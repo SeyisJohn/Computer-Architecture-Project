@@ -1,0 +1,12 @@
+[Version]
+Version=10.5
+[Designs]
+multimedia alu=.\Multimedia ALU\Multimedia ALU.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+multimedia alu=1
