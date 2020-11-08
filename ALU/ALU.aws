@@ -1,5 +1,5 @@
 [Version]
-Version=10.5
+Version=11.1
 [Designs]
 multimedia alu=.\Multimedia ALU\Multimedia ALU.adf
 [Browser]

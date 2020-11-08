@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+	<document type="stimulators" version="1">
+		<set name="ASDB Stimulators" active="1">
+			<stimulator>
+				<signal_path value="/ALU/rs1"/>
+				<rawdescription value="VAL:FRM:Override:11:&lt;= 11:1:"/>
+			</stimulator>
+			<stimulator>
+				<signal_path value="/ALU/rs2"/>
+				<rawdescription value="VAL:FRM:Override:111:&lt;= 111:1:"/>
+			</stimulator>
+		</set>
+	</document>
+</XML>
