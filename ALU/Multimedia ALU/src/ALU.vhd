@@ -106,6 +106,59 @@ architecture ALU of ALU is
 
 begin
 
-	 output <= signed_multiply(SIGNED(rs1), SIGNED(rs2));
+	process (instruct, rs1, rs2, rs3)
+	begin
+		
+		if (instruct = X"00") then
+			-- Signed Integer Multiply-Add Low with Saturation
+		elsif (instruct = X"01") then
+			-- Signed Integer Multiply-Add High with Saturation
+		elsif (instruct = X"02") then
+			-- Signed Integer Multiply-Subtract Low with Saturation
+		elsif (instruct = X"03") then
+			-- Signed Integer Multiply-Subtract High with Saturation
+		elsif (instruct = X"04") then
+			-- Signed Long Integer Multiply-Add Low with Saturation
+		elsif (instruct = X"05") then
+			-- Signed Long Integer Multiply-Add High with Saturation
+		elsif (instruct = X"06") then
+			-- Signed Long Integer Multiply-Subtract Low with Saturation
+		elsif (instruct = X"07") then 
+			-- Signed Long Integer Multiply-Subtract High with Saturation
+		elsif (instruct = X"08") then 
+			-- add word unsigned
+		elsif (instruct = X"09") then
+			-- absolute difference of bytes
+		elsif (instruct = X"0A") then
+			-- add halfword unsigned
+		elsif (instruct = X"0B") then
+			-- add halfword saturated 
+		elsif (instruct = X"0C") then
+			-- bitwise logical and
+		elsif (instruct = X"0D") then
+			-- broadcast word 
+		elsif (instruct = X"0E") then
+			-- max signed word
+		elsif (instruct = X"10") then
+			-- min signed word
+		elsif (instruct = X"11") then
+			-- multiply low unsigned
+		elsif (instruct = X"12") then
+			-- multiply low by constant unsigned
+		elsif (instruct = X"13") then
+			-- bitwise logical or
+		elsif (instruct = X"14") then
+			-- count ones in words
+		elsif (instruct = X"15") then
+			-- rotate bits in word
+		elsif (instruct = X"16") then
+			-- subtract from halfword saturated
+		elsif (instruct = X"17") then
+			-- subtract from word unsigned			
+		else
+			--NOP
+		end if;
+			
+	output <= signed_int_multiply(SIGNED(rs1), SIGNED(rs2));
 
 end ALU;

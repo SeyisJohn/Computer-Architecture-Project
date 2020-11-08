@@ -3,7 +3,7 @@ Multimedia_ALU=1
 Built-in symbols=0
 
 [COMPILESTATUS|.\src\ALU.vhd]
-FileTimeLow=30848400
+FileTimeLow=30848528
 Status=Modified
 
 [General]
@@ -14,7 +14,7 @@ Path=/ALU
 
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\Multimedia ALU\src/ALU.vhd|]
 CurrentLine=108
-CurrentColumn=2
+CurrentColumn=1
 Bookmarks=-1
 BookmarksLength=3
 ZoomFactor=0
