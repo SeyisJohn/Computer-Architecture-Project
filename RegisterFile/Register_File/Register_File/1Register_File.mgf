@@ -1,0 +1,19 @@
+V 000051 55 597           1604026032360 behavioral
+(_unit VHDL(register_file 0 28(behavioral 0 38))
+	(_version ve4)
+	(_time 1604026032361 2020.10.29 22:47:12)
+	(_source(\../src/Register_File.vhd\))
+	(_parameters tan)
+	(_code b6b5e1e2b5e1e5a0beb1a5ede3b0b3b1b4b3e0b0b0)
+	(_ent
+		(_time 1604026032300)
+	)
+	(_object
+		(_type(_int ~STD_LOGIC_VECTOR{127~downto~0}~12 0 30(_array -1((_dto i 127 i 0)))))
+		(_port(_int outA 0 0 30(_ent(_in))))
+		(_port(_int outB 0 0 31(_ent(_out))))
+		(_port(_int input 0 0 32(_ent(_in))))
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+)
