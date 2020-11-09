@@ -134,7 +134,7 @@ begin
 		elsif (instruct = X"0B") then
 			-- add halfword saturated 
 		elsif (instruct = X"0C") then
-			-- bitwise logical and
+			output <= rs1 and rs2;
 		elsif (instruct = X"0D") then
 			-- broadcast word 
 		elsif (instruct = X"0E") then
@@ -146,7 +146,7 @@ begin
 		elsif (instruct = X"12") then
 			-- multiply low by constant unsigned
 		elsif (instruct = X"13") then
-			-- bitwise logical or
+			output <= rs1 or rs2;
 		elsif (instruct = X"14") then
 			-- count ones in words
 		elsif (instruct = X"15") then
