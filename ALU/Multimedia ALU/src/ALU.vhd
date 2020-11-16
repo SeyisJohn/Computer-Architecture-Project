@@ -91,61 +91,91 @@ architecture ALU of ALU is
 
 begin
 
---	process (instruct, rs1, rs2, rs3)
---	begin
---		
---		if (instruct = X"00") then
---			-- Signed Integer Multiply-Add Low with Saturation
---		elsif (instruct = X"01") then
---			-- Signed Integer Multiply-Add High with Saturation
---		elsif (instruct = X"02") then
---			-- Signed Integer Multiply-Subtract Low with Saturation
---		elsif (instruct = X"03") then
---			-- Signed Integer Multiply-Subtract High with Saturation
---		elsif (instruct = X"04") then
---			-- Signed Long Integer Multiply-Add Low with Saturation
---		elsif (instruct = X"05") then
---			-- Signed Long Integer Multiply-Add High with Saturation
---		elsif (instruct = X"06") then
---			-- Signed Long Integer Multiply-Subtract Low with Saturation
---		elsif (instruct = X"07") then 
---			-- Signed Long Integer Multiply-Subtract High with Saturation
---		elsif (instruct = X"08") then 
---			-- add word unsigned
---		elsif (instruct = X"09") then
---			-- absolute difference of bytes
---		elsif (instruct = X"0A") then
---			-- add halfword unsigned
---		elsif (instruct = X"0B") then
---			-- add halfword saturated 
---		elsif (instruct = X"0C") then
---			output <= rs1 and rs2;
---		elsif (instruct = X"0D") then
---			-- broadcast word 
---		elsif (instruct = X"0E") then
---			-- max signed word
---		elsif (instruct = X"10") then
---			-- min signed word
---		elsif (instruct = X"11") then
---			-- multiply low unsigned
---		elsif (instruct = X"12") then
---			-- multiply low by constant unsigned
---		elsif (instruct = X"13") then
---			output <= rs1 or rs2;
---		elsif (instruct = X"14") then
---			-- count ones in words
---		elsif (instruct = X"15") then
---			-- rotate bits in word
---		elsif (instruct = X"16") then
---			-- subtract from halfword saturated
---		elsif (instruct = X"17") then
---			-- subtract from word unsigned			
---		else
---			--NOP
---		end if;
---
---	end process;
+	process (instruct, rs1, rs2, rs3)
+	begin
+		
+		if (instruct = "00000") then
+			output(31 downto 0) <= signed_int_multiply_add(	-- No idea if this is SYNTHESIZABLE  
+									SIGNED(rs3(15 downto 0)), 
+									SIGNED(rs2(15 downto 0)), 
+									SIGNED(rs1(31 downto 0))
+									);
+		elsif (instruct = "00001") then
+			output(31 downto 0) <= signed_int_multiply_add(	-- No idea if this is SYNTHESIZABLE
+									SIGNED(rs3(31 downto 16)), 
+									SIGNED(rs2(31 downto 16)), 
+									SIGNED(rs1(31 downto 0))
+									);
+		elsif (instruct = "00010") then
+			output(31 downto 0) <= signed_int_multiply_add(	-- No idea if this is SYNTHESIZABLE  
+									SIGNED(rs3(15 downto 0)), 
+									SIGNED(rs2(15 downto 0)), 
+									(-SIGNED(rs1(31 downto 0))) --Check if this works
+									);
+		elsif (instruct = "00011") then
+			output(31 downto 0) <= signed_int_multiply_add(	-- No idea if this is SYNTHESIZABLE
+									SIGNED(rs3(31 downto 16)), 
+									SIGNED(rs2(31 downto 16)), 
+									(-SIGNED(rs1(31 downto 0))) -- Check if this works
+									);
+		elsif (instruct = "00100") then
+			output(63 downto 0) <= signed_long_multiply_add( -- No idea if this is SYNTHESIZABLE
+									SIGNED(rs3(31 downto 0)),
+									SIGNED(rs2(31 downto 0)),
+									SIGNED(rs1(63 downto 0))
+									);
+		elsif (instruct = "00101") then
+			output(63 downto 0) <= signed_long_multiply_add( -- No idea if this is SYNTHESIZABLE
+									SIGNED(rs3(63 downto 32)),
+									SIGNED(rs2(63 downto 32)),
+									SIGNED(rs1(63 downto 0))
+									);
+		elsif (instruct = "00110") then
+			output(63 downto 0) <= signed_long_multiply_add( -- No idea if this is SYNTHESIZABLE
+									SIGNED(rs3(31 downto 0)),
+									SIGNED(rs2(31 downto 0)),
+									(-SIGNED(rs1(63 downto 0)))	-- Check if this works
+									);
+		elsif (instruct = "00111") then 
+			output(63 downto 0) <= signed_long_multiply_add( -- No idea if this is SYNTHESIZABLE
+									SIGNED(rs3(63 downto 32)),
+									SIGNED(rs2(63 downto 32)),
+									(-SIGNED(rs1(63 downto 0)))
+									);
+		elsif (instruct = "01000") then 
+			-- add word unsigned
+		elsif (instruct = "01001") then
+			-- absolute difference of bytes
+		elsif (instruct = "01010") then
+			-- add halfword unsigned
+		elsif (instruct = "01011") then
+			-- add halfword saturated 
+		elsif (instruct = "01100") then
+			output <= rs1 and rs2;
+		elsif (instruct = "01101") then
+			-- broadcast word 
+		elsif (instruct = "01110") then
+			-- max signed word
+		elsif (instruct = "01111") then
+			-- min signed word
+		elsif (instruct = "10000") then
+			-- multiply low unsigned
+		elsif (instruct = "10001") then
+			-- multiply low by constant unsigned
+		elsif (instruct = "10010") then
+			output <= rs1 or rs2;
+		elsif (instruct = "10011") then
+			-- count ones in words
+		elsif (instruct = "10100") then
+			-- rotate bits in word
+		elsif (instruct = "10101") then
+			-- subtract from halfword saturated
+		elsif (instruct = "10110") then
+			-- subtract from word unsigned			
+		else
+			null;
+		end if;
 
-	output(31 downto 0) <= signed_int_multiply(SIGNED(rs1(15 downto 0)), SIGNED(rs2(15 downto 0)));
+	end process;
 	
 end ALU;
