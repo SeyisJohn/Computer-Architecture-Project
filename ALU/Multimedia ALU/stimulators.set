@@ -4,11 +4,11 @@
 		<set name="ASDB Stimulators" active="1">
 			<stimulator>
 				<signal_path value="/ALU/rs1"/>
-				<rawdescription value="VAL:FRM:Override:11:&lt;= 11:1:"/>
+				<rawdescription value="VAL:FRM:Override:X&quot;8000&quot;:&lt;= X&quot;8000&quot;:1:"/>
 			</stimulator>
 			<stimulator>
 				<signal_path value="/ALU/rs2"/>
-				<rawdescription value="VAL:FRM:Override:111:&lt;= 111:1:"/>
+				<rawdescription value="VAL:FRM:Override:X&quot;8000&quot;:&lt;= X&quot;8000&quot;:1:"/>
 			</stimulator>
 		</set>
 	</document>

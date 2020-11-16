@@ -1,4 +1,4 @@
-Active-HDL 11.1.262.7351 2020-11-08 17:05:02
+Active-HDL 11.1.262.7351 2020-11-16 12:39:29
 
 Elaboration top modules:
 Architecture                  ALU(ALU)
@@ -26,3 +26,9 @@ ieee                    | Standard IEEE packages library
 multimedia_alu          | None
 std                     | Standard VHDL library
 ------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+ALU ALU ALU
+
+
+The performance of simulation is reduced. Version Student Edition
