@@ -1,4 +1,17 @@
 MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/ALU/Multimedia ALU/src/ALU.vhd" 
+BEGINPROGRESS C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/ALU/Multimedia ALU/src/ALU.vhd
+UPDATEPROGRESS 1
 MESSAGE "Compile Entity "ALU"" 
+UPDATEPROGRESS 3
+UPDATEPROGRESS 5
 MESSAGE "Compile Architecture "ALU" of Entity "ALU"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]" 
+UPDATEPROGRESS 13
+UPDATEPROGRESS 20
+UPDATEPROGRESS 23
+UPDATEPROGRESS 26
+UPDATEPROGRESS 31
+UPDATEPROGRESS 35
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/ALU/Multimedia ALU/src/ALU.vhd
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

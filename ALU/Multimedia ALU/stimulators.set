@@ -3,12 +3,20 @@
 	<document type="stimulators" version="1">
 		<set name="ASDB Stimulators" active="1">
 			<stimulator>
+				<signal_path value="/ALU/instruct"/>
+				<rawdescription value="VAL:FRM:Override:00010:&lt;= 00010:1:"/>
+			</stimulator>
+			<stimulator>
 				<signal_path value="/ALU/rs1"/>
-				<rawdescription value="VAL:FRM:Override:X&quot;8000&quot;:&lt;= X&quot;8000&quot;:1:"/>
+				<rawdescription value="VAL:FRM:Override:X&quot;A&quot;:&lt;= X&quot;A&quot;:1:"/>
 			</stimulator>
 			<stimulator>
 				<signal_path value="/ALU/rs2"/>
-				<rawdescription value="VAL:FRM:Override:X&quot;8000&quot;:&lt;= X&quot;8000&quot;:1:"/>
+				<rawdescription value="VAL:FRM:Override:X&quot;A&quot;:&lt;= X&quot;A&quot;:1:"/>
+			</stimulator>
+			<stimulator>
+				<signal_path value="/ALU/rs3"/>
+				<rawdescription value="VAL:FRM:Override:X&quot;A&quot;:&lt;= X&quot;A&quot;:1:"/>
 			</stimulator>
 		</set>
 	</document>
