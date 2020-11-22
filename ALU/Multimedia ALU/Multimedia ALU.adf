@@ -54,7 +54,7 @@ Count=0
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=alu|ALU|0      
+HierarchyInformation=alu|ALU|0       
 ShowHide=ShowTopLevel
 Selected=
 
