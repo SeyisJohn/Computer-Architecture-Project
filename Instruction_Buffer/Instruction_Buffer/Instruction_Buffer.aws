@@ -1,0 +1,13 @@
+[Version]
+Version=11.1
+C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Instruction_Buffer\Instruction_Buffer\Instruction_Buffer.aws
+[Designs]
+instruction buffer=.\Instruction buffer\Instruction buffer.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+instruction buffer=1

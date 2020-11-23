@@ -10,7 +10,7 @@ Status=Compiled
 CurrentVersion=103
 
 [CACHEDOC|Aldec.Project.Generic.7|.\Multimedia ALU\Multimedia ALU.adf|]
-Path=
+Path=/ALU
 
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\Multimedia ALU\src/ALU.vhd|]
 CurrentLine=0
