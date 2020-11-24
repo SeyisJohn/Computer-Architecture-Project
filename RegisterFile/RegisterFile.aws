@@ -1,7 +1,7 @@
 [Version]
 Version=11.1
 [Designs]
-register_file=.\Register_File\Register_File.adf
+registerfile=.\RegisterFile\RegisterFile.adf
 [Browser]
 sort=order
 mode=none
@@ -9,4 +9,4 @@ mode=none
 order=1
 macro=
 [Expand]
-register_file=1
+registerfile=1
