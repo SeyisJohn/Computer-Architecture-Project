@@ -1,3 +1,5 @@
-56
+75
 ~E 1 "../src/ALU.vhd" 29 ALU
 ~A 1 "../src/ALU.vhd" 41 ALU
+~E 1 "../src/ALU_tb.vhd" 32 ALU_tb
+~A 1 "../src/ALU_tb.vhd" 37 ALU_tb
