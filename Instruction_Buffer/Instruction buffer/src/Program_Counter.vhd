@@ -24,6 +24,7 @@
 
 library IEEE;
 use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 entity Program_Counter is
 	 port(
@@ -44,18 +45,13 @@ begin
 
 	process(Clk)
 	begin
-		
 		-- This should be an implied D-Flip Flop that stores the current_pc counter
-		if (rising_edge(clk)) then
-			
-			if (Rst = '1') then
-				current_pc <= "00000";
-			elsif (Set = '1') then
-				current_pc <= PC_new;
-			else
-				current_pc <= STD_LOGIC_VECTOR(UNSIGNED(current_pc) + 1);
-			end if;
-		
+		if (Rst = '1') then
+			current_pc <= "000000";
+		elsif (Set = '1') then
+			current_pc <= PC_new;
+		elsif (rising_edge(clk)) then
+			current_pc <= STD_LOGIC_VECTOR(UNSIGNED(current_pc) + 1);
 		end if;
 		
 	end process;

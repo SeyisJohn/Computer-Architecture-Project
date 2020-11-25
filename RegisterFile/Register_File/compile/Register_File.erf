@@ -1,7 +1,0 @@
-WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: c:/My_Designs/RegisterFile/Register_File/src/Register_File.vhd" 
-MESSAGE "Compile Entity "register_file"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "register_file"" 
-MESSAGE "Top-level unit(s) detected:" 
-MESSAGE "Entity => register_file" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]" 

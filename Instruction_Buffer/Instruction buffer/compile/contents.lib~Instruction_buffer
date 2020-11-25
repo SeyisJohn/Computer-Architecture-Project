@@ -1,1 +1,9 @@
-0
+20
+~E 1 "../src/Instruct_Buffer.vhd" 29 Instruct_Buffer
+~A 1 "../src/Instruct_Buffer.vhd" 41 Instruct_Buffer
+~E 1 "../src/instruct_buffer_system.vhd" 33 instruct_buffer_system
+~A 1 "../src/instruct_buffer_system.vhd" 47 instruct_buffer_system
+~E 1 "../src/instruct_buffer_tb.vhd" 32 instruct_buffer_tb
+~A 1 "../src/instruct_buffer_tb.vhd" 37 instruct_buffer_tb
+~E 1 "../src/Program_Counter.vhd" 29 Program_Counter
+~A 1 "../src/Program_Counter.vhd" 41 Program_Counter

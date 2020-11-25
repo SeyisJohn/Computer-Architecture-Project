@@ -39,13 +39,27 @@ end Instruct_Buffer;
 --}} End of automatically maintained section
 
 architecture Instruct_Buffer of Instruct_Buffer is
+
+type Instruction_table is array (0 to 63) of STD_LOGIC_VECTOR(24 downto 0);  
+
+signal instruct_buffer : Instruction_table := (others => (others => '0'));
 begin
 
-	store_instruct: process(Clk, WriteMode)
+	store_instruct: process(WriteMode, PC)
 	begin
 		if (WriteMode = '1') then 
-			
+			instruct_buffer(to_integer(UNSIGNED(PC))) <= Opcode;
+		end if;
+	end process; 
+	
+	
+	read_instruct: process(Clk)
+	begin
+		if(rising_edge(Clk)) then
+			Instruct <= instruct_buffer(to_integer(UNSIGNED(PC)));
+		else
+			null;
 		end if;
 	end process;
-
+	
 end Instruct_Buffer;

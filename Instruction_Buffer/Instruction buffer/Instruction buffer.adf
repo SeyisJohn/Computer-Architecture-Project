@@ -23,13 +23,32 @@ UCF=
 [Files]
 /Instruct_Buffer.vhd=-1
 /Program_Counter.vhd=-1
+/instruct_buffer_tb.vhd=-1
+/instruct_buffer_system.vhd=-1
 [Files.Data]
 .\src\Instruct_Buffer.vhd=VHDL Source Code
 .\src\Program_Counter.vhd=VHDL Source Code
+.\src\instruct_buffer_tb.vhd=VHDL Source Code
+.\src\instruct_buffer_system.vhd=VHDL Source Code
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=instruct_buffer|Instruct_Buffer|0 instruct_buffer_tb|instruct_buffer_tb|0 program_counter|Program_Counter|0 
 ShowHide=ShowTopLevel
 Selected=
 C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Instruction_Buffer\Instruction buffer\Instruction buffer.adf
+[LocalVhdlSets]
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=0
+EnableVHDL2008Key=0
+EnableVHDL2018Key=1
+DisableVHDL87Key=0
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+CompileWithDebug=1
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=

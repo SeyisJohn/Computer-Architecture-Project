@@ -1,2 +1,4 @@
 .\src\Instruct_Buffer.vhd
 .\src\Program_Counter.vhd
+.\src\instruct_buffer_tb.vhd
+.\src\instruct_buffer_system.vhd
