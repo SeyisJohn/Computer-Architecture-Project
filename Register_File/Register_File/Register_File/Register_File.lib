@@ -1,0 +1,24 @@
+timestamp=1606336860795
+
+[~A]
+ModifyID=4
+Version=74
+
+[~MFT]
+0=8|0Register_File.mgf|19187|9637
+1=2|1Register_File.mgf|7967|7967
+3=2|3Register_File.mgf|0|0
+
+[register_file]
+A/behavioral=21|../src/register_file.vhd|46|1*7967
+BinI32/behavioral=3*0
+I=0*1912
+I/behavioral=0*19187
+M=11|0|ve4|1606335481841|../src/register_file.vhd|0*1287*0xf1493080d1f8264ee5a444c2b1f51ae3e841fa2b|0*1821*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=21|0|ve4|1606336860463|../src/register_file.vhd|0*10774*0x9170590a2d8862fecd0c9174bf7c11587630c50e|0*19082*0x20116f55b147878295aeff36dce7fc50
+R=../src/register_file.vhd|29
+Version=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|a396fecd832e4041f15ae1be4d0acbff9590461053dd9c77b27bc3f69d93ce39aa6d750ae5c7d757e63a23da2abbb2a8
+Version/behavioral=11.1.262.7351 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff47485be5bfe90e3f6fd90664634dd36c0
+
+[~U]
+register_file=11|0*1021|
