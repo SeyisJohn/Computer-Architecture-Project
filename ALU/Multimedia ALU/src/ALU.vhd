@@ -32,7 +32,7 @@ entity ALU is
 		 rs2 : in SIGNED(127 downto 0);
 		 rs3 : in SIGNED(127 downto 0);
 		 instruct : in STD_LOGIC_VECTOR(4 downto 0);
-		 rd : out SIGNED(127 downto 0)
+		 rd : out SIGNED(127 downto 0) := (others => '0')
 	     );
 end ALU;
 
@@ -337,60 +337,50 @@ begin
 		-- The write-back stage will write the output(rd) register back into the specific register
 		elsif (instruct = "10111") then 
 		
-			case rs3 is
-			when X"0000_0000_0000_0000_0000_0000_0000_0000" => 
+			
+			if (rs3(3 downto 0) = X"0") then 
 				rd(15 downto 0) <= rs2(15 downto 0);
 				rd(127 downto 16) <= rs1(127 downto 16);
 			
-			
-			when X"0000_0000_0000_0000_0000_0000_0000_0001" =>
+			elsif (rs3(3 downto 0) = X"1") then
 				rd(31 downto 16) <= rs2(15 downto 0);
 				rd(127 downto 32) <= rs1(127 downto 32);
 				rd(15 downto 0) <= rs1(15 downto 0);
 			
-			
-			when X"0000_0000_0000_0000_0000_0000_0000_0010" =>
+			elsif (rs3(3 downto 0) = X"2") then
 				rd(47 downto 32) <= rs2(15 downto 0);
 				rd(127 downto 48) <= rs1(127 downto 48);
 				rd(31 downto 0) <= rs1(31 downto 0);
 				
-				
-			when X"0000_0000_0000_0000_0000_0000_0000_0011" => 
+			elsif (rs3(3 downto 0) = X"3") then 
 				rd(63 downto 48) <= rs2(15 downto 0);
 				rd(127 downto 64) <= rs1(127 downto 64);
 				rd(47 downto 0) <= rs1(47 downto 0);
 			
-			
-			when X"0000_0000_0000_0000_0000_0000_0000_0100" =>
+			elsif (rs3(3 downto 0) = X"4") then
 				rd(79 downto 64) <= rs2(15 downto 0);
 				rd(127 downto 80) <= rs1(127 downto 80);
 				rd(63 downto 0) <= rs1(63 downto 0);
 				
-				
-			when X"0000_0000_0000_0000_0000_0000_0000_0101" =>
+			elsif (rs3(3 downto 0) = X"5") then
 				rd(95 downto 80) <= rs2(15 downto 0);
 				rd(127 downto 96) <= rs1(127 downto 96);
 				rd(79 downto 0) <= rs1(79 downto 0);
 			
-			
-			when X"0000_0000_0000_0000_0000_0000_0000_0110" =>
+			elsif (rs3(3 downto 0) = X"6") then
 				rd(111 downto 96) <= rs2(15 downto 0);
 				rd(127 downto 112) <= rs1(127 downto 112);
 				rd(95 downto 0) <= rs1(95 downto 0);
 				
-			
-			when X"0000_0000_0000_0000_0000_0000_0000_0111" =>
+			elsif (rs3(3 downto 0) = X"7") then
 				rd(127 downto 112) <= rs2(15 downto 0);
-				rd(111 downto 0) <= rs1(111 downto 0);
-				
+				rd(111 downto 0) <= rs1(111 downto 0);	
 			
-			when others =>
+			else
 				null;
 			
-			end case;
+			end if;
 				
-			
-			
 		else
 			null;
 		
