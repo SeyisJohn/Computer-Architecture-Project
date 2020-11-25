@@ -330,6 +330,67 @@ begin
 			rd(127 downto 96) <= SIGNED(UNSIGNED(rs2(127 downto 96)) - UNSIGNED(rs1(127 downto 96)));		
 		
 		
+		-- li: Load a 16-bit Immediate value from the [20:5] instruction field into the 16-bit field specified by the Load Index field [23:21] of the 128-bit register rd.
+		-- rs1 will be specified register(rd)
+		-- rs2 will have the 16-bit immediate
+		-- rs3 will have the load index 
+		-- The write-back stage will write the output(rd) register back into the specific register
+		elsif (instruct = "10111") then 
+		
+			case rs3 is
+			when X"0000_0000_0000_0000_0000_0000_0000_0000" => 
+				rd(15 downto 0) <= rs2(15 downto 0);
+				rd(127 downto 16) <= rs1(127 downto 16);
+			
+			
+			when X"0000_0000_0000_0000_0000_0000_0000_0001" =>
+				rd(31 downto 16) <= rs2(15 downto 0);
+				rd(127 downto 32) <= rs1(127 downto 32);
+				rd(15 downto 0) <= rs1(15 downto 0);
+			
+			
+			when X"0000_0000_0000_0000_0000_0000_0000_0010" =>
+				rd(47 downto 32) <= rs2(15 downto 0);
+				rd(127 downto 48) <= rs1(127 downto 48);
+				rd(31 downto 0) <= rs1(31 downto 0);
+				
+				
+			when X"0000_0000_0000_0000_0000_0000_0000_0011" => 
+				rd(63 downto 48) <= rs2(15 downto 0);
+				rd(127 downto 64) <= rs1(127 downto 64);
+				rd(47 downto 0) <= rs1(47 downto 0);
+			
+			
+			when X"0000_0000_0000_0000_0000_0000_0000_0100" =>
+				rd(79 downto 64) <= rs2(15 downto 0);
+				rd(127 downto 80) <= rs1(127 downto 80);
+				rd(63 downto 0) <= rs1(63 downto 0);
+				
+				
+			when X"0000_0000_0000_0000_0000_0000_0000_0101" =>
+				rd(95 downto 80) <= rs2(15 downto 0);
+				rd(127 downto 96) <= rs1(127 downto 96);
+				rd(79 downto 0) <= rs1(79 downto 0);
+			
+			
+			when X"0000_0000_0000_0000_0000_0000_0000_0110" =>
+				rd(111 downto 96) <= rs2(15 downto 0);
+				rd(127 downto 112) <= rs1(127 downto 112);
+				rd(95 downto 0) <= rs1(95 downto 0);
+				
+			
+			when X"0000_0000_0000_0000_0000_0000_0000_0111" =>
+				rd(127 downto 112) <= rs2(15 downto 0);
+				rd(111 downto 0) <= rs1(111 downto 0);
+				
+			
+			when others =>
+				null;
+			
+			end case;
+				
+			
+			
 		else
 			null;
 		

@@ -54,13 +54,15 @@ Count=0
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=alu|ALU|0        
+HierarchyInformation=alu|ALU|0           
 ShowHide=ShowTopLevel
 Selected=
 
 [Files]
 /ALU.vhd=-1
+/ALU_tb.vhd=-1
 
 [Files.Data]
 .\src\ALU.vhd=VHDL Source Code
 
+.\src\ALU_tb.vhd=VHDL Source Code

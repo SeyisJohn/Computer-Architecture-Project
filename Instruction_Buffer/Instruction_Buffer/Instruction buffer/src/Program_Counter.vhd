@@ -27,7 +27,9 @@ use IEEE.std_logic_1164.all;
 
 entity Program_Counter is
 	 port(
+		 Clk : in STD_LOGIC;
 		 Rst : in STD_LOGIC;
+		 Set : in STD_LOGIC;
 		 PC_new : in STD_LOGIC_VECTOR(5 downto 0);
 		 PC_out : out STD_LOGIC_VECTOR(5 downto 0)
 	     );
@@ -36,8 +38,29 @@ end Program_Counter;
 --}} End of automatically maintained section
 
 architecture Program_Counter of Program_Counter is
+	
+	signal current_pc : STD_LOGIC_VECTOR(5 downto 0) := "000000";
 begin
 
-	 -- enter your statements here --
+	process(Clk)
+	begin
+		
+		-- This should be an implied D-Flip Flop that stores the current_pc counter
+		if (rising_edge(clk)) then
+			
+			if (Rst = '1') then
+				current_pc <= "00000";
+			elsif (Set = '1') then
+				current_pc <= PC_new;
+			else
+				current_pc <= STD_LOGIC_VECTOR(UNSIGNED(current_pc) + 1);
+			end if;
+		
+		end if;
+		
+	end process;
+	
+	-- This sends out the current program counter value
+	PC_out <= current_pc;
 
 end Program_Counter;
