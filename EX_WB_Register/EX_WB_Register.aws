@@ -1,0 +1,12 @@
+[Version]
+Version=11.1
+[Designs]
+ex_wb_register=.\EX_WB_Register\EX_WB_Register.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+ex_wb_register=1
