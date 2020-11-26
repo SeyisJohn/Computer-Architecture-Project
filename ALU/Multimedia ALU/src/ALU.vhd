@@ -33,7 +33,7 @@ entity ALU is
 		 rs3 : in SIGNED(127 downto 0);
 		 instruct : in STD_LOGIC_VECTOR(4 downto 0);
 		 rd : out SIGNED(127 downto 0) := (others => '0');
-		 valid : out STD_LOGIC := '0';
+		 valid : out STD_LOGIC := '0'
 	     );
 end ALU;
 
