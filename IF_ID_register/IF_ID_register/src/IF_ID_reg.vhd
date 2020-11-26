@@ -41,14 +41,14 @@ architecture IF_ID_reg of IF_ID_reg is
 
 begin
 
-	read: process(Clk)
+	write: process(Clk)
 	begin
 		if(rising_edge(Clk)) then
 			temporary_holder <= Input;	
 		end if;
 	end process;
 	
-	write: process(Clk) 
+	read: process(Clk) 
 	begin
 		if (rising_edge(Clk)) then
 			Output <= temporary_holder;

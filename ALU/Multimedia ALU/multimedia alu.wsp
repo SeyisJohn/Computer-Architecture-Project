@@ -3,11 +3,11 @@ Multimedia_ALU=1
 Built-in symbols=0
 
 [COMPILESTATUS|.\src\ALU.vhd]
-FileTimeLow=30851937
-Status=Modified
+FileTimeLow=30852021
+Status=Compiled
 
 [CACHEDOC|Aldec.Project.Generic.7|.\Multimedia ALU\Multimedia ALU.adf|]
-Path=/ALU
+Path=
 
 [COMPILESTATUS|.\src\ALU_tb.vhd]
 FileTimeLow=30851907

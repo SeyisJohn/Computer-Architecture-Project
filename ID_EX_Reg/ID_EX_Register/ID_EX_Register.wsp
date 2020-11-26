@@ -1,20 +1,20 @@
 [CACHESIMPLE|Aldec.SymbolsCommands.7]
-EX_WB_Register=1
+ID_EX_Register=1
 Built-in symbols=0
 
-[COMPILESTATUS|.\src\EX_WB_Reg.vhd]
-FileTimeLow=30852024
-Status=Modified
+[COMPILESTATUS|.\src\ID_EX_Reg.vhd]
+FileTimeLow=30852023
+Status=Compiled
 
 [General]
 CurrentVersion=103
 
-[CACHEDOC|Aldec.Project.Generic.7|.\EX_WB_Register\EX_WB_Register.adf|]
+[CACHEDOC|Aldec.Project.Generic.7|.\ID_EX_Register\ID_EX_Register.adf|]
 Path=
 
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\EX_WB_Register\src/EX_WB_Reg.vhd|]
-CurrentLine=64
-CurrentColumn=29
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\ID_EX_Register\src/ID_EX_Reg.vhd|]
+CurrentLine=84
+CurrentColumn=1
 Bookmarks=-1
 BookmarksLength=3
 ZoomFactor=0

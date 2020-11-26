@@ -1,0 +1,17 @@
+# Design: Design ID_EX_Register already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+acom -reorder -O3 -e 100 -work ID_EX_Register -2002  $dsn/src/ID_EX_Reg.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# Top-level unit(s) detected:
+# Entity => ID_EX_Reg
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].

@@ -32,7 +32,8 @@ entity ALU is
 		 rs2 : in SIGNED(127 downto 0);
 		 rs3 : in SIGNED(127 downto 0);
 		 instruct : in STD_LOGIC_VECTOR(4 downto 0);
-		 rd : out SIGNED(127 downto 0) := (others => '0')
+		 rd : out SIGNED(127 downto 0) := (others => '0');
+		 valid : out STD_LOGIC := '1';
 	     );
 end ALU;
 
@@ -382,7 +383,8 @@ begin
 			end if;
 				
 		else
-			null;
+			valid <= '0';
+			-- null;
 		
 		end if;
 

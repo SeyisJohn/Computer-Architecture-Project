@@ -42,6 +42,6 @@ AdditionalOptions=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=ex_wb_reg|EX_WB_Reg|0 
+HierarchyInformation=ex_wb_reg|EX_WB_Reg|0  
 ShowHide=ShowTopLevel
 Selected=

@@ -29,9 +29,11 @@ entity EX_WB_Reg is
 	 port(
 		 Clk : in STD_LOGIC;
 		 Input : in STD_LOGIC_VECTOR(127 downto 0);
-		 Reg_Num_in : in STD_LOGIC_VECTOR(4 downto 0);
-		 Output : out STD_LOGIC_VECTOR(127 downto 0) := (others => '0');
-		 Reg_Num_out : out STD_LOGIC_VECTOR(4 downto 0)	:= (others => '0')
+		 Reg_Num_in : in STD_LOGIC_VECTOR(4 downto 0);	
+		 Valid : in STD_LOGIC;
+		 Output : out STD_LOGIC_VECTOR(127 downto 0);
+		 Reg_Num_out : out STD_LOGIC_VECTOR(4 downto 0);
+		 Valid_out : out STD_LOGIC;
 	     );
 end EX_WB_Reg;
 
@@ -39,24 +41,28 @@ end EX_WB_Reg;
 
 architecture EX_WB_Reg of EX_WB_Reg is		
 
-signal reg_holder : STD_LOGIC_VECTOR(127 downto 0) := (others => '0');
-signal reg_num_holder : STD_LOGIC_VECTOR(4 downto 0) := (others => '0');
+signal reg_holder : STD_LOGIC_VECTOR(127 downto 0);
+signal reg_num_holder : STD_LOGIC_VECTOR(4 downto 0); 
+signal valid_holder : STD_LOGIC;
 
 begin
 
-	read: process(Clk)
+	write: process(Clk)
 	begin
 		if(rising_edge(Clk)) then
 			reg_holder <= Input;
 			reg_num_holder <= Reg_Num_in;
+			valid_holder <= valid;
 		end if;
 	end process;
 	
-	write: process(Clk)
+	
+	read: process(Clk)
 	begin
 		if (rising_edge(Clk)) then
 			Output <= reg_holder;
-			Reg_Num_out <= reg_num_holder;
+			Reg_Num_out <= reg_num_holder; 
+			Valid_out <= valid_holder;
 		else
 			null;
 		end if;

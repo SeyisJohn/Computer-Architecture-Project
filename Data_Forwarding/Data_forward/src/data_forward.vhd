@@ -34,7 +34,8 @@ entity data_forward is
 		 In_reg_num : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg1_num : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg2_num : in STD_LOGIC_VECTOR(4 downto 0);
-		 reg3_num : in STD_LOGIC_VECTOR(4 downto 0)
+		 reg3_num : in STD_LOGIC_VECTOR(4 downto 0);
+		 valid : in STD_LOGIC;
 	     );
 end data_forward;
 
@@ -45,15 +46,15 @@ begin
 
 	process(In_reg_num, reg1_num, reg2_num, reg3_num)
 	begin
-		if (In_reg_num = reg1_num) then
+		if (In_reg_num = reg1_num and valid = '1') then
 			WriteMode <= "01";
 			Out_value <= In_value;
 		
-		elsif (In_reg_num = reg2_num) then
+		elsif (In_reg_num = reg2_num and valid = '1') then
 			WriteMode <= "10";
 			Out_value <= In_value;
 			
-		elsif (In_reg_num = reg3_num) then
+		elsif (In_reg_num = reg3_num and valid = '1') then
 			WriteMode <= "11";
 			Out_value <= In_value;
 			
