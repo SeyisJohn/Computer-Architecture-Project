@@ -3,13 +3,17 @@ Current Flow=Multivendor
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
-compile=Multimedia_ALU
+compile=multimedia_alu
+
 [Library]
 Multimedia_ALU=.\Multimedia_ALU\Multimedia_ALU.lib
+
 [$LibMap$]
 Multimedia_ALU=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
@@ -23,12 +27,10 @@ DisableVitalMsg=0
 VitalAccel=1
 UnboundError=0
 VitalGlitches=0
+
 [IMPLEMENTATION]
 UCF=
-[Files]
-/ALU.vhd=-1
-[Files.Data]
-.\src\ALU.vhd=VHDL Source Code
+
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0
@@ -44,11 +46,23 @@ DisableRangeChecks=0
 ProtectLevel=0
 IncrementalCompilation=0
 AdditionalOptions=
+
 [LoadVHPI]
 Count=0
+
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
-HierarchyInformation=alu|ALU|0 
+HierarchyInformation=                
 ShowHide=ShowTopLevel
 Selected=
+
+[Files]
+/ALU.vhd=-1
+/ALU_tb.vhd=-1
+
+[Files.Data]
+.\src\ALU.vhd=VHDL Source Code
+
+.\src\ALU_tb.vhd=VHDL Source Code
