@@ -28,9 +28,9 @@ use ieee.numeric_std.all;
 
 entity register_file is
 	 port(
-		 rs1  					: out STD_LOGIC_VECTOR(127 downto 0);	-- rs1
-		 rs2  					: out STD_LOGIC_VECTOR(127 downto 0);	-- rs2
-		 rs3  					: out STD_LOGIC_VECTOR(127 downto 0);	-- rs3
+		 rs1  					: out STD_LOGIC_VECTOR(127 downto 0) := (others => '0');	-- rs1
+		 rs2  					: out STD_LOGIC_VECTOR(127 downto 0) := (others => '0');	-- rs2
+		 rs3  					: out STD_LOGIC_VECTOR(127 downto 0) := (others => '0');	-- rs3
 		 writeData 				: in STD_LOGIC_VECTOR(127 downto 0);   	-- rd   
 		 writeRegSel			: in STD_LOGIC_VECTOR(4 downto 0);	   	-- rd
 		 
@@ -81,25 +81,26 @@ architecture behavioral of register_file is
 							);
 											
 function R4_Instruction(instruction : STD_LOGIC_VECTOR(24 downto 0)) return STD_LOGIC_VECTOR is
-	variable result : STD_LOGIC_VECTOR(4 downto 0);
+	variable result : STD_LOGIC_VECTOR(4 downto 0) := (others => '0');
 begin	 
-	if instruction(22 downto 20) = "000" then
-	  result := "00000";
-	elsif instruction(22 downto 20) = "001" then
-	  result := "00001";
-	elsif instruction(22 downto 20) = "010" then
-	  result := "00010";
-	elsif instruction(22 downto 20) = "011" then
-	  result := "00011";
-	elsif instruction(22 downto 20) = "100" then
-	  result := "00100";
-	elsif instruction(22 downto 20) = "001" then
-	  result := "00101";
-	elsif instruction(22 downto 20) = "001" then
-	  result := "00110";
-	elsif instruction(22 downto 20) = "001" then	   
-	  result := "00111";
-	end if; 
+	-- if instruction(22 downto 20) = "000" then
+	  -- result := "00000";
+	-- elsif instruction(22 downto 20) = "001" then
+	  -- result := "00001";
+	-- elsif instruction(22 downto 20) = "010" then
+	  -- result := "00010";
+	-- elsif instruction(22 downto 20) = "011" then
+	  -- result := "00011";
+	-- elsif instruction(22 downto 20) = "100" then
+	  -- result := "00100";
+	-- elsif instruction(22 downto 20) = "101" then
+	  -- result := "00101";
+	-- elsif instruction(22 downto 20) = "110" then
+	  -- result := "00110";
+	-- elsif instruction(22 downto 20) = "111" then	   
+	  -- result := "00111";
+	-- end if; 
+	result(2 downto 0) := instruction(22 downto 20);
     return result;
 		
 end R4_Instruction;
@@ -108,66 +109,61 @@ function R3_Instruction(instruction : STD_LOGIC_VECTOR(24 downto 0)) return STD_
 	variable result : STD_LOGIC_VECTOR(4 downto 0);
 begin	
 	if instruction(18 downto 15) = "0000" then		--nop
-	  result := "11000";
+		result := "11000";
 	elsif instruction(18 downto 15) = "0001" then		--AU: add word unsigned
-	  result := "01000";
+		result := "01000";
 	elsif instruction(18 downto 15) = "0010" then	 --ABSDB
-	  result := "01001";
+		result := "01001";
 	elsif instruction(18 downto 15) = "0011" then	  --AHU
-	  result := "01010";
+		result := "01010";
 	elsif instruction(18 downto 15) = "0100" then	  --AHS
-	  result := "01011";
+		result := "01011";
 	elsif instruction(18 downto 15) = "0101" then	   --AND
-	  result := "01100";
+		result := "01100";
 	elsif instruction(18 downto 15) = "0110" then	  --BCW
-	  result := "01101";
+		result := "01101";
 	elsif instruction(18 downto 15) = "0111" then	   --MAXWS
-	  result := "01110";
+		result := "01110";
 	elsif instruction(18 downto 15) = "1000" then	   --MINWS			
-	  result := "01111";	
+		result := "01111";	
 	elsif instruction(18 downto 15) = "1001" then	   --MLHU		 
-	  result := "10000";
+		result := "10000";
 	elsif instruction(18 downto 15) = "1010" then	   --MUL LOW			
-	  result := "10001";
+		result := "10001";
 	elsif instruction(18 downto 15) = "1011" then	   	--OR		
-	  result := "10010";
-	 elsif instruction(18 downto 15) = "1100" then	   --PCNTW			
-	  result := "10011";
-	 elsif instruction(18 downto 15) = "1101" then	   --ROTW			
-	  result := "10100";
-	 elsif instruction(18 downto 15) = "1110" then	   --SFHS		
-	  result := "10101";
-	 elsif instruction(18 downto 15) = "1111" then	   	--SFW		
-	  result := "10110";
-	 end if; 
-     return result;
+		result := "10010";
+	elsif instruction(18 downto 15) = "1100" then	   --PCNTW			
+		result := "10011";
+	elsif instruction(18 downto 15) = "1101" then	   --ROTW			
+		result := "10100";
+	elsif instruction(18 downto 15) = "1110" then	   --SFHS		
+		result := "10101";
+	elsif instruction(18 downto 15) = "1111" then	   	--SFW		
+		result := "10110";
+	end if;
+	
+	return result;
 end R3_Instruction;
 
---function Load_Instruction(instruction : STD_LOGIC_VECTOR(24 downto 0)) return STD_LOGIC_VECTOR is
---begin
 
---end Load_Instruction;	
-		 
 begin							   
-	regFile : process (clk) is 
+	
+	read_value: process (clk) 
 	  	 variable RegSel1	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs1
 		 variable RegSel2 	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs2
 		 variable RegSel3 	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs3
 	begin 
-		if rising_edge(clk) then 
-			if writeEnable = '1' then
-			   	reg_array(to_integer(unsigned(writeRegSel))) <= writeData; 
-			end if; 
-			if input(24) = '1' and input(23) = '0' then		-- R4 - Instruction Format
-				regSel1 := input(19 downto 15);
+		if rising_edge(clk) then  
+			if (input(24) = '1' and input(23) = '0') then		-- R4 - Instruction Format
+				regSel3 := input(19 downto 15);
 				regSel2 := input(14 downto 10);
-				regSel3 := input(9 downto 5);
+				regSel1 := input(9 downto 5);
 				rs1 <= reg_array(to_integer(unsigned(regSel1)));
 				rs2 <= reg_array(to_integer(unsigned(regSel2)));
 				rs3 <= reg_array(to_integer(unsigned(regSel3)));
 				ALU_Ctrl <= R4_Instruction(input); 
 				
-			elsif input(24) = '1' and input(23) = '1' then	-- R3- Instruction Format
+			elsif (input(24) = '1' and input(23) = '1') then	-- R3- Instruction Format
 				regSel1 := input(9 downto 5);
 				regSel2 := input(14 downto 10);
 				rs1 <= reg_array(to_integer(unsigned(regSel1)));
@@ -175,13 +171,26 @@ begin
 				ALU_Ctrl <=	R3_Instruction(input);
 				
 			elsif (input(24) = '0') then							-- Load Immediate
-			   	rs1(2 downto 0) <= input(23 downto 21);
+			   	rs1 <= reg_array(to_integer(unsigned(input(4 downto 0)));
 				rs2(15 downto 0) <= input(20 downto 5);
+				rs3(2 downto 0) <= input(23 downto 21);
 				ALU_Ctrl <= "10111";
-			end if; 
+				
+			else
+				null;
+			end if;
+			
+		else
+			null;
 		end if; 
 	end process;
-end behavioral; 
+	
+	
+	write_value: process (clk)
+	begin	
+		if (rising_edge(clk) and WriteEnable = '1') then
+			reg_array(to_integer(unsigned(writeRegSel))) <= WriteData;
+		end if;
+	end process;
 			
-			
-						
+end behavioral; 	

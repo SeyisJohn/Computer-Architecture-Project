@@ -1,0 +1,6 @@
+# Design Explorer: Shortcut to "C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Register_File\Register_File.aws" workspace added.
+acom -dbg -e 100 -work Register_File -2018  $dsn/src/register_file.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
