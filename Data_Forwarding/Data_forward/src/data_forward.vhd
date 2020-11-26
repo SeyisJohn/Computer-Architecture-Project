@@ -35,7 +35,7 @@ entity data_forward is
 		 reg1_num : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg2_num : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg3_num : in STD_LOGIC_VECTOR(4 downto 0);
-		 valid : in STD_LOGIC;
+		 valid : in STD_LOGIC
 	     );
 end data_forward;
 
