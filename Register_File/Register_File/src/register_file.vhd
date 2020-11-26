@@ -32,8 +32,12 @@ entity register_file is
 		 rs2  					: out STD_LOGIC_VECTOR(127 downto 0) := (others => '0');	-- rs2
 		 rs3  					: out STD_LOGIC_VECTOR(127 downto 0) := (others => '0');	-- rs3
 		 writeData 				: in STD_LOGIC_VECTOR(127 downto 0);   	-- rd   
-		 writeRegSel			: in STD_LOGIC_VECTOR(4 downto 0);	   	-- rd
+		 RSel1					: out STD_LOGIC_VECTOR(4 downto 0);	   	--  output rs1
+		 RSel2 					: out STD_LOGIC_VECTOR(4 downto 0);	   	--  output rs2
+		 RSel3 					: out STD_LOGIC_VECTOR(4 downto 0);	   	--  output rs3
+		 RselD 					: out STD_LOGIC_VECTOR(4 downto 0);   -- output rd
 		 
+		 writeRegSel			: in STD_LOGIC_VECTOR(4 downto 0);	   	-- rd
 		 writeEnable 			: in STD_LOGIC; 			 			-- write enable	
 		 input 					: in STD_LOGIC_VECTOR(24 downto 0);		-- 25 bit instruction to be decoded
 		 ALU_Ctrl				: out STD_LOGIC_VECTOR(4 downto 0);
@@ -77,29 +81,12 @@ architecture behavioral of register_file is
 							x"10008000100080001000800010008000",	-- $gp
 							x"7ffff1ec7ffff1ec7ffff1ec7ffff1ec",	-- $sp
 							x"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",	-- $fp
-							x"ffffffffffffffffffffffffffffffff"	-- $ra											
+							x"ffffffffffffffffffffffffffffffff"		-- $ra											
 							);
 											
 function R4_Instruction(instruction : STD_LOGIC_VECTOR(24 downto 0)) return STD_LOGIC_VECTOR is
 	variable result : STD_LOGIC_VECTOR(4 downto 0) := (others => '0');
 begin	 
-	-- if instruction(22 downto 20) = "000" then
-	  -- result := "00000";
-	-- elsif instruction(22 downto 20) = "001" then
-	  -- result := "00001";
-	-- elsif instruction(22 downto 20) = "010" then
-	  -- result := "00010";
-	-- elsif instruction(22 downto 20) = "011" then
-	  -- result := "00011";
-	-- elsif instruction(22 downto 20) = "100" then
-	  -- result := "00100";
-	-- elsif instruction(22 downto 20) = "101" then
-	  -- result := "00101";
-	-- elsif instruction(22 downto 20) = "110" then
-	  -- result := "00110";
-	-- elsif instruction(22 downto 20) = "111" then	   
-	  -- result := "00111";
-	-- end if; 
 	result(2 downto 0) := instruction(22 downto 20);
     return result;
 		
@@ -110,11 +97,11 @@ function R3_Instruction(instruction : STD_LOGIC_VECTOR(24 downto 0)) return STD_
 begin	
 	if instruction(18 downto 15) = "0000" then		--nop
 		result := "11000";
-	elsif instruction(18 downto 15) = "0001" then		--AU: add word unsigned
+	elsif instruction(18 downto 15) = "0001" then	--AU: add word unsigned
 		result := "01000";
-	elsif instruction(18 downto 15) = "0010" then	 --ABSDB
+	elsif instruction(18 downto 15) = "0010" then	--ABSDB
 		result := "01001";
-	elsif instruction(18 downto 15) = "0011" then	  --AHU
+	elsif instruction(18 downto 15) = "0011" then	 --AHU
 		result := "01010";
 	elsif instruction(18 downto 15) = "0100" then	  --AHS
 		result := "01011";
@@ -158,6 +145,10 @@ begin
 				regSel3 := input(19 downto 15);
 				regSel2 := input(14 downto 10);
 				regSel1 := input(9 downto 5);
+				RSel1 <= regSel1; 
+				RSel2 <= regSel2;
+				RSel3 <= regSel3;
+				RselD <= input(4 downto 0);
 				rs1 <= reg_array(to_integer(unsigned(regSel1)));
 				rs2 <= reg_array(to_integer(unsigned(regSel2)));
 				rs3 <= reg_array(to_integer(unsigned(regSel3)));
@@ -165,13 +156,16 @@ begin
 				
 			elsif (input(24) = '1' and input(23) = '1') then	-- R3- Instruction Format
 				regSel1 := input(9 downto 5);
-				regSel2 := input(14 downto 10);
+				regSel2 := input(14 downto 10);	
+				RSel1 <= regSel1;
+				RSel2 <= regSel2;
+				RselD <= input(4 downto 0);
 				rs1 <= reg_array(to_integer(unsigned(regSel1)));
 				rs2 <= reg_array(to_integer(unsigned(regSel2)));
 				ALU_Ctrl <=	R3_Instruction(input);
 				
 			elsif (input(24) = '0') then							-- Load Immediate
-			   	rs1 <= reg_array(to_integer(unsigned(input(4 downto 0)));
+			   	rs1 <= reg_array(to_integer(unsigned(input(4 downto 0))));
 				rs2(15 downto 0) <= input(20 downto 5);
 				rs3(2 downto 0) <= input(23 downto 21);
 				ALU_Ctrl <= "10111";

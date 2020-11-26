@@ -3,13 +3,17 @@ Current Flow=Multivendor
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=Register_File
+
 [Library]
 Register_File=.\Register_File\Register_File.lib
+
 [$LibMap$]
 Register_File=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
@@ -18,30 +22,23 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
+
 [IMPLEMENTATION]
 UCF=
+
 [Files]
 /register_file.vhd=-1
+/registerfile_tb.vhd=-1
+
 [Files.Data]
 .\src\register_file.vhd=VHDL Source Code
-[LocalVhdlSets]
-NetlistCompilation=1
-EnableVHDL93Key=0
-EnableVHDL2002Key=0
-EnableVHDL2008Key=0
-EnableVHDL2018Key=1
-DisableVHDL87Key=0
-Syntax RelaxLRM=0
-MaxErrorsKey=100
-CompileWithDebug=1
-OptimizationLevel=3
-DisableRangeChecks=0
-ProtectLevel=0
-IncrementalCompilation=0
-AdditionalOptions=
+.\src\registerfile_tb.vhd=VHDL Source Code
+
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
