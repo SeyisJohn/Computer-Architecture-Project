@@ -1,0 +1,5 @@
+[COMPILESTATUS|.\src\register_file.vhd]
+FileTimeLow=30852011
+Status=Compiled
+[Gui config]
+RunFor=100 ns
