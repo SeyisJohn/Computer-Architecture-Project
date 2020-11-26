@@ -33,7 +33,7 @@ entity ALU is
 		 rs3 : in SIGNED(127 downto 0);
 		 instruct : in STD_LOGIC_VECTOR(4 downto 0);
 		 rd : out SIGNED(127 downto 0) := (others => '0');
-		 valid : out STD_LOGIC := '1';
+		 valid : out STD_LOGIC := '0';
 	     );
 end ALU;
 
@@ -156,6 +156,7 @@ begin
 									rs2(15 downto 0), 
 									rs1(31 downto 0)
 									);
+			valid <= '1';				
 									
 									
 		-- Signed Integer Multiply-Add High with Saturation
@@ -165,7 +166,7 @@ begin
 									rs2(31 downto 16), 
 									rs1(31 downto 0)
 									);
-									
+			valid <= '1';						
 									
 		-- Signed Integer Multiply-Subtract Low with Saturation
 		elsif (instruct = "00010") then
@@ -174,7 +175,7 @@ begin
 									rs2(15 downto 0), 
 									(-rs1(31 downto 0)) --Check if this works
 									);
-									
+		    valid <= '1';							
 									
 		-- Signed Integer Multiply-Subtract High with Saturation
 		elsif (instruct = "00011") then
@@ -183,7 +184,7 @@ begin
 									rs2(31 downto 16), 
 									(-rs1(31 downto 0)) -- Check if this works
 									);
-									
+			valid <= '1';						
 									
 		-- Signed Long Integer Multiply-Add Low with Saturation
 		elsif (instruct = "00100") then
@@ -192,7 +193,7 @@ begin
 									rs2(31 downto 0),
 									rs1(63 downto 0)
 									);
-									
+			valid <= '1';						
 									
 		-- Signed Long Integer Multiply-Add High with Saturation
 		elsif (instruct = "00101") then
@@ -201,7 +202,7 @@ begin
 									rs2(63 downto 32),
 									rs1(63 downto 0)
 									);
-									
+			valid <= '1';						
 									
 		-- Signed Long Integer Multiply-Subtract Low with Saturation
 		elsif (instruct = "00110") then
@@ -210,7 +211,7 @@ begin
 									rs2(31 downto 0),
 									(-rs1(63 downto 0))	-- Check if this works
 									);
-									
+			valid <= '1';						
 									
 		-- Signed Long Integer Multiply-Subtract High with Saturation
 		elsif (instruct = "00111") then 
@@ -219,7 +220,7 @@ begin
 									rs2(63 downto 32),
 									(-rs1(63 downto 0))
 									);
-									
+			valid <= '1';						
 									
 		-- AU: add word unsigned
 		elsif (instruct = "01000") then 		
@@ -227,7 +228,8 @@ begin
 			rd(63 downto 32)  <= SIGNED(UNSIGNED(rs1(63 downto 32)) + UNSIGNED(rs2(63 downto 32)));
 			rd(95 downto 64)  <= SIGNED(UNSIGNED(rs1(95 downto 64)) + UNSIGNED(rs2(95 downto 64)));
 			rd(127 downto 96) <= SIGNED(UNSIGNED(rs1(127 downto 96)) + UNSIGNED(rs2(127 downto 96)));	
-		
+			
+			valid <= '1';
 		
 		-- ABSDB: absolute difference of bytes	
 		elsif (instruct = "01001") then
@@ -235,13 +237,15 @@ begin
 				rd((7+(8 * j)) downto (j*8)) <= abs(rs2((7+(8 * j)) downto (j*8)) - rs1((7+(8 * j)) downto (j*8)));
 			end loop;
 		
-		
+			valid <= '1';
+			
 		-- AHU: add halfword unsigned	
 		elsif (instruct = "01010") then
 			for k in 0 to 7 loop
 				rd((15+(16*k)) downto (16*k)) <= SIGNED(UNSIGNED(rs1((15+(16*k)) downto (16*k))) + UNSIGNED(rs2((15+(16*k)) downto (16*k))));
 			end loop;
 			
+			valid <= '1';
 		
 		-- AHS: add halfword saturated
 		elsif (instruct = "01011") then
@@ -249,11 +253,13 @@ begin
 				rd((15+(16*x)) downto (16*x)) <=  rs1((15+(16*x)) downto (16*x)) + rs2((15+(16*x)) downto (16*x)); 
 			end loop;			
 		
-		
+			valid <= '1';
+			
 		-- AND: bitwise logical and 
 		elsif (instruct = "01100") then
 			rd <= rs1 and rs2;
 		
+			valid <= '1';
 		
 		-- BCW: broadcast word
 		elsif (instruct = "01101") then
@@ -262,6 +268,7 @@ begin
 			rd(95 downto 64)  <= rs1(31 downto 0);
 			rd(127 downto 96) <= rs1(31 downto 0);
 		
+			valid <= '1';
 		
 		-- MAXWS: max signed word
 		elsif (instruct = "01110") then
@@ -270,6 +277,7 @@ begin
 			rd(95 downto 64)  <= MAX(rs1(95 downto 64), rs2(95 downto 64));
 			rd(127 downto 96) <= MAX(rs1(127 downto 96), rs2(127 downto 96));	
 		
+			valid <= '1';
 		
 		-- MINWS: min signed word
 		elsif (instruct = "01111") then
@@ -278,6 +286,7 @@ begin
 			rd(95 downto 64)  <= MIN(rs1(95 downto 64), rs2(95 downto 64));
 			rd(127 downto 96) <= MIN(rs1(127 downto 96), rs2(127 downto 96));		
 		
+			valid <= '1';
 		
 		-- MLHU: multiply low unsigned
 		elsif (instruct = "10000") then
@@ -286,6 +295,7 @@ begin
 			rd(95 downto 64)  <= SIGNED(UNSIGNED(rs1(79 downto 64)) * UNSIGNED(rs2(79 downto 64)));
 			rd(127 downto 96) <= SIGNED(UNSIGNED(rs1(111 downto 96)) * UNSIGNED(rs2(111 downto 96)));	
 		
+			valid <= '1';
 		
 		-- multiply low by constant unsigned
 		elsif (instruct = "10001") then
@@ -294,11 +304,13 @@ begin
 			rd(95 downto 64)  <= SIGNED(UNSIGNED(rs1(79 downto 64)) * UNSIGNED(rs2(15 downto 0)));
 			rd(127 downto 96) <= SIGNED(UNSIGNED(rs1(111 downto 96)) * UNSIGNED(rs2(15 downto 0)));
 
-
+			valid <= '1';
+			
 		-- OR: bitwise logical or
 		elsif (instruct = "10010") then
 			rd <= rs1 or rs2;
-		
+			
+			valid <= '1';
 		
 		-- PCNTW: count ones in words
 		elsif (instruct = "10011") then
@@ -307,6 +319,7 @@ begin
 			rd(95 downto 64)  <= count_ones_words(rs1(95 downto 64));
 			rd(127 downto 96) <= count_ones_words(rs1(127 downto 96));
 		
+			valid <= '1';
 		
 		-- ROTW: rotate bits in word
 		elsif (instruct = "10100") then			
@@ -315,14 +328,16 @@ begin
 			rd(95 downto 64) <= rotate_right(rs1(95 downto 64), to_integer(rs2(4 downto 0)));
 			rd(127 downto 96) <= rotate_right(rs1(127 downto 96), to_integer(rs2(4 downto 0)));
 		
-		
+			valid <= '1';
+			
 		-- SFHS: subtract from halfword saturated
 		elsif (instruct = "10101") then
 			for y in 0 to 7 loop
 				rd((15+(16*y)) downto (16*y)) <=  rs2((15+(16*y)) downto (16*y)) - rs1((15+(16*y)) downto (16*y)); 
 			end loop;
 		
-		
+			valid <= '1';
+			
 		-- SFW: subtract from word unsigned:
 		elsif (instruct = "10110") then
 			rd(31 downto 0)   <= SIGNED(UNSIGNED(rs2(31 downto 0)) - UNSIGNED(rs1(31 downto 0)));
@@ -330,6 +345,7 @@ begin
 			rd(95 downto 64)  <= SIGNED(UNSIGNED(rs2(95 downto 64)) - UNSIGNED(rs1(95 downto 64)));
 			rd(127 downto 96) <= SIGNED(UNSIGNED(rs2(127 downto 96)) - UNSIGNED(rs1(127 downto 96)));		
 		
+			valid <= '1';
 		
 		-- li: Load a 16-bit Immediate value from the [20:5] instruction field into the 16-bit field specified by the Load Index field [23:21] of the 128-bit register rd.
 		-- rs1 will be specified register(rd)
@@ -381,7 +397,8 @@ begin
 				null;
 			
 			end if;
-				
+			
+			valid <= '1';
 		else
 			valid <= '0';
 			-- null;

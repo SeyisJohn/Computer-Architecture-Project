@@ -1,7 +1,4 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-acom -dbg -e 100 -work multimedia_alu -2018  $dsn/src/ALU.vhd
-# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/ALU/Multimedia ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU" of Entity "ALU"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'multimedia_alu.ALU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
