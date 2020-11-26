@@ -33,7 +33,7 @@ entity EX_WB_Reg is
 		 Valid : in STD_LOGIC;
 		 Output : out STD_LOGIC_VECTOR(127 downto 0);
 		 Reg_Num_out : out STD_LOGIC_VECTOR(4 downto 0);
-		 Valid_out : out STD_LOGIC;
+		 Valid_out : out STD_LOGIC
 	     );
 end EX_WB_Reg;
 
