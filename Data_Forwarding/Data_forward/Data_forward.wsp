@@ -1,0 +1,23 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Data_forward=1
+Built-in symbols=0
+
+[COMPILESTATUS|.\src\data_forward.vhd]
+FileTimeLow=30852008
+Status=Modified
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\Data_forward\Data_forward.adf|]
+Path=/data_forward
+
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Data_forward\src/data_forward.vhd|]
+CurrentLine=45
+CurrentColumn=9
+Bookmarks=-1
+BookmarksLength=3
+ZoomFactor=0
+Frame=0
+WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////88AAAB5AAAAfwcAAEcDAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
+

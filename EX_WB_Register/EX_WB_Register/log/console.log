@@ -1,0 +1,7 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -dbg -e 100 -work EX_WB_Register -2018  $dsn/src/EX_WB_Reg.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/EX_WB_Register/EX_WB_Register/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]

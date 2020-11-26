@@ -1,0 +1,12 @@
+[Version]
+Version=11.1
+[Designs]
+id_ex_register=.\ID_EX_Register\ID_EX_Register.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+id_ex_register=1

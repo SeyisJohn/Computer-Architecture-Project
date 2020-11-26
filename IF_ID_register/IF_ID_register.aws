@@ -1,0 +1,12 @@
+[Version]
+Version=11.1
+[Designs]
+if_id_register=.\IF_ID_register\IF_ID_register.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+if_id_register=1

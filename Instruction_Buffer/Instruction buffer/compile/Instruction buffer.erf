@@ -1,0 +1,4 @@
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Instruction_Buffer/Instruction buffer/src/instruct_buffer_system.vhd" 
+MESSAGE "Compile Entity "instruct_buffer_system"" 
+MESSAGE "Compile Architecture "instruct_buffer_system" of Entity "instruct_buffer_system"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

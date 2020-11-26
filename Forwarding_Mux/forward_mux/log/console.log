@@ -1,0 +1,36 @@
+# Design: Design forward_mux already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+acom -reorder -O3 -e 100 -work forward_mux -2002  $dsn/src/forward_mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Forwarding_Mux/Forwarding_Mux/forward_mux/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Forwarding_Mux/Forwarding_Mux/forward_mux/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Forwarding_Mux/Forwarding_Mux/forward_mux/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Forwarding_Mux/Forwarding_Mux/forward_mux/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# Error: COMP96_0018: forward_mux.vhd : (39, 7): Identifier expected.
+# Error: COMP96_0056: forward_mux.vhd : (44, 1): Cannot find referenced entity declaration "forward_mux".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work forward_mux -2002  $dsn/src/forward_mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Forwarding_Mux/Forwarding_Mux/forward_mux/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# Top-level unit(s) detected:
+# Entity => forward_mux
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
