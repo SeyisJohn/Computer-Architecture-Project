@@ -1,0 +1,27 @@
+V 000050 55 1025          1606349731255 IF_ID_reg
+(_unit VHDL(if_id_reg 0 29(if_id_reg 0 39))
+	(_version ve4)
+	(_time 1606349731256 2020.11.25 19:15:31)
+	(_source(\../src/IF_ID_reg.vhd\))
+	(_parameters tan)
+	(_code ecb8e1bfb9b8eefae7ebf8b5ebebeeeae9eaebeae5)
+	(_ent
+		(_time 1606349731253)
+	)
+	(_object
+		(_port(_int Clk -1 0 31(_ent(_in)(_event))))
+		(_type(_int ~STD_LOGIC_VECTOR{24~downto~0}~12 0 32(_array -1((_dto i 24 i 0)))))
+		(_port(_int Input 0 0 32(_ent(_in))))
+		(_port(_int Output 0 0 33(_ent(_out))))
+		(_type(_int ~STD_LOGIC_VECTOR{24~downto~0}~13 0 40(_array -1((_dto i 24 i 0)))))
+		(_sig(_int temporary_holder 1 0 40(_arch(_uni((_others(i 2)))))))
+		(_prcs
+			(read(_arch 0 0 44(_prcs(_trgt(3))(_sens(0)(1))(_dssslsensitivity 1))))
+			(write(_arch 1 0 51(_prcs(_simple)(_trgt(2))(_sens(0))(_read(3)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+		(_type(_ext ~extieee.std_logic_1164.STD_ULOGIC(0 STD_ULOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard))(ieee(NUMERIC_STD)))
+	(_model . IF_ID_reg 2 -1)
+)

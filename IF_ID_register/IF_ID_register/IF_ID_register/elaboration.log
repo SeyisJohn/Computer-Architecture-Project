@@ -1,0 +1,34 @@
+Active-HDL 11.1.262.7351 2020-11-25 19:16:47
+
+Elaboration top modules:
+Architecture                  IF_ID_reg(IF_ID_reg)
+
+
+-------------------------------------------------------------------------------------------------
+Entity    | Architecture | Library        | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------
+IF_ID_reg | IF_ID_reg    | IF_ID_register |      | 11.1.262.7351 (Windows) | -O3
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+VHDL Package             | Library        | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------
+standard                 | std            |      |                         | <unavailable>
+TEXTIO                   | std            |      |                         | <unavailable>
+std_logic_1164           | ieee           |      |                         | <unavailable>
+NUMERIC_STD              | ieee           |      |                         | <unavailable>
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+Library                  | Comment
+-------------------------------------------------------------------------------------------------
+ieee                     | Standard IEEE packages library
+IF_ID_register           | None
+std                      | Standard VHDL library
+-------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+IF_ID_reg IF_ID_reg IF_ID_reg
+
+
+The performance of simulation is reduced. Version Student Edition
