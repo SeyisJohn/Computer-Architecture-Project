@@ -1,0 +1,55 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=System
+
+[Library]
+System=.\System\System.lib
+
+[$LibMap$]
+System=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+fileopenfolder=C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Data_Forwarding\Data_forward\src
+
+[IMPLEMENTATION]
+UCF=
+
+[Files]
+/ALU.vhd=-1
+/Execute.vhd=-1
+/forward_mux.vhd=-1
+/register_file.vhd=-1
+/EX_WB_Reg.vhd=-1
+/Instruct_Buffer.vhd=-1
+/instruct_fetch.vhd=-1
+/Program_Counter.vhd=-1
+/IF_ID_reg.vhd=-1
+/ID_EX_Reg.vhd=-1
+/data_forward.vhd=-1
+
+[Files.Data]
+.\src\ALU.vhd=VHDL Source Code
+.\src\Execute.vhd=VHDL Source Code
+.\src\forward_mux.vhd=VHDL Source Code
+.\src\register_file.vhd=VHDL Source Code
+.\src\EX_WB_Reg.vhd=VHDL Source Code
+.\src\Instruct_Buffer.vhd=VHDL Source Code
+.\src\instruct_fetch.vhd=VHDL Source Code
+.\src\Program_Counter.vhd=VHDL Source Code
+.\src\IF_ID_reg.vhd=VHDL Source Code
+.\src\ID_EX_Reg.vhd=VHDL Source Code
+.\src\data_forward.vhd=VHDL Source Code
+

@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 --
--- Title       : instruct_buffer_system
+-- Title       : instruct_fetch
 -- Design      : Instruction buffer
 -- Author      : Seyi Olajuyi
 -- Company     : Stony Brook University
 --
 -------------------------------------------------------------------------------
 --
--- File        : C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Instruction_Buffer\Instruction buffer\src\instruct_buffer_system.vhd
--- Generated   : Wed Nov 25 18:26:25 2020
+-- File        : C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Instruction_Buffer\Instruction buffer\src\instruct_fetch.vhd
+-- Generated   : Thu Nov 26 12:48:36 2020
 -- From        : interface description file
 -- By          : Itf2Vhdl ver. 1.22
 --
@@ -20,7 +20,7 @@
 
 --{{ Section below this comment is automatically maintained
 --   and may be overwritten
---{entity {instruct_buffer_system} architecture {instruct_buffer_system}}
+--{entity {instruct_fetch} architecture {structural}}
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -30,8 +30,8 @@ library work;
 use work.all;
 
 
-entity instruct_buffer_system is
-	 port(
+entity instruct_fetch is
+	port(
 		 Clk : in STD_LOGIC;
 		 Rst : in STD_LOGIC;
 		 Set : in STD_LOGIC;
@@ -40,17 +40,15 @@ entity instruct_buffer_system is
 		 Opcode : in STD_LOGIC_VECTOR(24 downto 0);
 		 Instruct : out STD_LOGIC_VECTOR(24 downto 0)
 	     );
-end instruct_buffer_system;
+end instruct_fetch;
 
 --}} End of automatically maintained section
 
-architecture instruct_buffer_system of instruct_buffer_system is
-
+architecture structural of instruct_fetch is
 	signal PC_out : STD_LOGIC_VECTOR(5 downto 0);
-
 begin
 
-	u1: entity program_counter port map
+	 	u1: entity program_counter port map
 		(
 		Clk => Clk,
 		Rst => Rst,
@@ -67,6 +65,5 @@ begin
 		Clk => Clk,
 		Instruct => Instruct
 		);	
-		
 
-end instruct_buffer_system;
+end structural;
