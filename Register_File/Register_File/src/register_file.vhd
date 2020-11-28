@@ -28,14 +28,14 @@ use ieee.numeric_std.all;
 
 entity register_file is
 	 port(
-		 rs1  					: out STD_LOGIC_VECTOR(127 downto 0) := (others => '0');	-- rs1
-		 rs2  					: out STD_LOGIC_VECTOR(127 downto 0) := (others => '0');	-- rs2
-		 rs3  					: out STD_LOGIC_VECTOR(127 downto 0) := (others => '0');	-- rs3
+		 rs1  					: out STD_LOGIC_VECTOR(127 downto 0);	-- rs1
+		 rs2  					: out STD_LOGIC_VECTOR(127 downto 0);	-- rs2
+		 rs3  					: out STD_LOGIC_VECTOR(127 downto 0);	-- rs3
 		 writeData 				: in STD_LOGIC_VECTOR(127 downto 0);   	-- rd   
 		 RSel1					: out STD_LOGIC_VECTOR(4 downto 0);	   	--  output rs1
 		 RSel2 					: out STD_LOGIC_VECTOR(4 downto 0);	   	--  output rs2
 		 RSel3 					: out STD_LOGIC_VECTOR(4 downto 0);	   	--  output rs3
-		 RselD 					: out STD_LOGIC_VECTOR(4 downto 0);   -- output rd
+		 RSelD 					: out STD_LOGIC_VECTOR(4 downto 0);   -- output rd
 		 
 		 writeRegSel			: in STD_LOGIC_VECTOR(4 downto 0);	   	-- rd
 		 writeEnable 			: in STD_LOGIC; 			 			-- write enable	
@@ -139,37 +139,84 @@ begin
 	  	 variable RegSel1	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs1
 		 variable RegSel2 	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs2
 		 variable RegSel3 	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs3
+		 variable RegSelD   : STD_LOGIC_VECTOR(4 downto 0);     -- rd
 	begin 
 		if rising_edge(clk) then  
 			if (input(24) = '1' and input(23) = '0') then		-- R4 - Instruction Format
-				regSel3 := input(19 downto 15);
-				regSel2 := input(14 downto 10);
-				regSel1 := input(9 downto 5);
-				RSel1 <= regSel1; 
-				RSel2 <= regSel2;
-				RSel3 <= regSel3;
-				RselD <= input(4 downto 0);
-				rs1 <= reg_array(to_integer(unsigned(regSel1)));
-				rs2 <= reg_array(to_integer(unsigned(regSel2)));
-				rs3 <= reg_array(to_integer(unsigned(regSel3)));
-				ALU_Ctrl <= R4_Instruction(input); 
+				
+				RegSel3 := input(19 downto 15);
+				RegSel2 := input(14 downto 10);
+				RegSel1 := input(9 downto 5);
+				
+				RSelD <= input(4 downto 0);
+				
+
+				ALU_Ctrl <= R4_Instruction(input);
+				
+				if (WriteEnable = '1' and writeRegSel = regSel1) then 
+					rs1 <= WriteData;
+					rs2 <= reg_array(to_integer(unsigned(regSel2)));
+					rs3 <= reg_array(to_integer(unsigned(regSel3)));
+				
+				elsif (WriteEnable = '1' and writeRegSel = regSel2) then
+					rs1 <= reg_array(to_integer(unsigned(regSel1)));
+					rs2 <= WriteData;
+					rs3 <= reg_array(to_integer(unsigned(regSel3)));
+					
+				elsif (WriteEnable = '1' and writeRegSel = regSel3) then
+					rs1 <= reg_array(to_integer(unsigned(regSel1)));
+					rs2 <= reg_array(to_integer(unsigned(regSel2)));
+					rs3 <= WriteData;
+				else
+					rs1 <= reg_array(to_integer(unsigned(regSel1)));
+					rs2 <= reg_array(to_integer(unsigned(regSel2)));
+					rs3 <= reg_array(to_integer(unsigned(regSel3)));
+				end if;
+				
+				RSel1 <= RegSel1;
+				RSel2 <= RegSel2;
+				RSel3 <= RegSel3;
+
 				
 			elsif (input(24) = '1' and input(23) = '1') then	-- R3- Instruction Format
+				
 				regSel1 := input(9 downto 5);
-				regSel2 := input(14 downto 10);	
+				regSel2 := input(14 downto 10);
+				RselD <= input(4 downto 0);
+
+				
+				ALU_Ctrl <=	R3_Instruction(input);	
+				
+				if (WriteEnable = '1' and writeRegSel = regSel1) then
+					rs1 <= WriteData;
+					rs2 <= reg_array(to_integer(unsigned(regSel2)));
+					
+				elsif (WriteEnable = '1' and writeRegSel = regSel2) then
+					rs1 <= reg_array(to_integer(unsigned(regSel1)));
+					rs2 <= WriteData; 	
+				else
+					rs1 <= reg_array(to_integer(unsigned(regSel1)));
+					rs2 <= reg_array(to_integer(unsigned(regSel2))); 
+				end if;	
+				
 				RSel1 <= regSel1;
 				RSel2 <= regSel2;
-				RselD <= input(4 downto 0);
-				rs1 <= reg_array(to_integer(unsigned(regSel1)));
-				rs2 <= reg_array(to_integer(unsigned(regSel2)));
-				ALU_Ctrl <=	R3_Instruction(input);
+				
 				
 			elsif (input(24) = '0') then							-- Load Immediate
-			   	rs1 <= reg_array(to_integer(unsigned(input(4 downto 0))));
+				
 				rs2(15 downto 0) <= input(20 downto 5);
 				rs3(2 downto 0) <= input(23 downto 21);
 				ALU_Ctrl <= "10111";
+				regSelD := input(4 downto 0);
 				
+				if (WriteEnable = '1' and writeRegSel = regSelD) then
+					rs1 <= WriteData;
+				else
+					rs1 <= reg_array(to_integer(unsigned(input(4 downto 0))));
+				end if;
+				
+				RSelD <= regSelD;
 			else
 				null;
 			end if;
