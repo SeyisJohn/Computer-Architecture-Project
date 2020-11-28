@@ -1,4 +1,55 @@
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/ALU.vhd" 
+BEGINPROGRESS C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/ALU.vhd
+MESSAGE "Compile Entity "ALU"" 
+UPDATEPROGRESS 3
+UPDATEPROGRESS 4
+MESSAGE "Compile Architecture "ALU" of Entity "ALU"" 
+UPDATEPROGRESS 10
+UPDATEPROGRESS 15
+UPDATEPROGRESS 21
+UPDATEPROGRESS 26
+UPDATEPROGRESS 28
+UPDATEPROGRESS 30
+UPDATEPROGRESS 34
+UPDATEPROGRESS 39
+UPDATEPROGRESS 98
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/ALU.vhd
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/Execute.vhd" 
+MESSAGE "Compile Entity "Execute"" 
+MESSAGE "Compile Architecture "structural" of Entity "Execute"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/forward_mux.vhd" 
+MESSAGE "Compile Entity "forward_mux"" 
+MESSAGE "Compile Architecture "forward_mux" of Entity "forward_mux"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/EX_WB_Reg.vhd" 
+MESSAGE "Compile Entity "EX_WB_Reg"" 
+MESSAGE "Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/Instruct_Buffer.vhd" 
+MESSAGE "Compile Entity "Instruct_Buffer"" 
+MESSAGE "Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/instruct_fetch.vhd" 
+MESSAGE "Compile Entity "instruct_fetch"" 
+MESSAGE "Compile Architecture "structural" of Entity "instruct_fetch"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/Program_Counter.vhd" 
+MESSAGE "Compile Entity "Program_Counter"" 
+MESSAGE "Compile Architecture "Program_Counter" of Entity "Program_Counter"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/IF_ID_reg.vhd" 
+MESSAGE "Compile Entity "IF_ID_reg"" 
+MESSAGE "Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/data_forward.vhd" 
+MESSAGE "Compile Entity "data_forward"" 
+MESSAGE "Compile Architecture "data_forward" of Entity "data_forward"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/ID_EX_Reg.vhd" 
+MESSAGE "Compile Entity "ID_EX_Reg"" 
+MESSAGE "Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/System.vhd" 
+MESSAGE "Compile Entity "System"" 
+MESSAGE "Compile Architecture "structural" of Entity "System"" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/System_tb.vhd" 
+MESSAGE "Compile Entity "System_tb"" 
+MESSAGE "Compile Architecture "System_tb" of Entity "System_tb"" 
 MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System/System/src/register_file.vhd" 
 MESSAGE "Compile Entity "register_file"" 
 MESSAGE "Compile Architecture "behavioral" of Entity "register_file"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]" 
