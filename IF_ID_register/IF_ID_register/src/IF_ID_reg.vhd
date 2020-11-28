@@ -37,7 +37,7 @@ end IF_ID_reg;
 --}} End of automatically maintained section
 
 architecture IF_ID_reg of IF_ID_reg is
-	signal temporary_holder : STD_LOGIC_VECTOR(24 downto 0) := (others => '0');
+	signal temporary_holder : STD_LOGIC_VECTOR(24 downto 0);
 
 begin
 

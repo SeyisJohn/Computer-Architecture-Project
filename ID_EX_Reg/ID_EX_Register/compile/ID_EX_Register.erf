@@ -1,7 +1,4 @@
-WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
 MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg.vhd" 
 MESSAGE "Compile Entity "ID_EX_Reg"" 
 MESSAGE "Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"" 
-MESSAGE "Top-level unit(s) detected:" 
-MESSAGE "Entity => ID_EX_Reg" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  79.0 [ms]" 

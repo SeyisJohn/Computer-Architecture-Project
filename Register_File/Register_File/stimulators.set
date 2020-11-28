@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XML>
 	<document type="stimulators" version="1">
-		<set name="ASDB Stimulators" active="1"/>
+		<set name="ASDB Stimulators" active="1">
+			<stimulator>
+				<signal_path value="/register_file/clk"/>
+				<rawdescription value="CLK:FRM:Override:100.000000;2;1;0;50;1:Clock:1:"/>
+			</stimulator>
+			<stimulator>
+				<signal_path value="/register_file/input"/>
+				<rawdescription value="VAL:FRM:Override:X&quot;1720808&quot;:&lt;= X&quot;1720808&quot;:1:"/>
+			</stimulator>
+			<stimulator>
+				<signal_path value="/register_file/writeData"/>
+				<rawdescription value="VAL:FRM:Override:X&quot;5&quot;:&lt;= X&quot;5&quot;:1:"/>
+			</stimulator>
+			<stimulator>
+				<signal_path value="/register_file/writeEnable"/>
+				<rawdescription value="VAL:FRM:Override:1:&lt;= 1:1:"/>
+			</stimulator>
+			<stimulator>
+				<signal_path value="/register_file/writeRegSel"/>
+				<rawdescription value="VAL:FRM:Override:X&quot;0&quot;:&lt;= X&quot;0&quot;:1:"/>
+			</stimulator>
+		</set>
 	</document>
 </XML>

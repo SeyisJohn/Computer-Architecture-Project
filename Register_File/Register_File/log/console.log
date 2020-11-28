@@ -1,0 +1,323 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Error: COMP96_0078: register_file.vhd : (152, 5): Unknown identifier "RegSel3".
+# Error: COMP96_0133: register_file.vhd : (152, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (153, 5): Unknown identifier "RegSel2".
+# Error: COMP96_0133: register_file.vhd : (153, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (154, 5): Unknown identifier "RegSel1".
+# Error: COMP96_0133: register_file.vhd : (154, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (155, 5): Unknown identifier "RegSelD".
+# Error: COMP96_0133: register_file.vhd : (155, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (159, 45): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (159, 45): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (159, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (161, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (161, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (161, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (162, 43): Unknown identifier "regSel3".
+# Error: COMP96_0133: register_file.vhd : (162, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (162, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (164, 48): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (164, 48): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (164, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (165, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (165, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (165, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (167, 43): Unknown identifier "regSel3".
+# Error: COMP96_0133: register_file.vhd : (167, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (167, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (169, 48): Unknown identifier "regSel3".
+# Error: COMP96_0133: register_file.vhd : (169, 48): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (169, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (170, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (170, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (170, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (171, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (171, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (171, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (174, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (174, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (174, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (175, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (175, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (175, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (176, 43): Unknown identifier "regSel3".
+# Error: COMP96_0133: register_file.vhd : (176, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (176, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (181, 5): Unknown identifier "RegSel1".
+# Error: COMP96_0133: register_file.vhd : (181, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (182, 5): Unknown identifier "RegSel2".
+# Error: COMP96_0133: register_file.vhd : (182, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (188, 45): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (188, 45): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (188, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (190, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (190, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (190, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (192, 48): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (192, 48): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (192, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (193, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (193, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (193, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (196, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (196, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (196, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (197, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (197, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (197, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (208, 45): Unknown identifier "regSelD".
+# Error: COMP96_0133: register_file.vhd : (208, 45): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (208, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 69 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Error: COMP96_0078: register_file.vhd : (152, 5): Unknown identifier "regSel3".
+# Error: COMP96_0133: register_file.vhd : (152, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (153, 5): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (153, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (154, 5): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (154, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (155, 5): Unknown identifier "regSelD".
+# Error: COMP96_0133: register_file.vhd : (155, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (159, 45): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (159, 45): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (159, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (161, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (161, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (161, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (162, 43): Unknown identifier "regSel3".
+# Error: COMP96_0133: register_file.vhd : (162, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (162, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (164, 48): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (164, 48): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (164, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (165, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (165, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (165, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (167, 43): Unknown identifier "regSel3".
+# Error: COMP96_0133: register_file.vhd : (167, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (167, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (169, 48): Unknown identifier "regSel3".
+# Error: COMP96_0133: register_file.vhd : (169, 48): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (169, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (170, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (170, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (170, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (171, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (171, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (171, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (174, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (174, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (174, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (175, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (175, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (175, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (176, 43): Unknown identifier "regSel3".
+# Error: COMP96_0133: register_file.vhd : (176, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (176, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (181, 5): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (181, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (182, 5): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (182, 5): Cannot find object declaration.
+# Error: COMP96_0078: register_file.vhd : (188, 45): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (188, 45): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (188, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (190, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (190, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (190, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (192, 48): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (192, 48): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (192, 11): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: register_file.vhd : (193, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (193, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (193, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (196, 43): Unknown identifier "regSel1".
+# Error: COMP96_0133: register_file.vhd : (196, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (196, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (197, 43): Unknown identifier "regSel2".
+# Error: COMP96_0133: register_file.vhd : (197, 43): Cannot find object declaration.
+# Error: COMP96_0149: register_file.vhd : (197, 43): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: register_file.vhd : (208, 45): Unknown identifier "regSelD".
+# Error: COMP96_0133: register_file.vhd : (208, 45): Cannot find object declaration.
+# Error: COMP96_0077: register_file.vhd : (208, 8): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 69 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Error: COMP96_0123: register_file.vhd : (177, 5): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: register_file.vhd : (177, 5): Object "RegSel1" cannot be written.
+# Error: COMP96_0123: register_file.vhd : (178, 5): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: register_file.vhd : (178, 5): Object "RegSel2" cannot be written.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Error: COMP96_0110: register_file.vhd : (151, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0123: register_file.vhd : (178, 5): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: register_file.vhd : (178, 5): Object "RegSel1" cannot be written.
+# Error: COMP96_0123: register_file.vhd : (179, 5): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: register_file.vhd : (179, 5): Object "RegSel2" cannot be written.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Error: COMP96_0123: register_file.vhd : (178, 5): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: register_file.vhd : (178, 5): Object "RegSel1" cannot be written.
+# Error: COMP96_0123: register_file.vhd : (179, 5): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: register_file.vhd : (179, 5): Object "RegSel2" cannot be written.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim -O5 +access +r +m+register_file register_file behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7231 kB (elbread=1280 elab2=5813 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Register_File\Register_File\src\wave.asdb
+#  6:39 PM, Friday, November 27, 2020
+#  Simulation has been initialized
+# add wave -noreg {/register_file/rs1}
+# add wave -noreg {/register_file/rs2}
+# add wave -noreg {/register_file/rs3}
+# add wave -noreg {/register_file/writeData}
+# add wave -noreg {/register_file/RSel1}
+# add wave -noreg {/register_file/RSel2}
+# add wave -noreg {/register_file/RSel3}
+# add wave -noreg {/register_file/RselD}
+# add wave -noreg {/register_file/writeRegSel}
+# add wave -noreg {/register_file/writeEnable}
+# add wave -noreg {/register_file/input}
+# add wave -noreg {/register_file/ALU_Ctrl}
+# add wave -noreg {/register_file/clk}
+# add wave -noreg {/register_file/reg_array}
+# 14 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /register_file,  Process: read_value.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /register_file,  Process: read_value.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /register_file,  Process: read_value.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /register_file,  Process: read_value.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /register_file,  Process: read_value.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 150 ns,  Iteration: 0,  Instance: /register_file,  Process: read_value.
+# KERNEL: stopped at time: 200 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+register_file register_file behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Error: COMP96_0123: register_file.vhd : (182, 5): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: register_file.vhd : (182, 5): Object "RegSel1" cannot be written.
+# Error: COMP96_0123: register_file.vhd : (183, 5): Variable or constant cannot be the target of a signal assignment.
+# Error: COMP96_0143: register_file.vhd : (183, 5): Object "RegSel2" cannot be written.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7231 kB (elbread=1280 elab2=5813 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Register_File\Register_File\src\wave.asdb
+#  6:42 PM, Friday, November 27, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+register_file register_file behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7231 kB (elbread=1280 elab2=5813 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Register_File\Register_File\src\wave.asdb
+#  6:43 PM, Friday, November 27, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Register_File/Register_File/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.

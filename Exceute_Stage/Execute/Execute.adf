@@ -55,6 +55,6 @@ AdditionalOptions=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=execute|structural|0  
+HierarchyInformation=execute|structural|0   
 ShowHide=ShowTopLevel
 Selected=

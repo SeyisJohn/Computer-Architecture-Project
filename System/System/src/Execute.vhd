@@ -31,14 +31,14 @@ use work.all;
 
 entity Execute is
 	port (
-		 rs1 : in STD_LOGIC_VECTOR(127 downto 0);
-		 rs2 : in STD_LOGIC_VECTOR(127 downto 0);
-		 rs3 : in STD_LOGIC_VECTOR(127 downto 0);
-		 WriteMode : in STD_LOGIC_VECTOR(1 downto 0);
+		 reg1 : in STD_LOGIC_VECTOR(127 downto 0);
+		 reg2 : in STD_LOGIC_VECTOR(127 downto 0);
+		 reg3 : in STD_LOGIC_VECTOR(127 downto 0);
+		 forward : in STD_LOGIC_VECTOR(1 downto 0);
 		 WriteValue : in STD_LOGIC_VECTOR(127 downto 0);
 		 instruct : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg_des_in : in STD_LOGIC_VECTOR(4 downto 0);
-		 Output : out STD_LOGIC_VECTOR(127 downto 0);
+		 rd_value : out STD_LOGIC_VECTOR(127 downto 0);
 		 reg_des_out : out STD_LOGIC_VECTOR(4 downto 0);
 		 valid : out STD_LOGIC
 		 );
@@ -48,32 +48,35 @@ end Execute;
 
 architecture structural of Execute is
 
-signal rs1_out : STD_LOGIC_VECTOR(127 downto 0);
-signal rs2_out : STD_LOGIC_VECTOR(127 downto 0);
-signal rs3_out : STD_LOGIC_VECTOR(127 downto 0);
+signal rs1_connect : STD_LOGIC_VECTOR(127 downto 0);
+signal rs2_connect : STD_LOGIC_VECTOR(127 downto 0);
+signal rs3_connect : STD_LOGIC_VECTOR(127 downto 0);
+signal instruct_t : STD_LOGIC_VECTOR(4 downto 0);
 
 begin
 
 	forward_mux: entity forward_mux port map
 		  (
-		  rs1 => rs1,
-		  rs2 => rs2,
-		  rs3 => rs3,
-		  WriteMode => WriteMode,
+		  rs1_m => reg1,
+		  rs2_m => reg2,
+		  rs3_m => reg3,
+		  forward => forward,
 		  WriteValue => WriteValue,
-		  rs1_out => rs1_out,
-		  rs2_out => rs2_out,
-		  rs3_out => rs3_out
+		  rs1_out => rs1_connect,
+		  rs2_out => rs2_connect,
+		  rs3_out => rs3_connect,
+		  instruct_in => instruct,
+		  instruct_out => instruct_t
 		  );
 		  
 	Alu: entity ALU port map
 		(
-		rs1 => SIGNED(rs1_out),
-		rs2 => SIGNED(rs2_out),
-		rs3 => SIGNED(rs3_out),
-		instruct => instruct,
+		rs1 => rs1_connect,
+		rs2 => rs2_connect,
+		rs3 => rs3_connect,
+		instruct => instruct_t,
 		reg_des_in => reg_des_in, 
-		STD_LOGIC_VECTOR(rd) => Output,
+		rd => rd_value,
 		reg_des_out => reg_des_out,
 		valid => valid
 		);

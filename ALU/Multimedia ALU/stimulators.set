@@ -7,6 +7,10 @@
 				<rawdescription value="VAL:FRM:Override:10111:&lt;= 10111:1:"/>
 			</stimulator>
 			<stimulator>
+				<signal_path value="/ALU/reg_des_in"/>
+				<rawdescription value="VAL:FRM:Override:X&quot;10&quot;:&lt;= X&quot;10&quot;:1:"/>
+			</stimulator>
+			<stimulator>
 				<signal_path value="/ALU/rs1"/>
 				<rawdescription value="VAL:FRM:Override:X&quot;FFFF0000FFFF0000FFFF0000FFFF0000&quot;:&lt;= X&quot;FFFF0000FFFF0000FFFF0000FFFF0000&quot;:1:"/>
 			</stimulator>

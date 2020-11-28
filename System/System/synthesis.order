@@ -1,11 +1,13 @@
 i<>.\src\ALU.vhd
 i<>.\src\Execute.vhd
 i<>.\src\forward_mux.vhd
-i<>.\src\register_file.vhd
 i<>.\src\EX_WB_Reg.vhd
 i<>.\src\Instruct_Buffer.vhd
 i<>.\src\instruct_fetch.vhd
 i<>.\src\Program_Counter.vhd
 i<>.\src\IF_ID_reg.vhd
-i<>.\src\ID_EX_Reg.vhd
 i<>.\src\data_forward.vhd
+i<>.\src\ID_EX_Reg.vhd
+i<>.\src\System.vhd
+i<>.\src\System_tb.vhd
+i<>.\src\register_file.vhd

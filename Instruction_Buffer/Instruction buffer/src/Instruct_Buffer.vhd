@@ -42,7 +42,7 @@ architecture Instruct_Buffer of Instruct_Buffer is
 
 type Instruction_table is array (0 to 63) of STD_LOGIC_VECTOR(24 downto 0);  
 
-signal instruct_buffer : Instruction_table := (others => (others => '0'));
+signal instruct_buffer : Instruction_table;
 begin
 
 	store_instruct: process(WriteMode, PC)
@@ -55,7 +55,7 @@ begin
 	
 	read_instruct: process(Clk)
 	begin
-		if(rising_edge(Clk)) then
+		if(rising_edge(Clk) and WriteMode = '0') then
 			Instruct <= instruct_buffer(to_integer(UNSIGNED(PC)));
 		else
 			null;

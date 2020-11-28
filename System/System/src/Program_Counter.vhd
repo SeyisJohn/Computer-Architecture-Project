@@ -43,7 +43,7 @@ architecture Program_Counter of Program_Counter is
 	signal current_pc : STD_LOGIC_VECTOR(5 downto 0) := "000000";
 begin
 
-	process(Clk)
+	process(Clk, Rst, Set, PC_new)
 	begin
 		-- This should be an implied D-Flip Flop that stores the current_pc counter
 		if (Rst = '1') then

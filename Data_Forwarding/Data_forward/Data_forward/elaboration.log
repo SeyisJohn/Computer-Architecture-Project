@@ -1,4 +1,4 @@
-Active-HDL 11.1.262.7351 2020-11-25 22:56:31
+Active-HDL 11.1.262.7351 2020-11-27 19:27:58
 
 Elaboration top modules:
 Architecture                  data_forward(data_forward)
@@ -7,7 +7,7 @@ Architecture                  data_forward(data_forward)
 --------------------------------------------------------------------------------------------------
 Entity       | Architecture | Library      | Info | Compiler Version        | Compilation Options
 --------------------------------------------------------------------------------------------------
-data_forward | data_forward | Data_forward |      | 11.1.262.7351 (Windows) | -dbg -2018
+data_forward | data_forward | data_forward |      | 11.1.262.7351 (Windows) | -dbg -2018
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
@@ -22,13 +22,7 @@ NUMERIC_STD                 | ieee         |      |                         | <u
 --------------------------------------------------------------------------------------------------
 Library                     | Comment
 --------------------------------------------------------------------------------------------------
-Data_forward                | None
+data_forward                | None
 ieee                        | Standard IEEE packages library
 std                         | Standard VHDL library
 --------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+data_forward data_forward data_forward
-
-
-The performance of simulation is reduced. Version Student Edition

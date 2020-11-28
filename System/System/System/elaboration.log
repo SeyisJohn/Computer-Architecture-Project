@@ -1,0 +1,46 @@
+Active-HDL 11.1.262.7351 2020-11-28 01:07:50
+
+Elaboration top modules:
+Architecture                  System_tb(System_tb)
+
+
+---------------------------------------------------------------------------------------------------
+Entity          | Architecture    | Library | Info | Compiler Version        | Compilation Options
+---------------------------------------------------------------------------------------------------
+System_tb       | System_tb       | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+System          | structural      | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+instruct_fetch  | structural      | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+IF_ID_reg       | IF_ID_reg       | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+register_file   | behavioral      | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+ID_EX_Reg       | ID_EX_Reg       | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+Execute         | structural      | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+EX_WB_Reg       | EX_WB_Reg       | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+data_forward    | data_forward    | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+Program_Counter | Program_Counter | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+Instruct_Buffer | Instruct_Buffer | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+forward_mux     | forward_mux     | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+ALU             | ALU             | system  |      | 11.1.262.7351 (Windows) | -dbg -2008
+---------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+VHDL Package                      | Library | Info | Compiler Version        | Compilation Options
+---------------------------------------------------------------------------------------------------
+standard                          | std     |      |                         | <unavailable>
+TEXTIO                            | std     |      |                         | <unavailable>
+std_logic_1164                    | ieee    |      |                         | <unavailable>
+NUMERIC_STD                       | ieee    |      |                         | <unavailable>
+---------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+Library                           | Comment
+---------------------------------------------------------------------------------------------------
+ieee                              | Standard IEEE packages library
+std                               | Standard VHDL library
+system                            | None
+---------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+System_tb System_tb System_tb
+
+
+The performance of simulation is reduced. Version Student Edition

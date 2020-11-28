@@ -1,4 +1,4 @@
-Active-HDL 11.1.262.7351 2020-11-26 12:46:55
+Active-HDL 11.1.262.7351 2020-11-27 10:07:46
 
 Elaboration top modules:
 Architecture                  structural(Execute)
@@ -28,3 +28,9 @@ execute                    | None
 ieee                       | Standard IEEE packages library
 std                        | Standard VHDL library
 --------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+Execute Execute structural
+
+
+The performance of simulation is reduced. Version Student Edition

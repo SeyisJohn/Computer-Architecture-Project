@@ -43,7 +43,7 @@ end forward_mux;
 architecture forward_mux of forward_mux is
 begin
 
-	process(rs1, rs2, rs3, WriteMode)
+	process(WriteMode)
 	begin
 		
 		case WriteMode is 

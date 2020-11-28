@@ -38,7 +38,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=register_file|behavioral|0   
 ShowHide=ShowTopLevel
 Selected=
 

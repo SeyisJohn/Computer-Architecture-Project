@@ -33,7 +33,7 @@ entity ALU is
 		 rs3 : in SIGNED(127 downto 0);
 		 instruct : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg_des_in : in STD_LOGIC_VECTOR(4 downto 0);
-		 rd : out SIGNED(127 downto 0) := (others => '0');
+		 rd : out SIGNED(127 downto 0);
 		 valid : out STD_LOGIC := '0';
 		 reg_des_out : out STD_LOGIC_VECTOR(4 downto 0)
 		 
@@ -154,7 +154,7 @@ begin
 		
 		-- Signed Integer Multiply-Add Low with Saturation
 		if (instruct = "00000") then
-			rd(31 downto 0) <= signed_int_multiply_add(	-- No idea if this is SYNTHESIZABLE  
+			rd(31 downto 0) <= signed_int_multiply_add(	  
 									rs3(15 downto 0), 
 									rs2(15 downto 0), 
 									rs1(31 downto 0)
@@ -173,19 +173,19 @@ begin
 									
 		-- Signed Integer Multiply-Subtract Low with Saturation
 		elsif (instruct = "00010") then
-			rd(31 downto 0) <= signed_int_multiply_add(	-- No idea if this is SYNTHESIZABLE  
+			rd(31 downto 0) <= signed_int_multiply_add(	  
 									rs3(15 downto 0), 
 									rs2(15 downto 0), 
-									(-rs1(31 downto 0)) --Check if this works
+									(-rs1(31 downto 0)) 
 									);
 		    valid <= '1';							
 									
 		-- Signed Integer Multiply-Subtract High with Saturation
 		elsif (instruct = "00011") then
-			rd(31 downto 0) <= signed_int_multiply_add(	-- No idea if this is SYNTHESIZABLE
+			rd(31 downto 0) <= signed_int_multiply_add(	
 									rs3(31 downto 16), 
 									rs2(31 downto 16), 
-									(-rs1(31 downto 0)) -- Check if this works
+									(-rs1(31 downto 0)) 
 									);
 			valid <= '1';						
 									

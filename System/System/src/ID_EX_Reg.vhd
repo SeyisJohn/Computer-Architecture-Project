@@ -28,18 +28,22 @@ use IEEE.std_logic_1164.all;
 entity ID_EX_Reg is
 	port(
 		 Clk : in STD_LOGIC;
-		 rs1 : in STD_LOGIC_VECTOR(127 downto 0);
-		 rs2 : in STD_LOGIC_VECTOR(127 downto 0);
-		 rs3 : in STD_LOGIC_VECTOR(127 downto 0);
+		 rs1_id : in STD_LOGIC_VECTOR(127 downto 0);
+		 rs2_id : in STD_LOGIC_VECTOR(127 downto 0);
+		 rs3_id : in STD_LOGIC_VECTOR(127 downto 0);
 		 rs1_num : in STD_LOGIC_VECTOR(4 downto 0);
 		 rs2_num : in STD_LOGIC_VECTOR(4 downto 0);
-		 rs3_num : in STD_LOGIC_VECTOR(4 downto 0);	 
+		 rs3_num : in STD_LOGIC_VECTOR(4 downto 0);
+		 rd_num  : in STD_LOGIC_VECTOR(4 downto 0);
+		 ALU_Ctrl: in STD_LOGIC_VECTOR(4 downto 0);
 		 rs1_out : out STD_LOGIC_VECTOR(127 downto 0);
 		 rs2_out : out STD_LOGIC_VECTOR(127 downto 0);
 		 rs3_out : out STD_LOGIC_VECTOR(127 downto 0);
 		 rs1_num_out : out STD_LOGIC_VECTOR(4 downto 0);
 		 rs2_num_out : out STD_LOGIC_VECTOR(4 downto 0);
-		 rs3_num_out : out STD_LOGIC_VECTOR(4 downto 0)
+		 rs3_num_out : out STD_LOGIC_VECTOR(4 downto 0);
+		 rd_num_out : out STD_LOGIC_VECTOR(4 downto 0);
+		 ALU_Ctrl_out : out STD_LOGIC_VECTOR(4 downto 0)
 	     );
 end ID_EX_Reg;
 
@@ -53,18 +57,22 @@ signal rs3_temp : STD_LOGIC_VECTOR(127 downto 0);
 signal rs1_num_temp : STD_LOGIC_VECTOR(4 downto 0);
 signal rs2_num_temp : STD_LOGIC_VECTOR(4 downto 0);
 signal rs3_num_temp : STD_LOGIC_VECTOR(4 downto 0);
+signal rd_num_temp : STD_LOGIC_VECTOR(4 downto 0);
+signal ALU_Ctrl_temp : STD_LOGIC_VECTOR(4 downto 0);
 
 begin
 
 	write: process(Clk)
 	begin
 		if(rising_edge(Clk)) then
-			rs1_temp <= rs1;
-			rs2_temp <= rs2;
-			rs3_temp <= rs3;
+			rs1_temp <= rs1_id;
+			rs2_temp <= rs2_id;
+			rs3_temp <= rs3_id;
 			rs1_num_temp <= rs1_num;
 			rs2_num_temp <= rs2_num;
 			rs3_num_temp <= rs3_num;
+			rd_num_temp <= rd_num;
+			ALU_Ctrl_temp <= ALU_Ctrl;
 		end if;
 	end process;
 	
@@ -78,6 +86,8 @@ begin
 			rs1_num_out <= rs1_num_temp;
 			rs2_num_out <= rs2_num_temp;
 			rs3_num_out <= rs3_num_temp;
+			rd_num_out <= rd_num_temp;
+			ALU_Ctrl_out <= ALU_Ctrl_temp;
 		else
 			null;
 		end if;

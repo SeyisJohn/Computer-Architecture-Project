@@ -1,2 +1,44 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Execute Execute structural
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6212 kB (elbread=1280 elab2=4794 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Exceute_Stage\Execute\src\wave.asdb
+#  10:07 AM, Friday, November 27, 2020
+#  Simulation has been initialized
+# add wave -noreg {/Execute/rs1}
+# add wave -noreg {/Execute/rs2}
+# add wave -noreg {/Execute/rs3}
+# add wave -noreg {/Execute/WriteMode}
+# add wave -noreg {/Execute/WriteValue}
+# add wave -noreg {/Execute/instruct}
+# add wave -noreg {/Execute/reg_des_in}
+# add wave -noreg {/Execute/Output}
+# add wave -noreg {/Execute/reg_des_out}
+# add wave -noreg {/Execute/valid}
+# add wave -noreg {/Execute/rs1_out}
+# add wave -noreg {/Execute/rs2_out}
+# add wave -noreg {/Execute/rs3_out}
+# 13 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Exceute_Stage/Execute/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
