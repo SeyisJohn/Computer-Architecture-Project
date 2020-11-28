@@ -60,6 +60,8 @@ def main():
         fw2.write("PC_new <= " + str(f'{count:05b}') + ";" + "\n" + "Opcode <= " + x + ";" + "\n")
         count += 1
         # print(x)
+    fw2.write("PC_new <= " + str(f'{count:05b}') + ";" + "\n" + "Opcode <= 1100000000000000000000000;" + "\n")  #Add a NOP instruction after all instructions  
+    
 
         
 
