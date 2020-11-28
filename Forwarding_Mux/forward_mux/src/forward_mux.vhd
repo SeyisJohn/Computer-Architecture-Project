@@ -27,14 +27,16 @@ use IEEE.std_logic_1164.all;
 
 entity forward_mux is
 	 port(
-		 rs1 : in STD_LOGIC_VECTOR(127 downto 0);
-		 rs2 : in STD_LOGIC_VECTOR(127 downto 0);
-		 rs3 : in STD_LOGIC_VECTOR(127 downto 0);
+		 rs1_m : in STD_LOGIC_VECTOR(127 downto 0);
+		 rs2_m : in STD_LOGIC_VECTOR(127 downto 0);
+		 rs3_m : in STD_LOGIC_VECTOR(127 downto 0);
 		 rs1_out : out STD_LOGIC_VECTOR(127 downto 0);
 		 rs2_out : out STD_LOGIC_VECTOR(127 downto 0);
 		 rs3_out : out STD_LOGIC_VECTOR(127 downto 0);
-		 WriteMode : in STD_LOGIC_VECTOR(1 downto 0);
-		 WriteValue : in STD_LOGIC_VECTOR(127 downto 0)
+		 forward : in STD_LOGIC_VECTOR(1 downto 0);
+		 WriteValue : in STD_LOGIC_VECTOR(127 downto 0);
+		 instruct_in : in STD_LOGIC_VECTOR(4 downto 0);
+		 instruct_out : out STD_LOGIC_VECTOR(4 downto 0)
 	     );
 end forward_mux;
 
@@ -43,35 +45,40 @@ end forward_mux;
 architecture forward_mux of forward_mux is
 begin
 
-	process(WriteMode)
+	process(rs1_m, rs2_m, rs3_m, forward)
 	begin
 		
-		case WriteMode is 
+		case forward is 
 			when "00" =>
-				rs1_out <= rs1;
-				rs2_out <= rs2;
-				rs3_out <= rs3;
+				rs1_out <= rs1_m;
+				rs2_out <= rs2_m;
+				rs3_out <= rs3_m;
 				
 			when "01" =>
 				rs1_out <= WriteValue;
-				rs2_out <= rs2;
-				rs3_out <= rs3;
+				rs2_out <= rs2_m;
+				rs3_out <= rs3_m;
 				
 			when "10" =>			
-				rs1_out <= rs1;
+				rs1_out <= rs1_m;
 				rs2_out <= WriteValue;
-				rs3_out <= rs3;
+				rs3_out <= rs3_m;
 				
 			when "11" => 
-				rs1_out <= rs1;
-				rs2_out <= rs2;
+				rs1_out <= rs1_m;
+				rs2_out <= rs2_m;
 				rs3_out <= WriteValue;
 			
 			when others =>
 				null;
 		
 		end case; 
-	end process;		
+	end process;
+	
+	instruct_out <= instruct_in;
 		
 
 end forward_mux;
+
+
+

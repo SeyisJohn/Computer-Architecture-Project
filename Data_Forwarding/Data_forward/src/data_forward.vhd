@@ -29,7 +29,7 @@ use IEEE.numeric_std.all;
 entity data_forward is
 	 port(
 	 	 Out_Value : out STD_LOGIC_VECTOR(127 downto 0);
-	 	 forward : out STD_LOGIC_VECTOR(1 downto 0) := "00";
+	 	 forward : out STD_LOGIC_VECTOR(1 downto 0);
 		 In_Value : in STD_LOGIC_VECTOR(127 downto 0);
 		 In_Value_2 : in STD_LOGIC_VECTOR(127 downto 0);
 		 In_reg_num : in STD_LOGIC_VECTOR(4 downto 0);
@@ -71,9 +71,7 @@ begin
 			
 		elsif (In_reg_num_2 = reg3_num and valid_2 = '1') then
 			forward <= "11";
-			Out_value <= In_value_2;	
-			
-			
+			Out_value <= In_value_2;			
 		else
 			forward <= "00";
 		end if;

@@ -182,6 +182,7 @@ begin
 				
 				regSel1 := input(9 downto 5);
 				regSel2 := input(14 downto 10);
+				
 				RselD <= input(4 downto 0);
 
 				

@@ -29,8 +29,8 @@ use IEEE.numeric_std.all;
 entity IF_ID_reg is
 	port(
 		 Clk : in STD_LOGIC;
-		 Input : in STD_LOGIC_VECTOR(24 downto 0);
-		 Output : out STD_LOGIC_VECTOR(24 downto 0)
+		 Instruct_in : in STD_LOGIC_VECTOR(24 downto 0);
+		 Instruct_out : out STD_LOGIC_VECTOR(24 downto 0)
 	     );
 end IF_ID_reg;
 
@@ -44,14 +44,14 @@ begin
 	write: process(Clk)
 	begin
 		if(rising_edge(Clk)) then
-			temporary_holder <= Input;	
+			temporary_holder <= Instruct_in;	
 		end if;
 	end process;
 	
 	read: process(Clk) 
 	begin
 		if (rising_edge(Clk)) then
-			Output <= temporary_holder;
+			Instruct_out <= temporary_holder;
 		else
 			null;
 		end if;

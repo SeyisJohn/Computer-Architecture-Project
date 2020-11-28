@@ -1,4 +1,4 @@
-Active-HDL 11.1.262.7351 2020-11-28 01:07:50
+Active-HDL 11.1.262.7351 2020-11-28 10:48:46
 
 Elaboration top modules:
 Architecture                  System_tb(System_tb)
@@ -38,9 +38,3 @@ ieee                              | Standard IEEE packages library
 std                               | Standard VHDL library
 system                            | None
 ---------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+System_tb System_tb System_tb
-
-
-The performance of simulation is reduced. Version Student Edition

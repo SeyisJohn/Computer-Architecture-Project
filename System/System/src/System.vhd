@@ -66,7 +66,7 @@ architecture structural of System is
  signal RSel2_o : STD_LOGIC_VECTOR(4 downto 0);	   	
  signal RSel3_o : STD_LOGIC_VECTOR(4 downto 0);	   	
  signal RselD_o : STD_LOGIC_VECTOR(4 downto 0);  -- Store the number for the destination register to be written to, Value after it exits the ID_EX reg 
- signal RselD_o_2 : STD_LOGIC_VECTOR(4 downto 0);  -- Store the number for the destination register to be written to, Value after it exits the ALU		
+ signal RselD_e : STD_LOGIC_VECTOR(4 downto 0);  -- Store the number for the destination register to be written to, Value after it exits the ALU		
  
  signal ALU_Ctrl_o  : STD_LOGIC_VECTOR(4 downto 0);	-- Stores the ALU Control function code, Value after it exits the ID_EX reg
  
@@ -157,7 +157,7 @@ begin
 		instruct => ALU_Ctrl_o,
 		reg_des_in => RSelD_o,
 		rd_value => ALU_out,
-		reg_des_out => RSelD_o_2,
+		reg_des_out => RSelD_e,
 		valid => valid
 		);
 		
@@ -166,7 +166,7 @@ begin
 		(
 		Clk => Clk,
 		Input => ALU_out,
-		Reg_Num_in => RSelD_o_2,
+		Reg_Num_in => RSelD_e,
 		Valid => valid,
 		Output => writeData,
 		Reg_Num_out => writeRegSel,
@@ -181,7 +181,7 @@ begin
 		reg3_num => RSel3_o,
 		reg2_num => RSel2_o,
 		reg1_num => RSel1_o,
-		In_reg_num => RSelD_o_2,
+		In_reg_num => RSelD_e,
 		In_reg_num_2 => writeRegSel,
 		In_value => ALU_out,
 		In_value_2 => writeData,

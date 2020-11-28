@@ -450,6 +450,7 @@ begin
 			
 			valid <= '1';
 		else
+			rd <= (others => '0');
 			valid <= '0';
 			-- null;
 		
