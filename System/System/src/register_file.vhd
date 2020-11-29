@@ -40,8 +40,8 @@ entity register_file is
 		 writeRegSel			: in STD_LOGIC_VECTOR(4 downto 0);	   	-- rd
 		 writeEnable 			: in STD_LOGIC; 			 			-- write enable	
 		 input 					: in STD_LOGIC_VECTOR(24 downto 0);		-- 25 bit instruction to be decoded
-		 ALU_Ctrl				: out STD_LOGIC_VECTOR(4 downto 0);
-		 clk 					: in  STD_LOGIC					    -- clock  
+		 ALU_Ctrl				: out STD_LOGIC_VECTOR(4 downto 0)
+--		 clk 					: in  STD_LOGIC					    -- clock  
 	     );
 end register_file;
 
@@ -135,13 +135,14 @@ end R3_Instruction;
 
 begin							   
 	
-	read_value: process (clk) 
+--	read_value: process (clk) 
+		process(input)  
 	  	 variable RegSel1	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs1
 		 variable RegSel2 	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs2
 		 variable RegSel3 	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs3
 		 variable RegSelD   : STD_LOGIC_VECTOR(4 downto 0);     -- rd
 	begin 
-		if rising_edge(clk) then  
+--		if rising_edge(clk) then  
 			if (input(24) = '1' and input(23) = '0') then		-- R4 - Instruction Format
 				
 				RegSel3 := input(19 downto 15);
@@ -222,15 +223,17 @@ begin
 				null;
 			end if;
 			
-		else
-			null;
-		end if; 
+--		else
+--			null;
+--		end if; 
 	end process;
 	
 	
-	write_value: process (clk)
+--	write_value: process (clk)
+	process(WriteEnable, writeRegSel, WriteData)
 	begin	
-		if (rising_edge(clk) and WriteEnable = '1') then
+--		if (rising_edge(clk) and WriteEnable = '1') then
+		if (WriteEnable = '1') then
 			reg_array(to_integer(unsigned(writeRegSel))) <= WriteData;
 		end if;
 	end process;

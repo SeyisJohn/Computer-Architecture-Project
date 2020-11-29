@@ -22,7 +22,7 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
-fileopenfolder=C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\Register_File\Register_File\src
+fileopenfolder=C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System\System\src
 FUNC_LIB=system
 POST_LIB=system_post_synthesis
 TIM_LIB=system_timing
@@ -42,7 +42,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=system_tb|System_tb|0  
+HierarchyInformation=system_tb|System_tb|0
 ShowHide=ShowTopLevel
 Selected=
 
@@ -67,7 +67,6 @@ AdditionalOptions=
 
 [Files]
 /ALU.vhd=-1
-/Execute.vhd=-1
 /forward_mux.vhd=-1
 /EX_WB_Reg.vhd=-1
 /Instruct_Buffer.vhd=-1
@@ -79,10 +78,10 @@ AdditionalOptions=
 /System.vhd=-1
 /System_tb.vhd=-1
 /register_file.vhd=-1
+/Opcode.txt=-1
 
 [Files.Data]
 .\src\ALU.vhd=VHDL Source Code
-.\src\Execute.vhd=VHDL Source Code
 .\src\forward_mux.vhd=VHDL Source Code
 .\src\EX_WB_Reg.vhd=VHDL Source Code
 .\src\Instruct_Buffer.vhd=VHDL Source Code
@@ -94,4 +93,5 @@ AdditionalOptions=
 .\src\System.vhd=VHDL Source Code
 .\src\System_tb.vhd=VHDL Source Code
 .\src\register_file.vhd=VHDL Source Code
+.\src\Opcode.txt=Text File
 

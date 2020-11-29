@@ -1,5 +1,4 @@
 i<>.\src\ALU.vhd
-i<>.\src\Execute.vhd
 i<>.\src\forward_mux.vhd
 i<>.\src\EX_WB_Reg.vhd
 i<>.\src\Instruct_Buffer.vhd

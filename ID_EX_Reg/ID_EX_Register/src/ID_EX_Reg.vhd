@@ -62,7 +62,7 @@ signal ALU_Ctrl_temp : STD_LOGIC_VECTOR(4 downto 0);
 
 begin
 
-	write: process(Clk)
+	process(Clk)
 	begin
 		if(rising_edge(Clk)) then
 			rs1_temp <= rs1_id;
@@ -73,25 +73,24 @@ begin
 			rs3_num_temp <= rs3_num;
 			rd_num_temp <= rd_num;
 			ALU_Ctrl_temp <= ALU_Ctrl;
+			
 		end if;
 	end process;
 	
-	
-	read: process(Clk)
+	process(Clk)
 	begin
-		if(rising_edge(Clk)) then
-			rs1_out <= rs1_temp;
-			rs2_out <= rs2_temp;
-			rs3_out <= rs3_temp;
-			rs1_num_out <= rs1_num_temp;
-			rs2_num_out <= rs2_num_temp;
-			rs3_num_out <= rs3_num_temp;
-			rd_num_out <= rd_num_temp;
-			ALU_Ctrl_out <= ALU_Ctrl_temp;
+		if(rising_edge(Clk)) then			
+			rs1_out <= rs1_id;
+			rs2_out <= rs2_id;
+			rs3_out <= rs3_id;
+			rs1_num_out <= rs1_num;
+			rs2_num_out <= rs2_num;
+			rs3_num_out <= rs3_num;
+			rd_num_out <= rd_num;
+			ALU_Ctrl_out <= ALU_Ctrl;
 		else
 			null;
 		end if;
 	end process;
-	
 
 end ID_EX_Reg;

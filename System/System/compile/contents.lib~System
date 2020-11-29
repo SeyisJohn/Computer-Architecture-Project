@@ -1,12 +1,11 @@
-175
+231
 ~E 1 "../src/ALU.vhd" 29 ALU
 ~A 1 "../src/ALU.vhd" 45 ALU
 ~E 1 "../src/data_forward.vhd" 29 data_forward
-~A 1 "../src/data_forward.vhd" 47 data_forward
+~A 1 "../src/data_forward.vhd" 44 data_forward
 ~E 1 "../src/EX_WB_Reg.vhd" 28 EX_WB_Reg
 ~A 1 "../src/EX_WB_Reg.vhd" 42 EX_WB_Reg
 ~E 1 "../src/Execute.vhd" 32 Execute
-~A 1 "../src/Execute.vhd" 49 structural
 ~E 1 "../src/forward_mux.vhd" 28 forward_mux
 ~A 1 "../src/forward_mux.vhd" 45 forward_mux
 ~E 1 "../src/ID_EX_Reg.vhd" 28 ID_EX_Reg
@@ -16,12 +15,12 @@
 ~E 1 "../src/Instruct_Buffer.vhd" 29 Instruct_Buffer
 ~A 1 "../src/Instruct_Buffer.vhd" 41 Instruct_Buffer
 ~E 1 "../src/instruct_fetch.vhd" 33 instruct_fetch
-~A 1 "../src/instruct_fetch.vhd" 47 structural
+~A 1 "../src/instruct_fetch.vhd" 48 structural
 ~E 1 "../src/Program_Counter.vhd" 29 Program_Counter
 ~A 1 "../src/Program_Counter.vhd" 41 Program_Counter
 ~E 1 "../src/register_file.vhd" 29 register_file
 ~A 1 "../src/register_file.vhd" 50 behavioral
 ~E 1 "../src/System.vhd" 31 System
-~A 1 "../src/System.vhd" 44 structural
-~E 1 "../src/System_tb.vhd" 32 System_tb
-~A 1 "../src/System_tb.vhd" 37 System_tb
+~A 1 "../src/System.vhd" 80 structural
+~E 1 "../src/System_tb.vhd" 35 System_tb
+~A 1 "../src/System_tb.vhd" 40 System_tb

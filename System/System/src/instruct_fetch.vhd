@@ -38,7 +38,8 @@ entity instruct_fetch is
 		 WriteMode : in STD_LOGIC;
 		 PC_new : in STD_LOGIC_VECTOR(5 downto 0);
 		 Opcode : in STD_LOGIC_VECTOR(24 downto 0);
-		 Instruct : out STD_LOGIC_VECTOR(24 downto 0)
+		 Instruct : out STD_LOGIC_VECTOR(24 downto 0);
+		 PC_value : out STD_LOGIC_VECTOR(5 downto 0)
 	     );
 end instruct_fetch;
 
@@ -47,7 +48,8 @@ end instruct_fetch;
 architecture structural of instruct_fetch is
 	signal PC_out : STD_LOGIC_VECTOR(5 downto 0);
 begin
-
+	
+	PC_value <= PC_out;
 	 	u1: entity program_counter port map
 		(
 		Clk => Clk,

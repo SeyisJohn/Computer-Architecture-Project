@@ -30,13 +30,13 @@ entity forward_mux is
 		 rs1_m : in STD_LOGIC_VECTOR(127 downto 0);
 		 rs2_m : in STD_LOGIC_VECTOR(127 downto 0);
 		 rs3_m : in STD_LOGIC_VECTOR(127 downto 0);
-		 rs1_out : out STD_LOGIC_VECTOR(127 downto 0);
-		 rs2_out : out STD_LOGIC_VECTOR(127 downto 0);
-		 rs3_out : out STD_LOGIC_VECTOR(127 downto 0);
+		 rs1_out_m : out STD_LOGIC_VECTOR(127 downto 0);
+		 rs2_out_m : out STD_LOGIC_VECTOR(127 downto 0);
+		 rs3_out_m : out STD_LOGIC_VECTOR(127 downto 0);
 		 forward : in STD_LOGIC_VECTOR(1 downto 0);
 		 WriteValue : in STD_LOGIC_VECTOR(127 downto 0);
-		 instruct_in : in STD_LOGIC_VECTOR(4 downto 0);
-		 instruct_out : out STD_LOGIC_VECTOR(4 downto 0)
+		 ALU_instruct_in : in STD_LOGIC_VECTOR(4 downto 0);
+		 ALU_instruct_out : out STD_LOGIC_VECTOR(4 downto 0)	 
 	     );
 end forward_mux;
 
@@ -50,24 +50,24 @@ begin
 		
 		case forward is 
 			when "00" =>
-				rs1_out <= rs1_m;
-				rs2_out <= rs2_m;
-				rs3_out <= rs3_m;
+				rs1_out_m <= rs1_m;
+				rs2_out_m <= rs2_m;
+				rs3_out_m <= rs3_m;
 				
 			when "01" =>
-				rs1_out <= WriteValue;
-				rs2_out <= rs2_m;
-				rs3_out <= rs3_m;
+				rs1_out_m <= WriteValue;
+				rs2_out_m <= rs2_m;
+				rs3_out_m <= rs3_m;
 				
 			when "10" =>			
-				rs1_out <= rs1_m;
-				rs2_out <= WriteValue;
-				rs3_out <= rs3_m;
+				rs1_out_m <= rs1_m;
+				rs2_out_m <= WriteValue;
+				rs3_out_m <= rs3_m;
 				
 			when "11" => 
-				rs1_out <= rs1_m;
-				rs2_out <= rs2_m;
-				rs3_out <= WriteValue;
+				rs1_out_m <= rs1_m;
+				rs2_out_m <= rs2_m;
+				rs3_out_m <= WriteValue;
 			
 			when others =>
 				null;
@@ -75,8 +75,8 @@ begin
 		end case; 
 	end process;
 	
-	instruct_out <= instruct_in;
-		
+	ALU_instruct_out <= ALU_instruct_in;
+
 
 end forward_mux;
 

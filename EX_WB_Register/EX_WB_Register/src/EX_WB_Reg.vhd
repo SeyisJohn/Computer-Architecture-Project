@@ -47,7 +47,7 @@ signal valid_holder : STD_LOGIC;
 
 begin
 
-	write: process(Clk)
+	process(Clk)
 	begin
 		if(rising_edge(Clk)) then
 			reg_holder <= Input;
@@ -57,15 +57,16 @@ begin
 	end process;
 	
 	
-	read: process(Clk)
+	process(Clk)
 	begin
-		if (rising_edge(Clk)) then
-			Output <= reg_holder;
-			Reg_Num_out <= reg_num_holder; 
-			Valid_out <= valid_holder;
+		if(rising_edge(Clk)) then
+			Output <= Input;
+			Reg_Num_out <= Reg_Num_in; 
+			Valid_out <= valid;
 		else
 			null;
 		end if;
 	end process;
+	
 	
 end EX_WB_Reg;

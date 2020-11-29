@@ -31,14 +31,11 @@ entity data_forward is
 	 	 Out_Value : out STD_LOGIC_VECTOR(127 downto 0);
 	 	 forward : out STD_LOGIC_VECTOR(1 downto 0);
 		 In_Value : in STD_LOGIC_VECTOR(127 downto 0);
-		 In_Value_2 : in STD_LOGIC_VECTOR(127 downto 0);
 		 In_reg_num : in STD_LOGIC_VECTOR(4 downto 0);
-		 In_reg_num_2 : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg1_num : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg2_num : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg3_num : in STD_LOGIC_VECTOR(4 downto 0);
-		 valid : in STD_LOGIC;
-		 valid_2 : in STD_LOGIC
+		 valid : in STD_LOGIC
 	     );
 end data_forward;
 
@@ -47,7 +44,7 @@ end data_forward;
 architecture data_forward of data_forward is
 begin
 
-	process(In_reg_num, In_reg_num_2, reg1_num, reg2_num, reg3_num, In_Value, In_Value_2, valid, valid_2)
+	process(In_reg_num, reg1_num, reg2_num, reg3_num, In_Value, valid)
 	begin
 		if (In_reg_num = reg1_num and valid = '1') then
 			forward <= "01";
@@ -59,19 +56,7 @@ begin
 			
 		elsif (In_reg_num = reg3_num and valid = '1') then
 			forward <= "11";
-			Out_value <= In_value;
-		
-		elsif (In_reg_num_2 = reg1_num and valid_2 = '1') then
-			forward <= "01";
-			Out_value <= In_value_2;
-			
-		elsif (In_reg_num_2 = reg2_num and valid_2 = '1') then
-			forward <= "10";
-			Out_value <= In_value_2;
-			
-		elsif (In_reg_num_2 = reg3_num and valid_2 = '1') then
-			forward <= "11";
-			Out_value <= In_value_2;			
+			Out_value <= In_value;		
 		else
 			forward <= "00";
 		end if;

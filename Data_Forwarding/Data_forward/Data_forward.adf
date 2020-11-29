@@ -53,7 +53,7 @@ AdditionalOptions=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=data_forward|data_forward|0 
+HierarchyInformation=data_forward|data_forward|0  
 ShowHide=ShowTopLevel
 Selected=
 
