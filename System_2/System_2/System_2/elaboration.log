@@ -1,0 +1,40 @@
+Active-HDL 11.1.262.7351 2020-11-29 14:15:08
+
+Elaboration top modules:
+Architecture                  System_tb(System_tb)
+
+
+----------------------------------------------------------------------------------------------------
+Entity          | Architecture    | Library  | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------
+System_tb       | System_tb       | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+System          | structural      | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+instruct_fetch  | structural      | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+IF_ID_reg       | IF_ID_reg       | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+register_file   | behavioral      | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+ID_EX_Reg       | ID_EX_Reg       | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+forward_mux     | forward_mux     | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+ALU             | ALU             | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+EX_WB_Reg       | EX_WB_Reg       | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+data_forward    | data_forward    | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+Program_Counter | Program_Counter | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+Instruct_Buffer | Instruct_Buffer | system_2 |      | 11.1.262.7351 (Windows) | -dbg -2018
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+VHDL Package                      | Library  | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------
+standard                          | std      |      |                         | <unavailable>
+TEXTIO                            | std      |      |                         | <unavailable>
+std_logic_1164                    | ieee     |      |                         | <unavailable>
+NUMERIC_STD                       | ieee     |      |                         | <unavailable>
+STD_LOGIC_TEXTIO                  | ieee     |      |                         | <unavailable>
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Library                           | Comment
+----------------------------------------------------------------------------------------------------
+ieee                              | Standard IEEE packages library
+std                               | Standard VHDL library
+system_2                          | None
+----------------------------------------------------------------------------------------------------

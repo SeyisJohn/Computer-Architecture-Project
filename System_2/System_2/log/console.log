@@ -1,0 +1,3056 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of entity 'system_2.program_counter' instantiated in architecture 'structural:instruct_fetch' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: VSIM: cannot select specified top-level
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7349 kB (elbread=1280 elab2=5909 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  10:42 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Error: COMP96_0273: System_tb.vhd : (171, 3): Cannot find procedure "write" for these actuals.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7349 kB (elbread=1280 elab2=5909 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  10:46 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 100 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# EXECUTION:: NOTE   : Line: 1100000000000000000000000
+# EXECUTION:: Time: 110 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 110 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 120 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 120 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 130 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 130 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7349 kB (elbread=1280 elab2=5908 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  10:46 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1100000000000000000000000
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7349 kB (elbread=1280 elab2=5909 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  10:49 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1100000000000000000000000
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7349 kB (elbread=1280 elab2=5909 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  10:50 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1100000000000000000000000
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7350 kB (elbread=1280 elab2=5909 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  10:58 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7350 kB (elbread=1280 elab2=5909 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  10:59 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Error: COMP96_0724: System_tb.vhd : (99, 16): ',' or ')' expected.
+# Error: COMP96_0015: System_tb.vhd : (99, 19): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# Error: VLM_0034: Library "system_2" cannot be modified because it is being used by another process.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  5.0 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7350 kB (elbread=1280 elab2=5909 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:02 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7351 kB (elbread=1280 elab2=5910 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:03 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7351 kB (elbread=1280 elab2=5910 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:04 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7351 kB (elbread=1280 elab2=5910 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:06 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7351 kB (elbread=1280 elab2=5910 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:09 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7351 kB (elbread=1280 elab2=5910 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:12 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7351 kB (elbread=1280 elab2=5910 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:13 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7351 kB (elbread=1280 elab2=5910 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:14 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5910 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:15 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Error: COMP96_0078: System_tb.vhd : (173, 14): Unknown identifier "start".
+# Error: COMP96_0133: System_tb.vhd : (173, 14): Cannot find object declaration.
+# Error: COMP96_0077: System_tb.vhd : (173, 14): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: System_tb.vhd : (197, 3): Unknown identifier "end_clock".
+# Error: COMP96_0133: System_tb.vhd : (197, 3): Cannot find object declaration.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7351 kB (elbread=1280 elab2=5910 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:19 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Error: COMP96_0093: System_tb.vhd : (180, 26): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0153: System_tb.vhd : (180, 26): Formal "L" of class variable must be associated with a variable.
+# Error: COMP96_0093: System_tb.vhd : (193, 25): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0153: System_tb.vhd : (193, 25): Formal "L" of class variable must be associated with a variable.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Error: COMP96_0015: System_tb.vhd : (181, 4): ';' expected.
+# Error: COMP96_0015: System_tb.vhd : (195, 3): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5911 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:22 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5911 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:23 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+run 100 ns
+# KERNEL: stopped at time: 1770 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1870 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1970 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 2070 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5911 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:26 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5911 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:30 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+# add wave -noreg {/System_tb/UUT/instruct_buffer/u2/PC}
+# add wave -noreg {/System_tb/UUT/instruct_buffer/u2/Instruct}
+# 2 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Error: COMP96_0015: System.vhd : (42, 4): ';' expected.
+# Compile Architecture "structural" of Entity "System"
+# Error: COMP96_0078: System.vhd : (142, 2): Unknown identifier "In_RegFile".
+# Error: COMP96_0133: System.vhd : (142, 2): Cannot find object declaration.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5911 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:35 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/wave.asdb'.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5911 kernel=161 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:36 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -reorder -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => System_tb
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5911 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:43 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5911 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:44 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7352 kB (elbread=1280 elab2=5911 kernel=160 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  11:45 AM, Sunday, November 29, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# Error: COMP96_0018: System.vhd : (199, 3): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System_tb.vhd
+# Error: VLM_0034: Library "system_2" cannot be modified because it is being used by another process.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  5.0 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7362 kB (elbread=1280 elab2=5919 kernel=162 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  12:36 PM, Sunday, November 29, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Error: COMP96_0078: System_tb.vhd : (118, 3): Unknown identifier "Out_ALU_RD".
+# Error: COMP96_0078: System_tb.vhd : (119, 3): Unknown identifier "Out_ALU_RDest".
+# Error: COMP96_0078: System_tb.vhd : (120, 3): Unknown identifier "Out_ALU_Valid".
+# Error: COMP96_0133: System_tb.vhd : (118, 3): Cannot find object declaration.
+# Error: COMP96_0112: System_tb.vhd : (118, 3): "Out_ALU_RD" does not match the formal name.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/register_file.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Error: COMP96_0078: System_tb.vhd : (121, 3): Unknown identifier "Out_WB_Value".
+# Error: COMP96_0078: System_tb.vhd : (122, 3): Unknown identifier "Out_WB_RDest".
+# Error: COMP96_0078: System_tb.vhd : (123, 3): Unknown identifier "Out_WB_RWrite".
+# Error: COMP96_0133: System_tb.vhd : (121, 3): Cannot find object declaration.
+# Error: COMP96_0112: System_tb.vhd : (121, 3): "Out_WB_Value" does not match the formal name.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Error:  You do not have a valid license to run Advanced Dataflow. Contact Aldec for ordering information sales@aldec.com
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7367 kB (elbread=1280 elab2=5923 kernel=163 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  1:37 PM, Sunday, November 29, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/wave.asdb'.
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/instruct_buffer/u2,  Process: store_instruct.
+# EXECUTION:: NOTE   : Line: 1000000100000110001000001
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000000
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1000100001001010011000111
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000001
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 0010000000001000000000011
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000010
+# EXECUTION:: Time: 30 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : Line: 1111110000000000000000000
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# EXECUTION:: NOTE   : PC : 000011
+# EXECUTION:: Time: 40 ns,  Iteration: 0,  Instance: /System_tb,  Process: reading_file.
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work System_2 -2018  $dsn/src/ALU.vhd $dsn/src/data_forward.vhd $dsn/src/EX_WB_Reg.vhd $dsn/src/forward_mux.vhd $dsn/src/ID_EX_Reg.vhd $dsn/src/IF_ID_reg.vhd $dsn/src/Instruct_Buffer.vhd $dsn/src/instruct_fetch.vhd $dsn/src/Program_Counter.vhd $dsn/src/register_file.vhd $dsn/src/System.vhd $dsn/src/System_tb.vhd
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+asim -O5 +access +r +m+System_tb System_tb System_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7366 kB (elbread=1280 elab2=5922 kernel=163 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src\wave.asdb
+#  1:38 PM, Sunday, November 29, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/wave.asdb'.
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd
+# Compile Entity "data_forward"
+# Compile Architecture "data_forward" of Entity "data_forward"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd
+# Compile Entity "EX_WB_Reg"
+# Compile Architecture "EX_WB_Reg" of Entity "EX_WB_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd
+# Compile Entity "forward_mux"
+# Compile Architecture "forward_mux" of Entity "forward_mux"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd
+# Compile Entity "Instruct_Buffer"
+# Compile Architecture "Instruct_Buffer" of Entity "Instruct_Buffer"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd
+# Compile Entity "instruct_fetch"
+# Compile Architecture "structural" of Entity "instruct_fetch"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd
+# Compile Entity "Program_Counter"
+# Compile Architecture "Program_Counter" of Entity "Program_Counter"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd
+# Compile Entity "System"
+# Compile Architecture "structural" of Entity "System"
+# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd
+# Compile Entity "System_tb"
+# Compile Architecture "System_tb" of Entity "System_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+run
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /System_tb/UUT/inst

@@ -1,0 +1,12 @@
+.\src\ALU.vhd
+.\src\data_forward.vhd
+.\src\EX_WB_Reg.vhd
+.\src\forward_mux.vhd
+.\src\ID_EX_Reg.vhd
+.\src\IF_ID_reg.vhd
+.\src\Instruct_Buffer.vhd
+.\src\instruct_fetch.vhd
+.\src\Program_Counter.vhd
+.\src\register_file.vhd
+.\src\System.vhd
+.\src\System_tb.vhd

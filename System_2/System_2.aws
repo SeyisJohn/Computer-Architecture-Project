@@ -1,0 +1,12 @@
+[Version]
+Version=11.1
+[Designs]
+system_2=.\System_2\System_2.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+system_2=1

@@ -5,7 +5,7 @@
 
 # Load Immediate:                                             li (Load index) (16-bit immediate - in decimal) (rd)
 
-# Multiply-Add and Multiply-Subtract R4-Instruction Format:
+# Multiply-Add and Multiply-Subtract R4-Instruction Format:   (instruction) (rs3) (rs2) (rs1) (rd)
 # Signed Integer Multiply-Add Low with Saturation:            IAL (rs3) (rs2) (rs1) (rd)
 # Signed Integer Multiply-Add High with Saturation:           IAH "                    "
 # Signed Integer Multiply-Subtract Low with Saturation:       ISL "                    "
@@ -59,6 +59,8 @@ def main():
         fw.write(x + "\n")
         count += 1
         # print(x)
+
+    fw.write("1111110000000000000000000") # Write a NOP instruction with some information to inform program to that it has reached the end
     
 
         

@@ -1,0 +1,13 @@
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ALU.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/data_forward.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/EX_WB_Reg.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/forward_mux.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/ID_EX_Reg.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/IF_ID_reg.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Instruct_Buffer.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/instruct_fetch.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/Program_Counter.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/register_file.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System.vhd" VHDL System_2 1 0 0 -02 -08 -18
+"C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/System_2/System_2/src/System_tb.vhd" VHDL System_2 1 0 0 -02 -08 -18
+. . 0 0 0
