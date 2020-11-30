@@ -1,4 +1,4 @@
-MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Data_Forwarding/Data_forward/src/data_forward.vhd" 
-MESSAGE "Compile Entity "data_forward"" 
-MESSAGE "Compile Architecture "data_forward" of Entity "data_forward"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 
+MESSAGE "File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/Data_Forwarding/Data_forward/src/data_forward_tb.vhd" 
+MESSAGE "Compile Entity "data_forward_tb"" 
+MESSAGE "Compile Architecture "data_forward_tb" of Entity "data_forward_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 

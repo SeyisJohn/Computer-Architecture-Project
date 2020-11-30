@@ -35,165 +35,172 @@ end ALU_tb;
 --}} End of automatically maintained section
 
 architecture ALU_tb of ALU_tb is
-	
+
+
 	-- Stimulus signals
-	signal rs1 : SIGNED(127 downto 0) := (others => '0');
-	signal rs2 : SIGNED(127 downto 0) := (others => '0');
-	signal rs3 : SIGNED(127 downto 0) := (others => '0');
-	signal instruct : STD_LOGIC_VECTOR(4 downto 0) := (others => '1');
-	
+	signal rs1_in  : STD_LOGIC_VECTOR(127 downto 0);
+	signal rs2_in : STD_LOGIC_VECTOR(127 downto 0);
+	signal rs3_in : STD_LOGIC_VECTOR(127 downto 0);
+	signal ALU_instruct : STD_LOGIC_VECTOR(4 downto 0);
+	signal reg_des_in : STD_LOGIC_VECTOR(4 downto 0);
+
 	-- Observed signals
-	signal rd : SIGNED(127 downto 0);
+	signal rd : STD_LOGIC_VECTOR(127 downto 0);
+	signal reg_des_out : STD_LOGIC_VECTOR(4 downto 0); 
+	signal valid : STD_LOGIC;  
 	
-	
-	-- Temporary signals
+	signal PERIOD : time := 200 ns;
 	
 begin
 
 	UUT : entity ALU port map (
-		rs1 => rs1,
-		rs2 => rs2,
-		rs3 => rs3,
-		instruct => instruct,
-		rd => rd
+		rs1_in  => rs1_in ,
+		rs2_in => rs2_in,
+		rs3_in => rs3_in,
+		ALU_instruct => ALU_instruct,
+		reg_des_in => reg_des_in,
+		rd => rd,
+		valid => valid,
+		reg_des_out => reg_des_out
 		);
 		
-		
-	-- Testing each instruction in ALU
 	
 	instruct_loop: process
 	begin
+		wait for PERIOD/2;
 		for i in 0 to 31 loop
-			instruct <= STD_LOGIC_VECTOR(to_unsigned(i, 5)); 
-			wait for 200 ns;
+			ALU_instruct <= STD_LOGIC_VECTOR(to_unsigned(i, 5)); 
+			wait for PERIOD;
 			
 		end loop;
 		wait;
 	end process;
 	
 	
-	-- Does not currently work
 	testing: process
 	begin
-		wait for 1 ns;
+		
 		for i in 0 to 31 loop
-			if(instruct = "00000") then
+--			wait for PERIOD/2;
+			if(ALU_instruct = "00000") then
 				
-				rs1 <= (31 downto 0 => X"7FFF_FFFF", others => '0');
-				rs2 <= (15 downto 0 => X"7FFF", others => '0');
-				rs3 <= (15 downto 0 => X"7FFF", others => '0');
+				rs1_in  <= (31 downto 0 => X"7FFF_FFFF", others => '0');
+				rs2_in <= (15 downto 0 => X"7FFF", others => '0');
+				rs3_in <= (15 downto 0 => X"7FFF", others => '0');
 				
-				wait for 100ns;		
+				wait for PERIOD;		
 				
-				rs1 <= (31 downto 0 => X"8000_0000", others => '0');
-				rs2 <= (15 downto 0 => X"8000", others => '0');
-				rs3 <= (15 downto 0 => X"7FFF", others => '0');
+				rs1_in  <= (31 downto 0 => X"8000_0000", others => '0');
+				rs2_in <= (15 downto 0 => X"8000", others => '0');
+				rs3_in <= (15 downto 0 => X"7FFF", others => '0');
 				
-				wait for 100ns;
+--				wait for PERIOD;
 				
-			elsif (instruct = "00001") then
+			elsif (ALU_instruct = "00001") then
 				
-				rs1 <= (31 downto 0 => X"7FFF_FFFF", others => '0');
-				rs2 <= (31 downto 16 => X"7FFF", others => '0');
-				rs3 <= (31 downto 16 => X"7FFF", others => '0');
+				rs1_in <= (31 downto 0 => X"7FFF_FFFF", others => '0');
+				rs2_in <= (31 downto 16 => X"7FFF", others => '0');
+				rs3_in <= (31 downto 16 => X"7FFF", others => '0');
 				
-				wait for 100 ns;
+				wait for PERIOD;
 				
-				rs1 <= (31 downto 0 => X"8000_0000", others => '0');
-				rs2 <= (31 downto 16 => X"8000", others => '0');
-				rs3 <= (31 downto 16 => X"7FFF", others => '0');
+				rs1_in <= (31 downto 0 => X"8000_0000", others => '0');
+				rs2_in <= (31 downto 16 => X"8000", others => '0');
+				rs3_in <= (31 downto 16 => X"7FFF", others => '0');
 				
-				wait for 100 ns;
+--				wait for PERIOD;
 				
-			elsif (instruct = "00010") then
+			elsif (ALU_instruct = "00010") then
 
-				rs1 <= (31 downto 0 => X"8000_0001", others => '0');
-				rs2 <= (15 downto 0 => X"7FFF", others => '0');
-				rs3 <= (15 downto 0 => X"7FFF", others => '0');
+				rs1_in <= (31 downto 0 => X"8000_0001", others => '0');
+				rs2_in <= (15 downto 0 => X"7FFF", others => '0');
+				rs3_in <= (15 downto 0 => X"7FFF", others => '0');
 				
-				wait for 100 ns;
+				wait for PERIOD;
 				
-				rs1 <= (31 downto 0 => X"7FFF_FFFF", others => '0');
-				rs2 <= (15 downto 0 => X"8000", others => '0');
-				rs3 <= (15 downto 0 => X"7FFF", others => '0');
+				rs1_in <= (31 downto 0 => X"7FFF_FFFF", others => '0');
+				rs2_in <= (15 downto 0 => X"8000", others => '0');
+				rs3_in <= (15 downto 0 => X"7FFF", others => '0');
 				
-				wait for 100 ns; 
+--				wait for PERIOD; 
 				
-			elsif (instruct = "00011") then
+			elsif (ALU_instruct = "00011") then
 				
-				rs1 <= (31 downto 0 => X"8000_0001", others => '0');
-				rs2 <= (31 downto 16 => X"7FFF", others => '0');
-				rs3 <= (31 downto 16 => X"7FFF", others => '0');
+				rs1_in <= (31 downto 0 => X"8000_0001", others => '0');
+				rs2_in <= (31 downto 16 => X"7FFF", others => '0');
+				rs3_in <= (31 downto 16 => X"7FFF", others => '0');
 				
-				wait for 100 ns;
+				wait for PERIOD;
 				
-				rs1 <= (31 downto 0 => X"7FFF_FFFF", others => '0');
-				rs2 <= (31 downto 16 => X"8000", others => '0');
-				rs3 <= (31 downto 16 => X"7FFF", others => '0');
+				rs1_in <= (31 downto 0 => X"7FFF_FFFF", others => '0');
+				rs2_in <= (31 downto 16 => X"8000", others => '0');
+				rs3_in <= (31 downto 16 => X"7FFF", others => '0');
 				
-				wait for 100 ns;
+--				wait for PERIOD;
 				
-			elsif (instruct = "00100") then 
+			elsif (ALU_instruct = "00100") then 
 				
-				rs1 <= (63 downto 0 => X"7FFF_FFFF_FFFF_FFFF", others => '0');
-				rs2 <= (31 downto 0 => X"7FFF_FFFF", others => '0');
-				rs3 <= (31 downto 0 => X"7FFF_FFFF", others => '0');
+				rs1_in <= (63 downto 0 => X"7FFF_FFFF_FFFF_FFFF", others => '0');
+				rs2_in <= (31 downto 0 => X"7FFF_FFFF", others => '0');
+				rs3_in <= (31 downto 0 => X"7FFF_FFFF", others => '0');
 				
-				wait for 100 ns;
+				wait for PERIOD;
 				
-				rs1 <= (63 downto 0 => X"8000_0000_0000_0000", others => '0');
-				rs2 <= (31 downto 0 => X"8000_0000", others => '0');
-				rs3 <= (31 downto 0 => X"7FFF_FFFF", others => '0'); 
+				rs1_in <= (63 downto 0 => X"8000_0000_0000_0000", others => '0');
+				rs2_in <= (31 downto 0 => X"8000_0000", others => '0');
+				rs3_in <= (31 downto 0 => X"7FFF_FFFF", others => '0'); 
 				
-				wait for 100 ns;
+--				wait for PERIOD;
 				
-			elsif (instruct = "00101") then
+			elsif (ALU_instruct = "00101") then
 				
-				rs1 <= (63 downto 0 => X"7FFF_FFFF_FFFF_FFFF", others => '0');
-				rs2 <= (63 downto 32 => X"7FFF_FFFF", others => '0');
-				rs3 <= (63 downto 32 => X"7FFF_FFFF", others => '0');
+				rs1_in <= (63 downto 0 => X"7FFF_FFFF_FFFF_FFFF", others => '0');
+				rs2_in <= (63 downto 32 => X"7FFF_FFFF", others => '0');
+				rs3_in <= (63 downto 32 => X"7FFF_FFFF", others => '0');
 				
-				wait for 100 ns;
+				wait for PERIOD;
 				
-				rs1 <= (63 downto 0 => X"8000_0000_0000_0000", others => '0');
-				rs2 <= (63 downto 32 => X"8000_0000", others => '0');
-				rs3 <= (63 downto 32 => X"7FFF_FFFF", others => '0'); 
+				rs1_in <= (63 downto 0 => X"8000_0000_0000_0000", others => '0');
+				rs2_in <= (63 downto 32 => X"8000_0000", others => '0');
+				rs3_in <= (63 downto 32 => X"7FFF_FFFF", others => '0'); 
 				
-				wait for 100 ns;
+--				wait for PERIOD;
 				
-			elsif (instruct = "00110") then 
+			elsif (ALU_instruct = "00110") then 
 				
-				rs1 <= (63 downto 0 => X"8000_0000_0000_0001", others => '0');
-				rs2 <= (31 downto 0 => X"7FFF_FFFF", others => '0');
-				rs3 <= (31 downto 0 => X"7FFF_FFFF", others => '0');
+				rs1_in <= (63 downto 0 => X"8000_0000_0000_0001", others => '0');
+				rs2_in <= (31 downto 0 => X"7FFF_FFFF", others => '0');
+				rs3_in <= (31 downto 0 => X"7FFF_FFFF", others => '0');
 				
-				wait for 100 ns;
+				wait for PERIOD;
 				
-				rs1 <= (63 downto 0 => X"7FFF_FFFF_FFFF_FFFF", others => '0');
-				rs2 <= (31 downto 0 => X"8000_0000", others => '0');
-				rs3 <= (31 downto 0 => X"7FFF_FFFF", others => '0'); 
+				rs1_in <= (63 downto 0 => X"7FFF_FFFF_FFFF_FFFF", others => '0');
+				rs2_in <= (31 downto 0 => X"8000_0000", others => '0');
+				rs3_in <= (31 downto 0 => X"7FFF_FFFF", others => '0'); 
 				
-				wait for 100 ns;
+--				wait for PERIOD;
 				
-			elsif (instruct = "00111") then 
+			elsif (ALU_instruct = "00111") then 
 				
-				rs1 <= (63 downto 0 => X"8000_0000_0000_0001", others => '0');
-				rs2 <= (63 downto 32 => X"7FFF_FFFF", others => '0');
-				rs3 <= (63 downto 32 => X"7FFF_FFFF", others => '0');
+				rs1_in <= (63 downto 0 => X"8000_0000_0000_0001", others => '0');
+				rs2_in <= (63 downto 32 => X"7FFF_FFFF", others => '0');
+				rs3_in <= (63 downto 32 => X"7FFF_FFFF", others => '0');
 				
-				wait for 100 ns;
+				wait for PERIOD;
 				
-				rs1 <= (63 downto 0 => X"7FFF_FFFF_FFFF_FFFF", others => '0');
-				rs2 <= (63 downto 32 => X"8000_0000", others => '0');
-				rs3 <= (63 downto 32 => X"7FFF_FFFF", others => '0'); 
+				rs1_in <= (63 downto 0 => X"7FFF_FFFF_FFFF_FFFF", others => '0');
+				rs2_in <= (63 downto 32 => X"8000_0000", others => '0');
+				rs3_in <= (63 downto 32 => X"7FFF_FFFF", others => '0'); 
 				
-				wait for 100 ns;
-			
-				
+--				wait for PERIOD; 	
 			end if;
+			
+			WAIT for PERIOD;
+			-- Every instruct onward are using the previous values as inputs
 			
 		end loop;
 		
+		wait;
 	end process;
 	
 

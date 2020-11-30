@@ -1,24 +1,24 @@
-timestamp=1606413064700
+timestamp=1606762781100
 
 [~A]
-ModifyID=25
+ModifyID=26
 Version=74
 
 [~MFT]
-0=14|0Instruction_buffer.mgf|21106|11652
-1=8|1Instruction_buffer.mgf|29322|19074
-3=6|3Instruction_buffer.mgf|5896|4675
+0=34|0Instruction_buffer.mgf|25289|15702
+1=8|1Instruction_buffer.mgf|35145|24869
+3=7|3Instruction_buffer.mgf|9278|6968
 
 [instruct_buffer]
-A/instruct_buffer=A/Instruct_Buffer 21|../src/Instruct_Buffer.vhd|41|1*24926
-BinI32/instruct_buffer=3*4675
+A/instruct_buffer=A/Instruct_Buffer 21|../src/Instruct_Buffer.vhd|41|1*30721
+BinI32/instruct_buffer=3*6968
 I=0*4070
-I/instruct_buffer=I/Instruct_Buffer 0*19689
+I/instruct_buffer=I/Instruct_Buffer 0*22168
 M=11|0|ve4|1606333429830|../src/Instruct_Buffer.vhd|0*3588*0xc740dc3a608f431bc2488409c6cbb4a00544e72d|0*3975*0xd986fd7175c8cf28cd774bcadde79966
-M/instruct_buffer=M/Instruct_Buffer 21|0|ve4|1606413064524|../src/Instruct_Buffer.vhd|0*8650*0xa888e0ef144c2fe6e65f0cb43d1497251afb99ac|0*9222*0x3666052002612506830c83371aef600f
+M/instruct_buffer=M/Instruct_Buffer 21|0|ve4|1606762780886|../src/Instruct_Buffer.vhd|0*21444*0x5325e81956fac4712f16e520f23c9bcdb5ebb2fb|0*22054*0x3666052002612506830c83371aef600f
 R=../src/Instruct_Buffer.vhd|29
 Version=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|42537bad88c57b0ad305b0eeefd7a43973435ca8784074fbbe18a94b1af10e90960d8ef28cbf9a6d1d9215964971a9c1
-Version/instruct_buffer=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|42537bad88c57b0ad305b0eeefd7a43973435ca8784074fbbe18a94b1af10e903b8098ef44f77038587c99fe8b088810
+Version/instruct_buffer=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|42537bad88c57b0ad305b0eeefd7a43973435ca8784074fbbe18a94b1af10e904afc24909fd6c3d031837223dfbd7fac
 
 [instruct_buffer_system]
 A/instruct_buffer_system=21|../src/instruct_buffer_system.vhd|47|1*22071
@@ -31,40 +31,41 @@ Version=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|425
 Version/instruct_buffer_system=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|42537bad88c57b0ad305b0eeefd7a43993ac62a763248946eba2177717020b30f71da082eaa47e3b0867a0fc349c0c4d
 
 [instruct_buffer_tb]
-A/instruct_buffer_tb=21|../src/instruct_buffer_tb.vhd|37|1*27881
-BinI32/instruct_buffer_tb=3*5896
+A/instruct_buffer_tb=21|../src/instruct_buffer_tb.vhd|37|1*33704
+BinI32/instruct_buffer_tb=3*8206
 I=0*11081
-I/instruct_buffer_tb=0*20793
+I/instruct_buffer_tb=0*23293
 M=11|0|ve4|1606344479990|../src/instruct_buffer_tb.vhd|0*10726*0x4a9b9d6087fce5c2ee149d9694aa3c63dcfcc9b4|0*10980*0xd986fd7175c8cf28cd774bcadde79966
-M/instruct_buffer_tb=21|0|ve4|1606413064633|../src/instruct_buffer_tb.vhd|0*12591*0x87c6f5ecdeab6471a94b57fb59f32e4f7f43e60c|0*13432*0x3666052002612506830c83371aef600f
+M/instruct_buffer_tb=21|0|ve4|1606762781021|../src/instruct_buffer_tb.vhd|0*12591*0x87c6f5ecdeab6471a94b57fb59f32e4f7f43e60c|0*13432*0x3666052002612506830c83371aef600f
 R=../src/instruct_buffer_tb.vhd|32
 Version=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|42537bad88c57b0ad305b0eeefd7a439a09e33edd77b59666280af659ed77b74d5247b35628927157d7f1ec782fd384f
-Version/instruct_buffer_tb=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|42537bad88c57b0ad305b0eeefd7a439a09e33edd77b59666280af659ed77b74918ef360abe1bd78d0c6a4892b6c99d9
+Version/instruct_buffer_tb=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|42537bad88c57b0ad305b0eeefd7a439a09e33edd77b59666280af659ed77b74e604f4cce8417d3792916b0422b06f4a
 
 [instruct_fetch]
-A/structural=21|../src/instruct_fetch.vhd|47|1*29322
-I=0*17626
-I/structural=0*21106
-M=11|0|ve4|1606412844633|../src/instruct_fetch.vhd|0*17082*0x9a99c3202ace7aef16b8ae53a1d6f013c34cada7|0*17533*0xd986fd7175c8cf28cd774bcadde79966
-M/structural=21|0|ve4|1606413064688|../src/instruct_fetch.vhd|0*18781*0x4e432b675cfce0c92827ac4fd4c64d61c0316161|0*19244*0x3666052002612506830c83371aef600f
+A/structural=21|../src/instruct_fetch.vhd|48|1*35145
+BinI32/structural=3*9278
+I=0*24450
+I/structural=0*25289
+M=11|0|ve4|1606762781060|../src/instruct_fetch.vhd|0*23866*0xd9f6508316d0229dd69679c8ad8aee0a90de4683|0*24357*0xd986fd7175c8cf28cd774bcadde79966
+M/structural=21|0|ve4|1606762781067|../src/instruct_fetch.vhd|0*24697*0x793793b8f38c6021013ee3e4e80193f8bd784233|0*25182*0x3666052002612506830c83371aef600f
 R=../src/instruct_fetch.vhd|33
-Version=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|4835513973cfabe41de1ac1038a162897357742f1eb31bc73897946a5ade0017cd5912269433db7047db602ddc60283d
-Version/structural=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3ebeca67cae7006fdc9df9cb66ad8ec6656
+Version=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|4835513973cfabe41de1ac1038a162897357742f1eb31bc73897946a5ade00173848c9b53e6fdb0747413fbad280f068
+Version/structural=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|763af2576fce11abd6060bb6269849fa7b35399d4d6b9112dfc7987dc24af3eb72152b87847384c272c1a23abb2afc3d
 
 [program_counter]
-A/program_counter=A/Program_Counter 21|../src/Program_Counter.vhd|41|1*26483
-BinI32/program_counter=3*5280
+A/program_counter=A/Program_Counter 21|../src/Program_Counter.vhd|41|1*32306
+BinI32/program_counter=3*7590
 I=0*5651
-I/program_counter=I/Program_Counter 0*20529
+I/program_counter=I/Program_Counter 0*23029
 M=11|0|ve4|1606333436888|../src/Program_Counter.vhd|0*5190*0x64a1e88b9e52180de273f621bae8b08fda883cdf|0*5556*0xd986fd7175c8cf28cd774bcadde79966
-M/program_counter=M/Program_Counter 21|0|ve4|1606413064577|../src/Program_Counter.vhd|0*19953*0x70aa00c9d181ab086cbed4947d2b476fe3ecb42e|0*20415*0x3666052002612506830c83371aef600f
+M/program_counter=M/Program_Counter 21|0|ve4|1606762780948|../src/Program_Counter.vhd|0*22432*0x8722cb02b9f65a937016778ef909c4b2506054b8|0*22915*0x3666052002612506830c83371aef600f
 R=../src/Program_Counter.vhd|29
 Version=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|8f4c9b71392661bb64aaf1fd1ecdee3884ee5168192b3e6ad34e2bbdf84bdd455dbb0ccf28df118ddf2bb71342ddbff7
-Version/program_counter=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|8f4c9b71392661bb64aaf1fd1ecdee3884ee5168192b3e6ad34e2bbdf84bdd4506c3484a50b5d11a9ee05cefecf57366
+Version/program_counter=11.1.262.7351 (Windows)|0000000a789cd34d494a57d0353230b400000ec40273|8f4c9b71392661bb64aaf1fd1ecdee3884ee5168192b3e6ad34e2bbdf84bdd456eac4d1ddc91a1eebcc1a7a8a46c3abf
 
 [~U]
 instruct_buffer=Instruct_Buffer 11|0*3350|
 instruct_buffer_system=11|0*14708|
 instruct_buffer_tb=11|0*10584|
-instruct_fetch=11|0*16834|
+instruct_fetch=11|0*23606|
 program_counter=Program_Counter 11|0*4963|

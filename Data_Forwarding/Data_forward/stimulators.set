@@ -1,43 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XML>
 	<document type="stimulators" version="1">
-		<set name="ASDB Stimulators" active="1">
-			<stimulator>
-				<signal_path value="/data_forward/In_Value"/>
-				<rawdescription value="VAL:FRM:Override:X&quot;FFFF&quot;:&lt;= X&quot;FFFF&quot;:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/data_forward/In_Value_2"/>
-				<rawdescription value="VAL:FRM:Override:X&quot;0F0F0F0F&quot;:&lt;= X&quot;0F0F0F0F&quot;:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/data_forward/In_reg_num"/>
-				<rawdescription value="VAL:FRM:Override:X&quot;03&quot;:&lt;= X&quot;03&quot;:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/data_forward/In_reg_num_2"/>
-				<rawdescription value="VAL:FRM:Override:X&quot;03&quot;:&lt;= X&quot;03&quot;:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/data_forward/reg1_num"/>
-				<rawdescription value="VAL:FRM:Override:X&quot;01&quot;:&lt;= X&quot;01&quot;:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/data_forward/reg2_num"/>
-				<rawdescription value="VAL:FRM:Override:X&quot;02&quot;:&lt;= X&quot;02&quot;:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/data_forward/reg3_num"/>
-				<rawdescription value="VAL:FRM:Override:X&quot;03&quot;:&lt;= X&quot;03&quot;:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/data_forward/valid"/>
-				<rawdescription value="VAL:FRM:Override:0:&lt;= 0:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/data_forward/valid_2"/>
-				<rawdescription value="VAL:FRM:Override:1:&lt;= 1:1:"/>
-			</stimulator>
-		</set>
+		<set name="ASDB Stimulators" active="1"/>
 	</document>
 </XML>

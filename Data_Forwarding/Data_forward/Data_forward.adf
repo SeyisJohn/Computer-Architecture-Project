@@ -29,9 +29,11 @@ UCF=
 
 [Files]
 /data_forward.vhd=-1
+/data_forward_tb.vhd=-1
 
 [Files.Data]
 .\src\data_forward.vhd=VHDL Source Code
+.\src\data_forward_tb.vhd=VHDL Source Code
 
 [LocalVhdlSets]
 NetlistCompilation=1
@@ -53,7 +55,7 @@ AdditionalOptions=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=data_forward|data_forward|0  
+HierarchyInformation=data_forward_tb|data_forward_tb|0   
 ShowHide=ShowTopLevel
 Selected=
 

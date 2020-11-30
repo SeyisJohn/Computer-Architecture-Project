@@ -22,11 +22,13 @@ ON_SERVERFARM_SIM=0
 UCF=
 [Files]
 /forward_mux.vhd=-1
+/forward_mux_tb.vhd=-1
 [Files.Data]
 .\src\forward_mux.vhd=VHDL Source Code
+.\src\forward_mux_tb.vhd=VHDL Source Code
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=forward_mux|forward_mux|0 
+HierarchyInformation=forward_mux|forward_mux|0 forward_mux_tb|forward_mux_tb|0  
 ShowHide=ShowTopLevel
 Selected=

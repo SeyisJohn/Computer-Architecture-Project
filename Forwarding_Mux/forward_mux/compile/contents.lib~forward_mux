@@ -1,3 +1,5 @@
-1
+7
 ~E 1 "../src/forward_mux.vhd" 28 forward_mux
-~A 1 "../src/forward_mux.vhd" 43 forward_mux
+~A 1 "../src/forward_mux.vhd" 45 forward_mux
+~E 1 "../src/forward_mux_tb.vhd" 33 forward_mux_tb
+~A 1 "../src/forward_mux_tb.vhd" 38 forward_mux_tb

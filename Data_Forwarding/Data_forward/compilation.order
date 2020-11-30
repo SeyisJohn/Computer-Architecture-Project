@@ -1,1 +1,2 @@
 .\src\data_forward.vhd
+.\src\data_forward_tb.vhd

@@ -1,12 +1,13 @@
-Active-HDL 11.1.262.7351 2020-11-27 01:55:45
+Active-HDL 11.1.262.7351 2020-11-30 12:45:19
 
 Elaboration top modules:
-Architecture                  ALU(ALU)
+Architecture                  ALU_tb(ALU_tb)
 
 
 ------------------------------------------------------------------------------------------------
 Entity   | Architecture | Library        | Info | Compiler Version        | Compilation Options
 ------------------------------------------------------------------------------------------------
+ALU_tb   | ALU_tb       | multimedia_alu |      | 11.1.262.7351 (Windows) | -dbg -2018
 ALU      | ALU          | multimedia_alu |      | 11.1.262.7351 (Windows) | -dbg -2018
 ------------------------------------------------------------------------------------------------
 
@@ -28,7 +29,7 @@ std                     | Standard VHDL library
 ------------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+ALU ALU ALU
+Simulation Options: asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
 
 
 The performance of simulation is reduced. Version Student Edition
