@@ -40,8 +40,10 @@ entity register_file is
 		 writeRegSel			: in STD_LOGIC_VECTOR(4 downto 0);	   	-- rd
 		 writeEnable 			: in STD_LOGIC; 			 			-- write enable	
 		 input 					: in STD_LOGIC_VECTOR(24 downto 0);		-- 25 bit instruction to be decoded
-		 ALU_Ctrl				: out STD_LOGIC_VECTOR(4 downto 0)
---		 clk 					: in  STD_LOGIC					    -- clock  
+		 ALU_Ctrl				: out STD_LOGIC_VECTOR(4 downto 0);     -- ALU control signal
+		 vRSel1                 : out STD_LOGIC;  --Specify if the rs1 output is a valid register for forwarding
+		 vRSel2                 : out STD_LOGIC;  --Specify if the rs2 output is a valid register for forwarding
+		 vRSel3                 : out STD_LOGIC	  --Specify if the rs3 output is a valid register for forwarding
 	     );
 end register_file;
 
@@ -135,15 +137,21 @@ end R3_Instruction;
 
 begin							   
 	
---	read_value: process (clk) 
-		process(input)  
+	
+	process(input)  
 	  	 variable RegSel1	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs1
 		 variable RegSel2 	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs2
 		 variable RegSel3 	: STD_LOGIC_VECTOR(4 downto 0);	   	-- rs3
 		 variable RegSelD   : STD_LOGIC_VECTOR(4 downto 0);     -- rd
-	begin 
---		if rising_edge(clk) then  
-			if (input(24) = '1' and input(23) = '0') then		-- R4 - Instruction Format
+	begin   
+		
+		 if (input = "11----0000---------------") then
+			    vRSel1 <= '0';
+			    vRSel2 <= '0';
+			    vRSel3 <= '0'; 
+				ALU_Ctrl <=	R3_Instruction(input);
+		
+		 elsif (input(24) = '1' and input(23) = '0') then		-- R4 - Instruction Format
 				
 				RegSel3 := input(19 downto 15);
 				RegSel2 := input(14 downto 10);
@@ -177,7 +185,10 @@ begin
 				RSel1 <= RegSel1;
 				RSel2 <= RegSel2;
 				RSel3 <= RegSel3;
-
+				
+			    vRSel1 <= '1';
+			    vRSel2 <= '1';
+			    vRSel3 <= '1';
 				
 			elsif (input(24) = '1' and input(23) = '1') then	-- R3- Instruction Format
 				
@@ -204,6 +215,9 @@ begin
 				RSel1 <= regSel1;
 				RSel2 <= regSel2;
 				
+			    vRSel1 <= '1';
+			    vRSel2 <= '1';
+			    vRSel3 <= '0';
 				
 			elsif (input(24) = '0') then							-- Load Immediate
 				
@@ -219,23 +233,27 @@ begin
 				end if;
 				
 				RSelD <= regSelD;
-			else
-				null;
+				
+			 vRSel1 <= '1';
+			 vRSel2 <= '0';
+			 vRSel3 <= '0';
+			else  
+				
+			  vRSel1 <= '0';
+			  vRSel2 <= '0';
+			  vRSel3 <= '0';
 			end if;
 			
---		else
---			null;
---		end if; 
 	end process;
 	
 	
---	write_value: process (clk)
+	
 	process(WriteEnable, writeRegSel, WriteData)
 	begin	
---		if (rising_edge(clk) and WriteEnable = '1') then
 		if (WriteEnable = '1') then
 			reg_array(to_integer(unsigned(writeRegSel))) <= WriteData;
 		end if;
 	end process;
-			
+	
+	
 end behavioral; 	

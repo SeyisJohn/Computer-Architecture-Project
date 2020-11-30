@@ -1,7 +1,0 @@
-6
-~E 1 "../src/ALU.vhd" 29 ALU
-~A 1 "../src/ALU.vhd" 45 ALU
-~E 1 "../src/Execute.vhd" 32 Execute
-~A 1 "../src/Execute.vhd" 49 structural
-~E 1 "../src/forward_mux.vhd" 28 forward_mux
-~A 1 "../src/forward_mux.vhd" 43 forward_mux

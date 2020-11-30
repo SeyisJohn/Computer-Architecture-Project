@@ -34,7 +34,7 @@ entity ALU is
 		 ALU_instruct : in STD_LOGIC_VECTOR(4 downto 0);
 		 reg_des_in : in STD_LOGIC_VECTOR(4 downto 0);
 		 rd : out STD_LOGIC_VECTOR(127 downto 0);
-		 valid : out STD_LOGIC := '0';
+		 valid : out STD_LOGIC;
 		 reg_des_out : out STD_LOGIC_VECTOR(4 downto 0)
 		 
 	     );
@@ -440,7 +440,7 @@ begin
 			
 			valid <= '1';
 		else
-			rd <= (others => '0');
+			
 			valid <= '0';
 			-- null;
 		
