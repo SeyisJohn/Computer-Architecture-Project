@@ -4,7 +4,7 @@
 		<set name="ASDB Stimulators" active="1">
 			<stimulator>
 				<signal_path value="/IF_ID_reg/Clk"/>
-				<rawdescription value="CLK:FRM:Override:10.000000;2;1;0;50;1:Clock:1:"/>
+				<rawdescription value="CLK:FRM:Override:10.000000;2;1;0;50;1:Clock:0:"/>
 			</stimulator>
 			<stimulator>
 				<signal_path value="/IF_ID_reg/Input"/>

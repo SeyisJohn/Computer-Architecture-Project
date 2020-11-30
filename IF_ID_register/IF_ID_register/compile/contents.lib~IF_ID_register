@@ -1,3 +1,5 @@
-3
+4
 ~E 1 "../src/IF_ID_reg.vhd" 29 IF_ID_reg
 ~A 1 "../src/IF_ID_reg.vhd" 39 IF_ID_reg
+~E 1 "../src/IF_ID_reg_tb.vhd" 28 IF_ID_reg_tb
+~A 1 "../src/IF_ID_reg_tb.vhd" 30 IF_ID_reg_tb

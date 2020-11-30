@@ -1,34 +1,35 @@
-Active-HDL 11.1.262.7351 2020-11-25 19:16:47
+Active-HDL 11.1.262.7351 2020-11-30 03:39:02
 
 Elaboration top modules:
-Architecture                  IF_ID_reg(IF_ID_reg)
+Architecture                  IF_ID_reg_tb(IF_ID_reg_tb)
 
 
--------------------------------------------------------------------------------------------------
-Entity    | Architecture | Library        | Info | Compiler Version        | Compilation Options
--------------------------------------------------------------------------------------------------
-IF_ID_reg | IF_ID_reg    | IF_ID_register |      | 11.1.262.7351 (Windows) | -O3
--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Entity       | Architecture | Library        | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------
+IF_ID_reg_tb | IF_ID_reg_tb | if_id_register |      | 11.1.262.7351 (Windows) | -dbg -2018
+IF_ID_reg    | IF_ID_reg    | if_id_register |      | 11.1.262.7351 (Windows) | -dbg -2018
+----------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------
-VHDL Package             | Library        | Info | Compiler Version        | Compilation Options
--------------------------------------------------------------------------------------------------
-standard                 | std            |      |                         | <unavailable>
-TEXTIO                   | std            |      |                         | <unavailable>
-std_logic_1164           | ieee           |      |                         | <unavailable>
-NUMERIC_STD              | ieee           |      |                         | <unavailable>
--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+VHDL Package                | Library        | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------
+standard                    | std            |      |                         | <unavailable>
+TEXTIO                      | std            |      |                         | <unavailable>
+std_logic_1164              | ieee           |      |                         | <unavailable>
+NUMERIC_STD                 | ieee           |      |                         | <unavailable>
+----------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------
-Library                  | Comment
--------------------------------------------------------------------------------------------------
-ieee                     | Standard IEEE packages library
-IF_ID_register           | None
-std                      | Standard VHDL library
--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Library                     | Comment
+----------------------------------------------------------------------------------------------------
+ieee                        | Standard IEEE packages library
+if_id_register              | None
+std                         | Standard VHDL library
+----------------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+IF_ID_reg IF_ID_reg IF_ID_reg
+Simulation Options: asim -O5 +access +r +m+IF_ID_reg_tb IF_ID_reg_tb IF_ID_reg_tb
 
 
 The performance of simulation is reduced. Version Student Edition
