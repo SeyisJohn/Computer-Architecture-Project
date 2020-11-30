@@ -1,23 +1,19 @@
 [CACHESIMPLE|Aldec.SymbolsCommands.7]
 ID_EX_Register=1
 Built-in symbols=0
-
 [COMPILESTATUS|.\src\ID_EX_Reg.vhd]
-FileTimeLow=30852023
+FileTimeLow=30852923
 Status=Compiled
-
-[General]
-CurrentVersion=103
-
 [CACHEDOC|Aldec.Project.Generic.7|.\ID_EX_Register\ID_EX_Register.adf|]
 Path=
-
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\ID_EX_Register\src/ID_EX_Reg.vhd|]
-CurrentLine=84
-CurrentColumn=1
-Bookmarks=-1
-BookmarksLength=3
-ZoomFactor=0
-Frame=0
-WindowWorkspaceInfo="LAAAAAAAAAABAAAA/////////////////////88AAAB5AAAAfwcAAEcDAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAyAAAAMgAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAEAAAA="
-
+[COMPILESTATUS|.\src\ID_EX_Reg_tb.vhd]
+FileTimeLow=30852924
+Status=Compiled
+[COMPILESTATUS|.\src\untitled.asdb]
+FileTimeLow=30852925
+Status=Modified
+[COMPILESTATUS|.\src\untitled.awc]
+FileTimeLow=30852925
+Status=Modified
+[Gui config]
+RunFor=2000ns

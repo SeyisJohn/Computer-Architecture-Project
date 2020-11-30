@@ -1,3 +1,5 @@
-5
+9
 ~E 1 "../src/EX_WB_Reg.vhd" 28 EX_WB_Reg
 ~A 1 "../src/EX_WB_Reg.vhd" 42 EX_WB_Reg
+~E 1 "../src/EX_WB_Reg_tb.vhd" 28 EX_WB_Reg_tb
+~A 1 "../src/EX_WB_Reg_tb.vhd" 30 EX_WB_Reg_tb

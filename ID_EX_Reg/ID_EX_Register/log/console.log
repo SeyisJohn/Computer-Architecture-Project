@@ -123,4 +123,5 @@ asim -O5 +access +r +m+IF_ID_reg_tb IF_ID_reg_tb IF_ID_reg_tb
 run @2us
 # KERNEL: stopped at time: 2 us
 # Waveform file 'C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/untitled.asdb'.
-# Adding file C:\Computer_Architecture\Computer-Architecture-Project\ID_EX_Reg\ID_EX_Register\src\untitled.asdb 
+# Adding file C:\Computer_Architecture\Computer-Architecture-Project\ID_EX_Reg\ID_EX_Register\src\untitled.asdb ... Done
+# Adding file C:\Computer_Architecture\Computer-Architecture-Project\ID_EX_Reg\ID_EX_Register\src\untitled.awc ... Done
