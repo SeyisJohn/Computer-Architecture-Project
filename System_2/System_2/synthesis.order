@@ -10,3 +10,4 @@ i<>.\src\Program_Counter.vhd
 i<>.\src\register_file.vhd
 i<>.\src\System.vhd
 i<>.\src\System_tb.vhd
+i<>.\src\System_copy.bde

@@ -8,5 +8,6 @@
 .\src\instruct_fetch.vhd
 .\src\Program_Counter.vhd
 .\src\register_file.vhd
-.\src\System.vhd
 .\src\System_tb.vhd
+.\src\System.vhd
+.\src\System_copy.bde

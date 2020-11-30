@@ -22,7 +22,7 @@ FLOWTOOLS=ONLY_IMPL
 ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
-fileopenfolder=C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System\System\src
+fileopenfolder=C:\Users\Seyi Olajuyi\Documents\Courses\ESE345\Projec\System_2\System_2\src
 DisableIEEEWarnings=0
 DisableVitalMsg=0
 VitalAccel=1
@@ -48,6 +48,17 @@ ProtectLevel=0
 IncrementalCompilation=0
 AdditionalOptions=
 
+[LoadVHPI]
+Count=0
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=system_tb|System_tb|0 
+ShowHide=ShowTopLevel
+Selected=
+
 [Files]
 /ALU.vhd=-1
 /data_forward.vhd=-1
@@ -59,9 +70,10 @@ AdditionalOptions=
 /instruct_fetch.vhd=-1
 /Program_Counter.vhd=-1
 /register_file.vhd=-1
-/System.vhd=-1
 /System_tb.vhd=-1
+/System.vhd=-1
 /Opcode.txt=-1
+/System_copy.bde=-1
 
 [Files.Data]
 .\src\ALU.vhd=VHDL Source Code
@@ -74,18 +86,8 @@ AdditionalOptions=
 .\src\instruct_fetch.vhd=VHDL Source Code
 .\src\Program_Counter.vhd=VHDL Source Code
 .\src\register_file.vhd=VHDL Source Code
-.\src\System.vhd=VHDL Source Code
 .\src\System_tb.vhd=VHDL Source Code
+.\src\System.vhd=VHDL Source Code
 .\src\Opcode.txt=Text File
-
-[LoadVHPI]
-Count=0
-
-[SpecTracer]
-WindowVisible=0
-
-[HierarchyViewer]
-HierarchyInformation=system_tb|System_tb|0 
-ShowHide=ShowTopLevel
-Selected=
+.\src\System_copy.bde=Block Diagram
 

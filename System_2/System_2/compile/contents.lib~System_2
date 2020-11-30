@@ -1,4 +1,4 @@
-67
+95
 ~E 1 "../src/ALU.vhd" 29 ALU
 ~A 1 "../src/ALU.vhd" 45 ALU
 ~E 1 "../src/data_forward.vhd" 29 data_forward
@@ -21,6 +21,7 @@
 ~E 1 "../src/register_file.vhd" 29 register_file
 ~A 1 "../src/register_file.vhd" 52 behavioral
 ~E 1 "../src/System.vhd" 31 System
-~A 1 "../src/System.vhd" 80 structural
+~E 1 "../src/System - Copy.vhd" 31 System_copy
+~A 1 "../src/System - Copy.vhd" 46 structural
 ~E 1 "../src/System_tb.vhd" 35 System_tb
 ~A 1 "../src/System_tb.vhd" 40 System_tb
