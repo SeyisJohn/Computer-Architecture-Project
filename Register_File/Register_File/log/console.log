@@ -1,0 +1,513 @@
+acom -reorder -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Top-level unit(s) detected:
+# Entity => register_file
+# Error: COMP96_0010: registerfile_tb.vhd : (103, 19): Invalid literal.
+# Error: COMP96_0111: registerfile_tb.vhd : (28, 31): Labels do not match.
+# Error: COMP96_0015: registerfile_tb.vhd : (39, 3): ';' expected.
+# Error: COMP96_0015: registerfile_tb.vhd : (77, 9): ';' expected.
+# Error: COMP96_0015: registerfile_tb.vhd : (85, 9): ';' expected.
+# Error: COMP96_0015: registerfile_tb.vhd : (95, 9): ';' expected.
+# Error: COMP96_0029: registerfile_tb.vhd : (103, 19): Expression expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  3.0 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Error: COMP96_0010: registerfile_tb.vhd : (103, 19): Invalid literal.
+# Compile Entity "registerfile_tb"
+# Error: COMP96_0111: registerfile_tb.vhd : (28, 31): Labels do not match.
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0015: registerfile_tb.vhd : (77, 9): ';' expected.
+# Error: COMP96_0015: registerfile_tb.vhd : (85, 9): ';' expected.
+# Error: COMP96_0015: registerfile_tb.vhd : (95, 9): ';' expected.
+# Error: COMP96_0029: registerfile_tb.vhd : (103, 19): Expression expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Error: COMP96_0010: registerfile_tb.vhd : (103, 19): Invalid literal.
+# Compile Entity "registerfile_tb"
+# Error: COMP96_0111: registerfile_tb.vhd : (28, 31): Labels do not match.
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0029: registerfile_tb.vhd : (103, 19): Expression expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0077: registerfile_tb.vhd : (36, 33): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0077: registerfile_tb.vhd : (102, 17): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0077: registerfile_tb.vhd : (102, 17): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0110: registerfile_tb.vhd : (102, 4): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0077: registerfile_tb.vhd : (102, 17): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0015: registerfile_tb.vhd : (41, 1): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.4 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+registerfile_tb registerfile_tb registerfile_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.7 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7234 kB (elbread=1280 elab2=5816 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:07 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# add wave -noreg {/registerfile_tb/writeData}
+# add wave -noreg {/registerfile_tb/writeRegSel}
+# add wave -noreg {/registerfile_tb/writeEnable}
+# add wave -noreg {/registerfile_tb/input}
+# add wave -noreg {/registerfile_tb/ALU_Ctrl}
+# add wave -noreg {/registerfile_tb/vRSel1}
+# add wave -noreg {/registerfile_tb/vRSel2}
+# add wave -noreg {/registerfile_tb/vRSel3}
+# add wave -noreg {/registerfile_tb/RSel1}
+# add wave -noreg {/registerfile_tb/RSel2}
+# add wave -noreg {/registerfile_tb/RSel3}
+# add wave -noreg {/registerfile_tb/RSelD}
+# add wave -noreg {/registerfile_tb/rs1}
+# add wave -noreg {/registerfile_tb/rs2}
+# add wave -noreg {/registerfile_tb/rs3}
+# 15 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+registerfile_tb registerfile_tb registerfile_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7234 kB (elbread=1280 elab2=5816 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:13 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim -O5 +access +r +m+registerfile_tb registerfile_tb registerfile_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7234 kB (elbread=1280 elab2=5816 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:16 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0367: registerfile_tb.vhd : (71, 13): Improper array length (27). Expected length is 25.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7234 kB (elbread=1280 elab2=5816 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:19 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7234 kB (elbread=1280 elab2=5816 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:23 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/register_file.vhd $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7234 kB (elbread=1280 elab2=5816 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:24 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7234 kB (elbread=1280 elab2=5816 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:25 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0015: registerfile_tb.vhd : (72, 4): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7234 kB (elbread=1280 elab2=5816 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:27 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0015: registerfile_tb.vhd : (35, 53): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0015: registerfile_tb.vhd : (35, 53): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0015: registerfile_tb.vhd : (35, 53): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7234 kB (elbread=1280 elab2=5816 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:31 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0015: registerfile_tb.vhd : (75, 4): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0019: registerfile_tb.vhd : (78, 3): Keyword 'end' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6210 kB (elbread=1280 elab2=4792 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\Register_File\Register_File\src\wave.asdb
+#  1:34 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work Register_File -2002  $dsn/src/registerfile_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Computer_Architecture/Computer-Architecture-Project/Register_File/Register_File/src/registerfile_tb.vhd
+# Compile Entity "registerfile_tb"
+# Compile Architecture "registerfile_tb" of Entity "registerfile_tb"
+# Error: COMP96_0077: registerfile_tb.vhd : (75, 13): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 1 Errors 0 Warnin

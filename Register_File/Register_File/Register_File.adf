@@ -29,10 +29,14 @@ UCF=
 [Files]
 /register_file.vhd=-1
 /registerfile_tb.vhd=-1
+/untitled.asdb=-1
+/untitled.awc=-1
 
 [Files.Data]
 .\src\register_file.vhd=VHDL Source Code
 .\src\registerfile_tb.vhd=VHDL Source Code
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
 
 [SpecTracer]
 WindowVisible=0

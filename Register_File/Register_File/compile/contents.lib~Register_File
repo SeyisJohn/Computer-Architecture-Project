@@ -1,1 +1,5 @@
-0
+19
+~E 1 "../src/register_file.vhd" 29 register_file
+~A 1 "../src/register_file.vhd" 52 behavioral
+~E 1 "../src/registerfile_tb.vhd" 28 registerfile_tb
+~A 1 "../src/registerfile_tb.vhd" 30 registerfile_tb
