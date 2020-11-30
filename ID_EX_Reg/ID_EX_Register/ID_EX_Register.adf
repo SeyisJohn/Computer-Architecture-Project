@@ -22,8 +22,14 @@ ON_SERVERFARM_SIM=0
 UCF=
 [Files]
 /ID_EX_Reg.vhd=-1
+/ID_EX_Reg_tb.vhd=-1
+/untitled.asdb=-1
+/untitled.awc=-1
 [Files.Data]
 .\src\ID_EX_Reg.vhd=VHDL Source Code
+.\src\ID_EX_Reg_tb.vhd=VHDL Source Code
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0

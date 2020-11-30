@@ -1,17 +1,126 @@
-# Design: Design ID_EX_Register already active.
-# DESIGN: Default Design Language: VHDL
-# DESIGN: Default BDE Language: VHDL
-# DESIGN: C-Synthesis: Not Defined
-# DESIGN: HDL Synthesis: Not Defined
-# DESIGN: Physical Synthesis: Not Defined
-# DESIGN: Implementation: Not Defined
-acom -reorder -O3 -e 100 -work ID_EX_Register -2002  $dsn/src/ID_EX_Reg.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/Users/Seyi Olajuyi/Documents/Courses/ESE345/Projec/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg.vhd
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.6 [s].
+# Design Explorer: Shortcut to "C:\Computer_Architecture\Computer-Architecture-Project\ID_EX_Reg\ID_EX_Reg.aws" workspace added.
+acom -dbg -e 100 -work ID_EX_Register -2018  $dsn/src/ID_EX_Reg.vhd $dsn/src/ID_EX_Reg_tb.vhd
+# File: C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg.vhd
 # Compile Entity "ID_EX_Reg"
 # Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
-# Top-level unit(s) detected:
-# Entity => ID_EX_Reg
-# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+# File: C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg_tb.vhd
+# Error: COMP96_0010: ID_EX_Reg_tb.vhd : (87, 10): Invalid literal.
+# Error: COMP96_0010: ID_EX_Reg_tb.vhd : (89, 10): Invalid literal.
+# Error: COMP96_0010: ID_EX_Reg_tb.vhd : (90, 20): Invalid literal.
+# Compile Entity "IF_ID_reg_tb"
+# Compile Architecture "IF_ID_reg_tb" of Entity "IF_ID_reg_tb"
+# Error: COMP96_0015: ID_EX_Reg_tb.vhd : (57, 1): ';' expected.
+# Error: COMP96_0724: ID_EX_Reg_tb.vhd : (77, 14): ',' or ')' expected.
+# Error: COMP96_0015: ID_EX_Reg_tb.vhd : (77, 17): ';' expected.
+# Error: COMP96_0029: ID_EX_Reg_tb.vhd : (87, 10): Expression expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -dbg -e 100 -work ID_EX_Register -2018  $dsn/src/ID_EX_Reg_tb.vhd
+# File: C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg_tb.vhd
+# Compile Entity "IF_ID_reg_tb"
+# Compile Architecture "IF_ID_reg_tb" of Entity "IF_ID_reg_tb"
+# Error: COMP96_0724: ID_EX_Reg_tb.vhd : (77, 14): ',' or ')' expected.
+# Error: COMP96_0015: ID_EX_Reg_tb.vhd : (77, 17): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -e 100 -work ID_EX_Register -2018  $dsn/src/ID_EX_Reg_tb.vhd
+# File: C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg_tb.vhd
+# Compile Entity "IF_ID_reg_tb"
+# Compile Architecture "IF_ID_reg_tb" of Entity "IF_ID_reg_tb"
+# Error: COMP96_0078: ID_EX_Reg_tb.vhd : (58, 14): Unknown identifier "IF_ID_reg".
+# Error: COMP96_0056: ID_EX_Reg_tb.vhd : (58, 14): Cannot find referenced entity declaration "IF_ID_reg".
+# Error: COMP96_0055: ID_EX_Reg_tb.vhd : (58, 14): Cannot find context item "IF_ID_reg".
+# Error: COMP96_0367: ID_EX_Reg_tb.vhd : (94, 15): Improper array length (4). Expected length is 5.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -dbg -e 100 -work ID_EX_Register -2018  $dsn/src/ID_EX_Reg_tb.vhd
+# File: C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg_tb.vhd
+# Compile Entity "IF_ID_reg_tb"
+# Compile Architecture "IF_ID_reg_tb" of Entity "IF_ID_reg_tb"
+# Error: COMP96_0078: ID_EX_Reg_tb.vhd : (58, 14): Unknown identifier "IF_EX_Reg".
+# Error: COMP96_0056: ID_EX_Reg_tb.vhd : (58, 14): Cannot find referenced entity declaration "IF_EX_Reg".
+# Error: COMP96_0055: ID_EX_Reg_tb.vhd : (58, 14): Cannot find context item "IF_EX_Reg".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -dbg -e 100 -work ID_EX_Register -2018  $dsn/src/ID_EX_Reg.vhd $dsn/src/ID_EX_Reg_tb.vhd
+# File: C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg.vhd
+# Compile Entity "ID_EX_Reg"
+# Compile Architecture "ID_EX_Reg" of Entity "ID_EX_Reg"
+# File: C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg_tb.vhd
+# Compile Entity "IF_ID_reg_tb"
+# Compile Architecture "IF_ID_reg_tb" of Entity "IF_ID_reg_tb"
+# Error: COMP96_0078: ID_EX_Reg_tb.vhd : (60, 3): Unknown identifier "rs1".
+# Error: COMP96_0078: ID_EX_Reg_tb.vhd : (61, 3): Unknown identifier "rs2".
+# Error: COMP96_0078: ID_EX_Reg_tb.vhd : (62, 3): Unknown identifier "rs3".
+# Error: COMP96_0133: ID_EX_Reg_tb.vhd : (60, 3): Cannot find object declaration.
+# Error: COMP96_0112: ID_EX_Reg_tb.vhd : (60, 3): "rs1" does not match the formal name.
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "rs1_id".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "rs2_id".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "rs3_id".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "rs1_num".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "rs2_num".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "rs3_num".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "rd_num".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "ALU_Ctrl".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "valid_rs1_in".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "valid_rs2_in".
+# Error: COMP96_0207: ID_EX_Reg_tb.vhd : (58, 2): No actual specified for local port "valid_rs3_in".
+# Compile failure 16 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -dbg -e 100 -work ID_EX_Register -2018  $dsn/src/ID_EX_Reg_tb.vhd
+# File: C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/ID_EX_Reg_tb.vhd
+# Compile Entity "IF_ID_reg_tb"
+# Compile Architecture "IF_ID_reg_tb" of Entity "IF_ID_reg_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+asim -O5 +access +r +m+IF_ID_reg_tb IF_ID_reg_tb IF_ID_reg_tb
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7227 kB (elbread=1280 elab2=5808 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\ID_EX_Reg\ID_EX_Register\src\wave.asdb
+#  12:16 PM, Monday, November 30, 2020
+#  Simulation has been initialized
+# add wave -noreg {/IF_ID_reg_tb/Clk}
+# add wave -noreg {/IF_ID_reg_tb/rs1_id}
+# add wave -noreg {/IF_ID_reg_tb/rs2_id}
+# add wave -noreg {/IF_ID_reg_tb/rs3_id}
+# add wave -noreg {/IF_ID_reg_tb/rs1_num}
+# add wave -noreg {/IF_ID_reg_tb/rs2_num}
+# add wave -noreg {/IF_ID_reg_tb/rs3_num}
+# add wave -noreg {/IF_ID_reg_tb/rd_num}
+# add wave -noreg {/IF_ID_reg_tb/ALU_Ctrl}
+# add wave -noreg {/IF_ID_reg_tb/valid_rs1_in}
+# add wave -noreg {/IF_ID_reg_tb/valid_rs2_in}
+# add wave -noreg {/IF_ID_reg_tb/valid_rs3_in}
+# add wave -noreg {/IF_ID_reg_tb/rs1_out}
+# add wave -noreg {/IF_ID_reg_tb/rs2_out}
+# add wave -noreg {/IF_ID_reg_tb/rs3_out}
+# add wave -noreg {/IF_ID_reg_tb/rs1_num_out}
+# add wave -noreg {/IF_ID_reg_tb/rs2_num_out}
+# add wave -noreg {/IF_ID_reg_tb/rs3_num_out}
+# add wave -noreg {/IF_ID_reg_tb/rd_num_out}
+# add wave -noreg {/IF_ID_reg_tb/ALU_Ctrl_out}
+# add wave -noreg {/IF_ID_reg_tb/valid_rs1_out}
+# add wave -noreg {/IF_ID_reg_tb/valid_rs2_out}
+# add wave -noreg {/IF_ID_reg_tb/valid_rs3_out}
+# 23 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# Waveform file 'C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/ID_EX_Reg/ID_EX_Register/src/untitled.asdb'.
+# Adding file C:\Computer_Architecture\Computer-Architecture-Project\ID_EX_Reg\ID_EX_Register\src\untitled.asdb 

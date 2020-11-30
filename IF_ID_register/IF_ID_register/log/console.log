@@ -1,0 +1,113 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# Design Explorer: Shortcut to "C:\Computer_Architecture\Computer-Architecture-Project\IF_ID_register\IF_ID_register.aws" workspace added.
+acom -dbg -e 100 -work IF_ID_register -2018  $dsn/src/IF_ID_reg.vhd $dsn/src/IF_ID_reg_tb.vhd
+# File: C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/IF_ID_reg.vhd
+# Compile Entity "IF_ID_reg"
+# Compile Architecture "IF_ID_reg" of Entity "IF_ID_reg"
+# File: C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/IF_ID_reg_tb.vhd
+# Compile Entity "IF_ID_reg_tb"
+# Compile Architecture "IF_ID_reg_tb" of Entity "IF_ID_reg_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+asim -O5 +access +r +m+IF_ID_reg IF_ID_reg IF_ID_reg
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.4 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7218 kB (elbread=1280 elab2=5800 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\IF_ID_register\IF_ID_register\src\wave.asdb
+#  3:33 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# add wave -noreg {/IF_ID_reg/Clk}
+# add wave -noreg {/IF_ID_reg/Input}
+# add wave -noreg {/IF_ID_reg/Output}
+# add wave -noreg {/IF_ID_reg/temporary_holder}
+# 4 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7218 kB (elbread=1280 elab2=5800 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\IF_ID_register\IF_ID_register\src\wave.asdb
+#  3:38 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+asim -O5 +access +r +m+IF_ID_reg_tb IF_ID_reg_tb IF_ID_reg_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7220 kB (elbread=1280 elab2=5801 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location C:\Computer_Architecture\Computer-Architecture-Project\IF_ID_register\IF_ID_register\src\wave.asdb
+#  3:39 AM, Monday, November 30, 2020
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /IF_ID_reg/Clk not found in C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /IF_ID_reg/Input not found in C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /IF_ID_reg/temporary_holder not found in C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /IF_ID_reg/Output not found in C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/wave.asdb.
+# add wave -noreg {/IF_ID_reg_tb/Clk}
+# add wave -noreg {/IF_ID_reg_tb/Input}
+# add wave -noreg {/IF_ID_reg_tb/Output}
+# 3 signal(s) traced.
+run @2us
+# KERNEL: stopped at time: 2 us
+# Waveform file 'C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/untitled.awc' connected to 'C:/Computer_Architecture/Computer-Architecture-Project/IF_ID_register/IF_ID_register/src/untitled.asdb'.
+# Adding file C:\Computer_Architecture\Computer-Architecture-Project\IF_ID_register\IF_ID_register\src\untitled.asdb ... Done
+# Adding file C:\Computer_Architecture\Computer-Architecture-Project\IF_ID_register\IF_ID_register\src\untitled.awc ... Done
