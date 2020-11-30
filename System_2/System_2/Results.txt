@@ -1,0 +1,125 @@
+PC: 000000
+Instruction: XXXXXXX
+Input into register File: XXXXXXX
+Output of register File (rs1): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of register File (rs2): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of register File (rs3): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of register File (Register 1 number): XX
+Output of register File (Register 2 number): XX
+Output of register File (Register 3 number): XX
+Output of register File (Register destination number): XX
+Output of register File (ALU Control number): XX
+Output of Data Forwarding Selector: 0
+Output of Data Forwarding Value: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs1): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs2): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs3): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (ALU Control): XX
+Input of ALU (Rd destination): XX
+Output of ALU (rd): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of ALU (rd destination): XX
+Output of ALU (rd valid/WriteEnable for Register): 0
+Output of EX/WB Register (WriteData to RegisterFile): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of EX/WB Register (Select Register to write): XX
+Output of EX/WB Register (WriteEnable for RegisterFile): U
+ 
+PC: 000001
+Instruction: 1020C41
+Input into register File: XXXXXXX
+Output of register File (rs1): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of register File (rs2): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of register File (rs3): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of register File (Register 1 number): XX
+Output of register File (Register 2 number): XX
+Output of register File (Register 3 number): XX
+Output of register File (Register destination number): XX
+Output of register File (ALU Control number): XX
+Output of Data Forwarding Selector: 0
+Output of Data Forwarding Value: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs1): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs2): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs3): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (ALU Control): XX
+Input of ALU (Rd destination): XX
+Output of ALU (rd): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of ALU (rd destination): XX
+Output of ALU (rd valid/WriteEnable for Register): 0
+Output of EX/WB Register (WriteData to RegisterFile): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of EX/WB Register (Select Register to write): XX
+Output of EX/WB Register (WriteEnable for RegisterFile): 0
+ 
+PC: 000010
+Instruction: 11094C7
+Input into register File: 1020C41
+Output of register File (rs1): 22222222222222222222222222222222
+Output of register File (rs2): 33333333333333333333333333333333
+Output of register File (rs3): 44444444444444444444444444444444
+Output of register File (Register 1 number): 02
+Output of register File (Register 2 number): 03
+Output of register File (Register 3 number): 04
+Output of register File (Register destination number): 01
+Output of register File (ALU Control number): 00
+Output of Data Forwarding Selector: 0
+Output of Data Forwarding Value: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs1): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs2): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs3): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (ALU Control): XX
+Input of ALU (Rd destination): XX
+Output of ALU (rd): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of ALU (rd destination): XX
+Output of ALU (rd valid/WriteEnable for Register): 0
+Output of EX/WB Register (WriteData to RegisterFile): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of EX/WB Register (Select Register to write): XX
+Output of EX/WB Register (WriteEnable for RegisterFile): 0
+ 
+PC: 000011
+Instruction: 0401003
+Input into register File: 11094C7
+Output of register File (rs1): 66666666666666666666666666666666
+Output of register File (rs2): 55555555555555555555555555555555
+Output of register File (rs3): 11111111111111111111111111111111
+Output of register File (Register 1 number): 06
+Output of register File (Register 2 number): 05
+Output of register File (Register 3 number): 01
+Output of register File (Register destination number): 07
+Output of register File (ALU Control number): 01
+Output of Data Forwarding Selector: 0
+Output of Data Forwarding Value: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Input of ALU (rs1): 22222222222222222222222222222222
+Input of ALU (rs2): 33333333333333333333333333333333
+Input of ALU (rs3): 44444444444444444444444444444444
+Input of ALU (ALU Control): 00
+Input of ALU (Rd destination): 01
+Output of ALU (rd): XXXXXXXXXXXXXXXXXXXXXXXX2FC947AE
+Output of ALU (rd destination): 01
+Output of ALU (rd valid/WriteEnable for Register): 1
+Output of EX/WB Register (WriteData to RegisterFile): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Output of EX/WB Register (Select Register to write): XX
+Output of EX/WB Register (WriteEnable for RegisterFile): 0
+ 
+PC: 000100
+Instruction: 1F80000
+Input into register File: 0401003
+Output of register File (rs1): 33333333333333333333333333333333
+Output of register File (rs2): 55555555555555555555555555550080
+Output of register File (rs3): 11111111111111111111111111111112
+Output of register File (Register 1 number): 06
+Output of register File (Register 2 number): 05
+Output of register File (Register 3 number): 01
+Output of register File (Register destination number): 03
+Output of register File (ALU Control number): 17
+Output of Data Forwarding Selector: 3
+Output of Data Forwarding Value: XXXXXXXXXXXXXXXXXXXXXXXX2FC947AE
+Input of ALU (rs1): 66666666666666666666666666666666
+Input of ALU (rs2): 55555555555555555555555555555555
+Input of ALU (rs3): XXXXXXXXXXXXXXXXXXXXXXXX2FC947AE
+Input of ALU (ALU Control): 01
+Input of ALU (Rd destination): 07
+Output of ALU (rd): XXXXXXXXXXXXXXXXXXXXXXXX76540123
+Output of ALU (rd destination): 07
+Output of ALU (rd valid/WriteEnable for Register): 1
+Output of EX/WB Register (WriteData to RegisterFile): XXXXXXXXXXXXXXXXXXXXXXXX2FC947AE
+Output of EX/WB Register (Select Register to write): 01
+Output of EX/WB Register (WriteEnable for RegisterFile): 1
+ 
